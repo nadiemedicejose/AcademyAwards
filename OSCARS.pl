@@ -33,12 +33,6 @@ Que se puede traducir como alerta para predicados repetidos.
 pelicula(nomadland, 2020).
 actriz(nomadland, frances_mcdormand).
 productor(nomadland, [mollye_asher, dan_janvey, frances_mcdormand, peter_spears, chloe_zhao]).
-% Productores
-% productor(nomadland, mollye_asher).
-% productor(nomadland, dan_janvey).
-% productor(nomadland, frances_mcdormand).
-% productor(nomadland, peter_spears).
-% productor(nomadland, chloe_zhao).
 director(nomadland, chloe_zhao).
 fotografia(nomadland, joshua_james_richards).
 edicion(nomadland, chloe_zhao).
@@ -51,16 +45,12 @@ actor(nomadland, david_strathairn).
 % Mejor Actriz de Reparto, Mejor Guión Adaptado, Mejor Edición, Mejor Diseño de Producción.
 
 pelicula(the_father, 2021).
-productor(the_father, david_parfitt).
-productor(the_father, jean-lous_livi).
-productor(the_father, philippe_carcassonne).
+productor(the_father, [david_parfitt, jean-lous_livi, philippe_carcassonne]).
 actor(the_father, anthony_hopkins).
 actriz(the_father, olivia_colman).
-guion(the_father, florian_zeller).
-guion(the_father, christopher_hampton).
+guion(the_father, [florian_zeller, christopher_hampton]).
 edicion(the_father, yorgos_lamprinos).
-diseñoproduccion(the_father, peter_francis).
-diseñoproduccion(the_father, cathy_featherstone).
+diseñoproduccion(the_father, [peter_francis, cathy_featherstone]).
 
 
 
@@ -86,32 +76,19 @@ actriz(mujercitas, saoirse_ronan).
 actriz(judy, renee_zellweger).
 actriz(el_escandalo, charlizetheron).
 actriz(historia_de_un_matrimonio, scarlett_johansson).
-productor(le_mans66, peter_chernin).
-productor(le_mans66, alex_young).
-productor(le_mans66, lucas_foster).
-productor(le_mans66, kevin_halloran).
-productor(le_mans66, james_mangold).
-productor(el_irlandes, martin_scorsese).
-productor(el_irlandes, robert_de_niro).
-productor(el_irlandes, jane_rosenthal).
-productor(el_irlandes, gaston_pavlovich).
-productor(el_irlandes, emma_tillinger_koskoff).
-productor(jojo_rabbit, carthew_neal).
-productor(jojo_rabbit, taika_waititi).
-productor(jojo_rabbit, chelsea_winstanley).
-productor(joker, todd_phillips).
-productor(joker, bradley_cooper).
-productor(joker, emma_tillinger_koskoff).
+
+productor(le_mans66, [peter_chernin, alex_young, lucas_foster, kevin_halloran, james_mangold]).
+productor(el_irlandes, [martin_scorsese, robert_de_niro, jane_rosenthal, gaston_pavlovich, emma_tillinger_koskoff]).
+productor(jojo_rabbit, [carthew_neal, taika_waititi, chelsea_winstanley]).
+productor(joker, [todd_phillips, bradley_cooper, emma_tillinger_koskoff]).
 
 % --> MIKE <-- %
 
 % Entrega 2019 Avengers End-Games
 pelicula(avengers-endgame,2019).
 productor(avengers-enndgame,kevin_feige).
-director(avengers-endgame,anthony_russo).
-director(avengers-endgame,joe_russo).
-guion(avengers-endgame, christopher_markus).
-guion(avengers-endgame, stephen_mcfeely).
+director(avengers-endgame, [anthony_russo, joe_russo]).
+guion(avengers-endgame, [christopher_markus, stephen_mcfeely]).
 actor(avengers-endgame, robert_downey_jr).
 actor(avengers-endgame, chris_evans).
 actor(avengers-endgame, mark_ruffalo).
@@ -129,16 +106,13 @@ actor(avenger-endgame, bradley_cooper).
 actor(avenger-endgame, gwyneth_paltrow).
 actor(avenger-endgame, josh_brolin).
 musica(avenger-endgame, alan_silvestri).
-productor(avenger-endgame, marvel_studios).
 
 % Pelicula en Pathera Black 2019
 pelicula(patherbalck, 2019).
 director(patherblack, ryan_coogler).
 productor(patherblack, kevin_feige).
-guion(patherblack, ryan_coogler).
-guion(patherblack, joe_robert_cole).
-musica(patherblack, ludwing_goransoon).
-musica(patherblack, kendrick_lamar).
+guion(patherblack, [ryan_coogler, joe_robert_cole]).
+musica(patherblack, [ludwing_goransoon, kendrick_lamar]).
 fotografia(patherblack, rachel_morrison).
 vestuario(patherblack, ruth_e_carter).
 actor(patherblack, chadwick_boseman).
@@ -155,11 +129,7 @@ actor(patherblack, andy_serkis).
 % Pelicula BlacKkKlansman 2019
 pelicula(blackkklansman,2019).
 director(blackkklansman, spike_lee).
-productor(blackkklansman, jason_blum).
-productor(blackkklansman, spike_lee).
-productor(blackkklansman, raymond_manshield).
-productor(blackkklansman, sean_mckittrick).
-productor(blackkklansman, jordan_peele).
+productor(blackkklansman, [jason_blum, spike_lee, raymond_manshield, sean_mckittrick, jordan_peele]).
 guion(blackkklansman, spike_lee).
 musica(blackkklansman, terence_blanchard).
 fotografia(blackkklansman, chaysen_irvin).
@@ -178,40 +148,27 @@ actor(blackkklansman, harry_belafonte).
 pelicula(las_horas_oscuras,2017).
 actor(las_horas_oscuras,gary_oldman).
 actriz(las_horas_oscuras,kiristin_scott_thomas).
-productor(las_horas_oscuras, anthony_mcCarten).
-productor(las_horas_oscuras, douglas_urbanski).
-productor(las_horas_oscuras, lisa_bruce).
-productor(las_horas_oscuras, tim_bevan).
-productor(las_horas_oscuras, eric_fallner).
-productor(las_horas_oscuras, james_biddle).
+productor(las_horas_oscuras, [anthony_mcCarten, douglas_urbanski, lisa_bruce, tim_bevan, eric_fallner, james_biddle]).
 director(las_horas_oscuras, joe_wright).
 fotografia(las_horas_oscuras,bruno_delbonnel).
 musica(las_horas_oscuras, dario_marianelli).
 diseñovestuario(las_horas_oscuras, jacqueline_durran).
 edicion(las_horas_oscuras, valerio_bonelli).
-maquillaje(las_horas_oscuras, kazujiro_tsuji).
-maquillaje(las_horas_oscuras, ivana_primorac).
-maquillaje(las_horas_oscuras, luck_sibbick).
-diseñoproduccion(las_horas_oscuras, sarah_greenwood).
-diseñoproduccion(las_horas_oscuras, katie_spencer).
+maquillaje(las_horas_oscuras, [kazujiro_tsuji, ivana_primorac, luck_sibbick]).
+diseñoproduccion(las_horas_oscuras, [sarah_greenwood, katie_spencer]).
 efectosvisuales(las_horas_oscuras, gary_oldman).
 guion(las_horas_oscuras, anthony_mcCarten).
 nominacion(kristin_scott_Thomas, 2018, las_horas_oscuras).
 
 % Película dunkerque 2017 nominación 2018
 pelicula(dunkerque,2017).
-productor(dunkerque, christopher_nolan).
-productor(dunkerque, emma_thomas).
+productor(dunkerque, [christopher_nolan, emma_thomas]).
 director(dunkerque, christopher_nolan).
 fotografia(dunkerque, hoyte_van_hoytema).
 musica(dunkerque, hans_zimmer).
-edicion(dunkerque, richard_king).
-edicion(dunkerque, alex_gibson).
-maquillaje(dunkerque, kazujiro_tsuji).
-maquillaje(dunkerque, david_malinowski).
-maquillaje(dunkerque, luck_sibbick).
-diseñoproduccion(dunkerque, nathan_crowley).
-diseñoproduccion(dunkerque, gary_fettis).
+edicion(dunkerque, [richard_king, alex_gibson]).
+maquillaje(dunkerque, [kazujiro_tsuji, david_malinowski, luck_sibbick]).
+diseñoproduccion(dunkerque, [nathan_crowley, gary_fettis]).
 efectosvisuales(dunkerque, gary_oldman).
 guion(dunkerque, chhristopher_nolan).
 nominacion(chhristopher_nolan, 2018, dunkerque).
@@ -230,18 +187,14 @@ actriz(dejame_salir,ashley_leConte).
 actriz(dejame_salir,kara_hayward).
 actriz(dejame_salir,jane_allen).
 actriz(dejame_salir,julie_ann_doan).
-productor(dejame_salir, sean_mcKittrick ).
-productor(dejame_salir, jason_blum).
-productor(dejame_salir, edward_h).
-productor(dejame_salir, jordan_peele).
+productor(dejame_salir, [sean_mcKittrick, jason_blum, edward_h, jordan_peele]).
 director(dejame_salir,jordan_peele ).
 fotografia(dejame_salir, toby_oliver).
 musica(dejame_salir, michael_abels).
 diseñovestuario(dejame_salir, nadine_haders).
 edicion(dejame_salir, gregory_plotkin ).
 maquillaje(dejame_salir, malenie_deforrest).
-diseñoproduccion(dejame_salir, blumhouse_productions).
-diseñoproduccion(dejame_salir, qc_entertainment).
+diseñoproduccion(dejame_salir, [blumhouse_productions, qc_entertainment]).
 guion(dejame_salir, jordan_peele ).
 nominacion(jordan_peele, 2018, dejame_salir).
 
