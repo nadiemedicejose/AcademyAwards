@@ -31,7 +31,6 @@ Que se puede traducir como alerta para predicados repetidos.
 % Mejor Actriz, Mejor Director, Mejor Fotografía, Mejor Edición y Mejor Guión Adaptado.
 
 pelicula(nomadland, 2020).
-actriz(nomadland, frances_mcdormand).
 productor(nomadland, [mollye_asher, dan_janvey, frances_mcdormand, peter_spears, chloe_zhao]).
 director(nomadland, chloe_zhao).
 fotografia(nomadland, joshua_james_richards).
@@ -39,6 +38,7 @@ edicion(nomadland, chloe_zhao).
 guion(nomadland, chloe_zhao).
 
 % Cast
+actriz(nomadland, frances_mcdormand).
 actor(nomadland, david_strathairn).
 
 % The Father (2021) obtuvo 6 nominaciones por: Mejor Película, Mejor Actor,
@@ -46,12 +46,13 @@ actor(nomadland, david_strathairn).
 
 pelicula(the_father, 2021).
 productor(the_father, [david_parfitt, jean-lous_livi, philippe_carcassonne]).
-actor(the_father, anthony_hopkins).
-actriz(the_father, olivia_colman).
 guion(the_father, [florian_zeller, christopher_hampton]).
 edicion(the_father, yorgos_lamprinos).
 diseñoproduccion(the_father, [peter_francis, cathy_featherstone]).
 
+% Cast
+actor(the_father, anthony_hopkins).
+actriz(the_father, olivia_colman).
 
 
 % --> LEO <-- %
@@ -89,6 +90,9 @@ pelicula(avengers-endgame,2019).
 productor(avengers-enndgame,kevin_feige).
 director(avengers-endgame, [anthony_russo, joe_russo]).
 guion(avengers-endgame, [christopher_markus, stephen_mcfeely]).
+musica(avenger-endgame, alan_silvestri).
+
+% Cast
 actor(avengers-endgame, robert_downey_jr).
 actor(avengers-endgame, chris_evans).
 actor(avengers-endgame, mark_ruffalo).
@@ -105,7 +109,6 @@ actor(avenger-endgame, jon_favreau).
 actor(avenger-endgame, bradley_cooper).
 actor(avenger-endgame, gwyneth_paltrow).
 actor(avenger-endgame, josh_brolin).
-musica(avenger-endgame, alan_silvestri).
 
 % Pelicula en Pathera Black 2019
 pelicula(patherbalck, 2019).
@@ -115,6 +118,8 @@ guion(patherblack, [ryan_coogler, joe_robert_cole]).
 musica(patherblack, [ludwing_goransoon, kendrick_lamar]).
 fotografia(patherblack, rachel_morrison).
 vestuario(patherblack, ruth_e_carter).
+
+% Cast
 actor(patherblack, chadwick_boseman).
 actor(patherblack, michael_b_jordan).
 actor(patherblack, danai_gurira).
@@ -133,6 +138,8 @@ productor(blackkklansman, [jason_blum, spike_lee, raymond_manshield, sean_mckitt
 guion(blackkklansman, spike_lee).
 musica(blackkklansman, terence_blanchard).
 fotografia(blackkklansman, chaysen_irvin).
+
+% Cast
 actor(blackkklansman, john_david_washington).
 actor(blackkklansman, adam_driver).
 actor(blackkklansman, topher_grace).
@@ -146,8 +153,6 @@ actor(blackkklansman, harry_belafonte).
 
 % Pelicula El instante mas oscuro (darkest hour) 2017 nominación 2018
 pelicula(las_horas_oscuras,2017).
-actor(las_horas_oscuras,gary_oldman).
-actriz(las_horas_oscuras,kiristin_scott_thomas).
 productor(las_horas_oscuras, [anthony_mcCarten, douglas_urbanski, lisa_bruce, tim_bevan, eric_fallner, james_biddle]).
 director(las_horas_oscuras, joe_wright).
 fotografia(las_horas_oscuras,bruno_delbonnel).
@@ -159,6 +164,10 @@ diseñoproduccion(las_horas_oscuras, [sarah_greenwood, katie_spencer]).
 efectosvisuales(las_horas_oscuras, gary_oldman).
 guion(las_horas_oscuras, anthony_mcCarten).
 nominacion(kristin_scott_Thomas, 2018, las_horas_oscuras).
+
+% Cast
+actor(las_horas_oscuras,gary_oldman).
+actriz(las_horas_oscuras,kiristin_scott_thomas).
 
 % Película dunkerque 2017 nominación 2018
 pelicula(dunkerque,2017).
@@ -175,6 +184,18 @@ nominacion(chhristopher_nolan, 2018, dunkerque).
 
 % Pelicula dejame salir 2017 nominacion 2018
 pelicula(dejame_salir,2018).
+productor(dejame_salir, [sean_mcKittrick, jason_blum, edward_h, jordan_peele]).
+director(dejame_salir,jordan_peele ).
+fotografia(dejame_salir, toby_oliver).
+musica(dejame_salir, michael_abels).
+diseñovestuario(dejame_salir, nadine_haders).
+edicion(dejame_salir, gregory_plotkin ).
+maquillaje(dejame_salir, malenie_deforrest).
+diseñoproduccion(dejame_salir, [blumhouse_productions, qc_entertainment]).
+guion(dejame_salir, jordan_peele ).
+nominacion(jordan_peele, 2018, dejame_salir).
+
+% Cast
 actor(dejame_salir, daniel_kaluuya).
 actriz(dejame_salir,allison_williams).
 actriz(dejame_salir,catherine_keenner).
@@ -187,17 +208,6 @@ actriz(dejame_salir,ashley_leConte).
 actriz(dejame_salir,kara_hayward).
 actriz(dejame_salir,jane_allen).
 actriz(dejame_salir,julie_ann_doan).
-productor(dejame_salir, [sean_mcKittrick, jason_blum, edward_h, jordan_peele]).
-director(dejame_salir,jordan_peele ).
-fotografia(dejame_salir, toby_oliver).
-musica(dejame_salir, michael_abels).
-diseñovestuario(dejame_salir, nadine_haders).
-edicion(dejame_salir, gregory_plotkin ).
-maquillaje(dejame_salir, malenie_deforrest).
-diseñoproduccion(dejame_salir, [blumhouse_productions, qc_entertainment]).
-guion(dejame_salir, jordan_peele ).
-nominacion(jordan_peele, 2018, dejame_salir).
-
 
 %%%%%%%%%%%%%%%% ACADEMY AWARDS 2021 %%%%%%%%%%%%%%%%
 % NOMINACIONES
