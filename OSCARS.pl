@@ -18,7 +18,8 @@ Que se puede traducir como alerta para predicados repetidos.
     diseñovestuario/2,
     efectosvisuales/2,
     nominacion/2,
-    nominacion/3.
+    nominacion/3,
+    ganador/3.
 
 
 %%%%%%%%%%%%%%%% PELICULAS %%%%%%%%%%%%%%%%
@@ -338,9 +339,9 @@ nominacion(mejor_pelicula_extranjera, 2018, lebanon).
 nominacion(mejor_pelicula_extranjera, 2018, russia).
 nominacion(mejor_pelicula_extranjera, 2018, hungary).
 nominacion(mejor_pelicula_extranjera, 2018, sweden).
-nominacion(maquillaje_y_peinado, 2018, [kazuhiro_tsuji, david_malinowski, lucy_sibbick]).
-nominacion(maquillaje_y_peinado, 2018, [daniel_phillips, lou_sheppard]).
-nominacion(maquillaje_y_peinado, 2018, arjen_tuiten).
+nominacion(mejor_maquillaje_y_peinado, 2018, [kazuhiro_tsuji, david_malinowski, lucy_sibbick]).
+nominacion(mejor_maquillaje_y_peinado, 2018, [daniel_phillips, lou_sheppard]).
+nominacion(mejor_maquillaje_y_peinado, 2018, arjen_tuiten).
 nominacion(mejor_sountrack_original, 2018, hans_zimmer).
 nominacion(mejor_sountrack_original, 2018, jonny_greenwood).
 nominacion(mejor_sountrack_original, 2018, alexandre_desplat).
@@ -393,6 +394,30 @@ nominacion(mejor_guion_original, 2018, [guillermo_del_toro, vanessa_taylor, guil
 nominacion(mejor_guion_original, 2018, martin_mcdonagh).
 
 % GANADORES
+ganador(mejor_actor, 2018, gary_oldman).
+ganador(mejor_actor_de_reparto, 2018, sam_rockwell).
+ganador(mejor_actriz, 2018, frances_mcdormand).
+ganador(mejor_actriz_de_reparto, 2018, allison_janney).
+ganador(mejor_pelicula_animada, 2018, [lee_unkrich, darla_k_anderson]).
+ganador(mejor_fotografia, 2018, roger_a_deakins).
+ganador(mejor_diseño_de_vestuario, 2018, mark_bridges).
+ganador(mejor_director, 2018, guillermo_del_toro).
+ganador(mejor_documental, 2018, [bryan_fogel, dan_cogan]).
+ganador(mejor_corto_documental, 2018, frank_stiefel).
+ganador(mejor_edicion, 2018, lee_smith).
+ganador(mejor_pelicula_extranjera, 2018, chile).
+ganador(mejor_maquillaje_y_peinado, 2018, [kazuhiro_tsuji_david_malinowski, lucy_sibbick]).
+ganador(mejor_sountrack_original, 2018, alexandre_desplat).
+ganador(mejor_cancion_original, 2018, [kristen_anderson-lopez, robert_lopez]).
+ganador(mejor_pelicula, 2018, [guillermo_del_toro, j_miles_dale]).
+ganador(mejor_diseño_de_produccion, 2018, [paul_denham_austerberry, shane_vieau, jeffrey_a_melvin]).
+ganador(mejor_cortometraje_animado, 2018, [glen_keane, kobe_bryant]).
+ganador(mejor_cortometraje, 2018, [chris_overton, rachel_shenton]).
+ganador(mejor_edicion_de_sonido, 2018, [richard_king, alex_gibson]).
+ganador(mejor_mezcla_de_sonido, 2018, [gregg_landaker_gary_a_rizzo, mark_weingarten]).
+ganador(mejores_efectos_visuales, 2018, [john_nelson_gerd_nefzer_paul_lambert, richard_r_hoover]).
+ganador(mejor_guion_adaptado, 2018, james_ivory).
+ganador(mejor_guion_original, 2018, jordan_peele).
 
 
 % REGLAS
