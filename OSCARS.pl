@@ -25,6 +25,11 @@ Que se puede traducir como alerta para predicados repetidos.
 %%%%%%%%%%%%%%%% PELICULAS %%%%%%%%%%%%%%%%
 
 
+
+pelicula(the_shape_of_water, 2018).
+director(the_shape_of_water, guillermo_del_toro).
+
+
 % --> JOSE <-- %
 
 % Nomadland (2020) obtuvo 6 nominaciones por: Mejor Película (productores),
@@ -361,26 +366,26 @@ ganador(mejor_actor, 2018, gary_oldman).
 ganador(mejor_actor_de_reparto, 2018, sam_rockwell).
 ganador(mejor_actriz, 2018, frances_mcdormand).
 ganador(mejor_actriz_de_reparto, 2018, allison_janney).
-ganador(mejor_pelicula_animada, 2018, [lee_unkrich, darla_k_anderson]).
-ganador(mejor_fotografia, 2018, roger_a_deakins).
-ganador(mejor_diseño_de_vestuario, 2018, mark_bridges).
-ganador(mejor_director, 2018, guillermo_del_toro).
-ganador(mejor_documental, 2018, [bryan_fogel, dan_cogan]).
-ganador(mejor_corto_documental, 2018, frank_stiefel).
+ganador(mejor_pelicula_animada, 2018, coco).
+ganador(mejor_fotografia, 2018, blade_runner_2049).
+ganador(mejor_diseño_de_vestuario, 2018, phantom_thread).
+ganador(mejor_director, 2018, the_shape_of_water).
+ganador(mejor_documental, 2018, icarus).
+ganador(mejor_corto_documental, 2018, heaven_is_a_traffic_jam_on_the_405).
 ganador(mejor_edicion, 2018, lee_smith).
-ganador(mejor_pelicula_extranjera, 2018, chile).
-ganador(mejor_maquillaje_y_peinado, 2018, [kazuhiro_tsuji_david_malinowski, lucy_sibbick]).
-ganador(mejor_sountrack_original, 2018, alexandre_desplat).
-ganador(mejor_cancion_original, 2018, [kristen_anderson-lopez, robert_lopez]).
-ganador(mejor_pelicula, 2018, [guillermo_del_toro, j_miles_dale]).
-ganador(mejor_diseño_de_produccion, 2018, [paul_denham_austerberry, shane_vieau, jeffrey_a_melvin]).
-ganador(mejor_cortometraje_animado, 2018, [glen_keane, kobe_bryant]).
-ganador(mejor_cortometraje, 2018, [chris_overton, rachel_shenton]).
-ganador(mejor_edicion_de_sonido, 2018, [richard_king, alex_gibson]).
-ganador(mejor_mezcla_de_sonido, 2018, [gregg_landaker_gary_a_rizzo, mark_weingarten]).
-ganador(mejores_efectos_visuales, 2018, [john_nelson_gerd_nefzer_paul_lambert, richard_r_hoover]).
-ganador(mejor_guion_adaptado, 2018, james_ivory).
-ganador(mejor_guion_original, 2018, jordan_peele).
+ganador(mejor_pelicula_extranjera, 2018, a_fantastic_woman).
+ganador(mejor_maquillaje_y_peinado, 2018, darkest_hour).
+ganador(mejor_sountrack_original, 2018, the_shape_of_water).
+ganador(mejor_cancion_original, 2018, coco).
+ganador(mejor_pelicula, 2018, the_shape_of_water).
+ganador(mejor_diseño_de_produccion, 2018, the_shape_of_water).
+ganador(mejor_cortometraje_animado, 2018, dear_basketball).
+ganador(mejor_cortometraje, 2018, the_silent_child).
+ganador(mejor_edicion_de_sonido, 2018, dunkirk).
+ganador(mejor_mezcla_de_sonido, 2018, dunkirk).
+ganador(mejores_efectos_visuales, 2018, blade_runner_2049).
+ganador(mejor_guion_adaptado, 2018, call_me_by_your_name).
+ganador(mejor_guion_original, 2018, get_out).
 
 % Nominaciones 2019
 nominacion(mejor_actor, 2019, christian_bale).
@@ -403,11 +408,11 @@ nominacion(mejor_actriz_de_reparto, 2019, marina_de_tavira).
 nominacion(mejor_actriz_de_reparto, 2019, regina_king).
 nominacion(mejor_actriz_de_reparto, 2019, emma_stone).
 nominacion(mejor_actriz_de_reparto, 2019, rachel_weisz).
-nominacion(mejor_pelicula_animada, 2019, [brad_bird, john_walker, nicole_paradis_grindle]).
-nominacion(mejor_pelicula_animada, 2019, [wes_anderson, scott_rudin, steven_rales, jeremy_dawson]).
-nominacion(mejor_pelicula_animada, 2019, [mamoru_hosoda, yuichiro_saito]).
-nominacion(mejor_pelicula_animada, 2019, [rich_moore, phil_johnston, clark_spencer]).
-nominacion(mejor_pelicula_animada, 2019, [bob_persichetti, peter_ramsey, rodney_rothman, phil_lord, christopher_miller]).
+nominacion(mejor_pelicula_animada, 2019, incredibles_2).
+nominacion(mejor_pelicula_animada, 2019, isle_of_dogs).
+nominacion(mejor_pelicula_animada, 2019, mirai).
+nominacion(mejor_pelicula_animada, 2019, ralph_breaks_the_internet).
+nominacion(mejor_pelicula_animada, 2019, spider-man_into_the_spider-verse).
 nominacion(mejor_fotografia, 2019, lukasz_zal).
 nominacion(mejor_fotografia, 2019, robbie_ryan).
 nominacion(mejor_fotografia, 2019, caleb_deschanel).
@@ -423,26 +428,26 @@ nominacion(mejor_director, 2019, pawel_pawlikowski).
 nominacion(mejor_director, 2019, yorgos_lanthimos).
 nominacion(mejor_director, 2019, alfonso_cuaron).
 nominacion(mejor_director, 2019, adam_mckay).
-nominacion(mejor_documental, 2019, [elizabeth_chai_vasarhelyi, jimmy_chin, evan_hayes, shannon_dill]).
-nominacion(mejor_documental, 2019, [ramell_ross, joslyn_barnes, su_kim]).
-nominacion(mejor_documental, 2019, [bing_liu, diane_quon]).
-nominacion(mejor_documental, 2019, [talal_derki, ansgar_frerich, eva_kemme, tobias_n_siebert]).
-nominacion(mejor_documental, 2019, [betsy_west, julie_cohen]).
-nominacion(mejor_corto_documental, 2019, [ed_perkins, jonathan_chinn]).
-nominacion(mejor_corto_documental, 2019, [rob_epstein, jeffrey_friedman]).
-nominacion(mejor_corto_documental, 2019, [skye_fitzgerald, bryn_mooser]).
-nominacion(mejor_corto_documental, 2019, marshall_curry).
-nominacion(mejor_corto_documental, 2019, [rayka_zehtabchi, melissa_berton]).
+nominacion(mejor_documental, 2019, free_solo).
+nominacion(mejor_documental, 2019, hale_county_this_morning_this_evening).
+nominacion(mejor_documental, 2019, minding_the_gap).
+nominacion(mejor_documental, 2019, of_fathers_sons).
+nominacion(mejor_documental, 2019, rbg).
+nominacion(mejor_corto_documental, 2019, black_sheep).
+nominacion(mejor_corto_documental, 2019, end_game).
+nominacion(mejor_corto_documental, 2019, lifeboat).
+nominacion(mejor_corto_documental, 2019, a_night_at_the_garden).
+nominacion(mejor_corto_documental, 2019, period_end_of_sentence).
 nominacion(mejor_edicion, 2019, barry_alexander_brown).
 nominacion(mejor_edicion, 2019, john_ottman).
 nominacion(mejor_edicion, 2019, yorgos_mavropsaridis).
 nominacion(mejor_edicion, 2019, patrick_j_don_vito).
 nominacion(mejor_edicion, 2019, hank_corwin).
-nominacion(mejor_pelicula_extranjera, 2019, lebanon).
-nominacion(mejor_pelicula_extranjera, 2019, poland).
-nominacion(mejor_pelicula_extranjera, 2019, germany).
-nominacion(mejor_pelicula_extranjera, 2019, mexico).
-nominacion(mejor_pelicula_extranjera, 2019, japan).
+nominacion(mejor_pelicula_extranjera, 2019, capernaum).
+nominacion(mejor_pelicula_extranjera, 2019, cold_war).
+nominacion(mejor_pelicula_extranjera, 2019, never_look_away).
+nominacion(mejor_pelicula_extranjera, 2019, roma).
+nominacion(mejor_pelicula_extranjera, 2019, shoplifters).
 nominacion(mejor_maquillaje_y_peinado, 2019, [goran_lundstrom, pamela_goldammer]).
 nominacion(mejor_maquillaje_y_peinado, 2019, [jenny_shircore, marc_pilcher, jessica_brooks]).
 nominacion(mejor_maquillaje_y_peinado, 2019, [greg_cannom, kate_biscoe, patricia_dehaney]).
@@ -451,34 +456,34 @@ nominacion(mejor_sountrack_original, 2019, terence_blanchard).
 nominacion(mejor_sountrack_original, 2019, nicholas_britell).
 nominacion(mejor_sountrack_original, 2019, alexandre_desplat).
 nominacion(mejor_sountrack_original, 2019, marc_shaiman).
-nominacion(mejor_cancion_original, 2019, [kendrick_lamar, mark_sounwave_spears, anthony_top_dawg_tiffith, sza]).
-nominacion(mejor_cancion_original, 2019, diane_warren).
-nominacion(mejor_cancion_original, 2019, [marc_shaiman, scott_wittman]).
-nominacion(mejor_cancion_original, 2019, [lady_gaga, mark_ronson, anthony_rossomando, andrew_wyatt]).
-nominacion(mejor_cancion_original, 2019, [gillian_welch, david_rawlings]).
-nominacion(mejor_pelicula, 2019, kevin_feige_producer).
-nominacion(mejor_pelicula, 2019, [sean_mckittrick, jason_blum, raymond_mansfield, jordan_peele, spike_lee]).
-nominacion(mejor_pelicula, 2019, graham_king_producer).
-nominacion(mejor_pelicula, 2019, [ceci_dempsey, ed_guiney, lee_magiday, yorgos_lanthimos]).
-nominacion(mejor_pelicula, 2019, [jim_burke, charles_b_wessler, brian_currie, peter_farrelly, nick_vallelonga]).
-nominacion(mejor_pelicula, 2019, [gabriela_rodriguez, alfonso_cuaron]).
-nominacion(mejor_pelicula, 2019, [bill_gerber, bradley_cooper, lynette_howell_taylor]).
-nominacion(mejor_pelicula, 2019, [dede_gardner, jeremy_kleiner, adam_mckay, kevin_messick]).
+nominacion(mejor_cancion_original, 2019, black_panther).
+nominacion(mejor_cancion_original, 2019, rbg).
+nominacion(mejor_cancion_original, 2019, mary_poppins_returns).
+nominacion(mejor_cancion_original, 2019, a_star_is_born).
+nominacion(mejor_cancion_original, 2019, the_ballad_of_buster_scruggs).
+nominacion(mejor_pelicula, 2019, black_panther).
+nominacion(mejor_pelicula, 2019, blackkklansman).
+nominacion(mejor_pelicula, 2019, bohemian_rhapsody).
+nominacion(mejor_pelicula, 2019, the_favourite).
+nominacion(mejor_pelicula, 2019, green_book).
+nominacion(mejor_pelicula, 2019, roma).
+nominacion(mejor_pelicula, 2019, a_star_is_born).
+nominacion(mejor_pelicula, 2019, vice).
 nominacion(mejor_diseño_de_produccion, 2019, [hannah_beachler, jay_hart]).
 nominacion(mejor_diseño_de_produccion, 2019, [fiona_crombie, alice_felton]).
 nominacion(mejor_diseño_de_produccion, 2019, [nathan_crowley, kathy_lucas]).
 nominacion(mejor_diseño_de_produccion, 2019, [john_myhre, gordon_sim]).
 nominacion(mejor_diseño_de_produccion, 2019, [eugenio_caballero, barbara_enriquez]).
-nominacion(mejor_cortometraje_animado, 2019, [alison_snowden, david_fine]).
-nominacion(mejor_cortometraje_animado, 2019, [domee_shi, becky_neiman-cobb]).
-nominacion(mejor_cortometraje_animado, 2019, [louise_bagnall, nuria_gonzalez_blanco]).
-nominacion(mejor_cortometraje_animado, 2019, [andrew_chesworth, bobby_pontillas]).
-nominacion(mejor_cortometraje_animado, 2019, trevor_jimenez).
-nominacion(mejor_cortometraje, 2019, [vincent_lambe, darren_mahon]).
-nominacion(mejor_cortometraje, 2019, [jeremy_comte, maria_gracia_turgeon]).
-nominacion(mejor_cortometraje, 2019, [marianne_farley, marie-helene_panisset]).
-nominacion(mejor_cortometraje, 2019, [rodrigo_sorogoyen, maria_del_puy_alvarado]).
-nominacion(mejor_cortometraje, 2019, [guy_nattiv, jaime_ray_newman]).
+nominacion(mejor_cortometraje_animado, 2019, animal_behaviour).
+nominacion(mejor_cortometraje_animado, 2019, bao).
+nominacion(mejor_cortometraje_animado, 2019, late_afternoon).
+nominacion(mejor_cortometraje_animado, 2019, one_small_step).
+nominacion(mejor_cortometraje_animado, 2019, weekends).
+nominacion(mejor_cortometraje, 2019, detainment).
+nominacion(mejor_cortometraje, 2019, fauve).
+nominacion(mejor_cortometraje, 2019, marguerite).
+nominacion(mejor_cortometraje, 2019, mother).
+nominacion(mejor_cortometraje, 2019, skin).
 nominacion(mejor_edicion_de_sonido, 2019, [benjamin_a_burtt, steve_boeddeker]).
 nominacion(mejor_edicion_de_sonido, 2019, [john_warhurst, nina_hartstone]).
 nominacion(mejor_edicion_de_sonido, 2019, [ai-ling_lee, mildred_iatrou_morgan]).
@@ -499,14 +504,27 @@ nominacion(mejor_guion_adaptado, 2019, [charlie_wachtel, david_rabinowitz, kevin
 nominacion(mejor_guion_adaptado, 2019, [nicole_holofcener, jeff_whitty]).
 nominacion(mejor_guion_adaptado, 2019, barry_jenkins).
 nominacion(mejor_guion_adaptado, 2019, [eric_roth, bradley_cooper, will_fetters]).
-nominacion(mejor_guion_original, 2019, [deborah_davis, tony_mcnamara]).
-nominacion(mejor_guion_original, 2019, paul_schrader).
-nominacion(mejor_guion_original, 2019, [nick_vallelonga, brian_currie, peter_farrelly]).
-nominacion(mejor_guion_original, 2019, alfonso_cuaron).
-nominacion(mejor_guion_original, 2019, adam_mckay).
+nominacion(mejor_guion_original, 2019, the_favourite).
+nominacion(mejor_guion_original, 2019, first_reformed).
+nominacion(mejor_guion_original, 2019, green_book).
+nominacion(mejor_guion_original, 2019, roma).
+nominacion(mejor_guion_original, 2019, vice).
 
+escritor(the_favourite, [deborah_davis, tony_mcnamara]).
+escritor(first_reformed, paul_schrader).
+escritor(green_book, [nick_vallelonga, brian_currie, peter_farrelly]).
+escritor(roma, alfonso_cuaron).
+escritor(vice, adam_mckay).
 
 % REGLAS
+nominadosPor(Nominacion, Year) :-
+    nominacion(Nominacion, Year, Pelicula),
+    write(Pelicula), nl.
+
+escritaPor(Pelicula) :-
+    escritor(Pelicula, Escritor),
+    write(Escritor).
+
 % Obtener todas las películas nominadas a Mejor Película en cierto año
 % nominadasMejorPelicula(2021, Nominadas_a_Mejor_Pelicula).
 nominadasMejorPelicula(Year, Pelicula) :- nominacion(mejor_pelicula, Year, Pelicula).
@@ -554,7 +572,7 @@ productores(Pelicula) :-
 % Obtener detalles de la Mejor Película en cierto año
 % mejorPelicula(2021).
 mejorPelicula(Year) :-
-    ganadoraMejorPelicula(Year, Pelicula),
+    ganador(mejor_pelicula, Year, Pelicula),
     pelicula(Pelicula, Release),
     director(Pelicula, Director),
     write('Ganadora del OSCAR por Mejor Película en el año '), write(Year), nl,
