@@ -16,6 +16,8 @@ La base de conocmiento ha sido concebida de acuerdo a las categorías de premios
 * diseñoproduccion(nombre de la pelicula, decorador de set).
 * efectosvisuales(nombre de la pelicula, director de efectos visuales).
 * guion(nombre de la pelicula, escritor).
-* nominacion(nombre de la nominacion, año de entrega, nombre de la pelicula)
+* nominacion(categoría, año de entrega, receptor).
 
-\* Por simplicidad, sólo consideramos aquellos actores que han sido nominados por su desempeño en la categoría de actores principales y secundarios.
+**Notas importantes**
+* La base de conocimiento incluye solamente nominaciones para las entregas del 2018 al 2021.
+* Por simplicidad, sólo consideramos aquellos actores que han sido nominados por su desempeño en la categoría de actores principales y secundarios.

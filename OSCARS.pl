@@ -1,25 +1,4 @@
 /*
-* BASE DE CONOCIMIENTO
-* pelicula(nombre de la pelicula, año de estreno).
-* actor(nombre de la pelicula, actor).
-* actriz(nombre de la pelicula, actriz).
-* productor(nombre de la pelicula, productor).
-* director(nombre de la pelicula, director).
-* fotografia(nombre de la pelicula, director de fotografia).
-* musica(nombre de la pelicula, director de musica).
-* diseñovestuario(nombre de la pelicula, diseñador).
-* edicion(nombre de la pelicula, editor).
-* maquillaje(nombre de la pelicula, maquillaje).
-* diseñoproduccion(nombre de la pelicula, decorador de set).
-* efectosvisuales(nombre de la pelicula, director de efectos visuales).
-* guion(nombre de la pelicula, escritor).
-* nominacion(nombre de la nominacion, año de entrega, nombre de la pelicula)
-* 
-* Por simplicidad, sólo consideramos aquellos actores que han sido nominados
-* por su desempeño en la categoría de actores principales y secundarios.
-* */
-
-/*
 Este código es necesario para evitar errores similares a este:
 "Las cláusulas de pelicula/2 no están juntas en el archivo fuente."
 Que se puede traducir como alerta para predicados repetidos.
@@ -288,6 +267,134 @@ ganador(mejor_director, 2021, chloe_zhao).
 ganador(mejor_actriz, 2021, frances_mcdormand).
 
 
+%%%%%%%%%%%%%%%% ACADEMY AWARDS 2018 %%%%%%%%%%%%%%%%
+% NOMINACIONES
+nominacion(mejor_pelicula, 2018, [peter_spears, luca_guadagnino, emilie_georges, marco_morabito]).
+nominacion(mejor_pelicula, 2018, [tim_bevan, eric_fellner, lisa_bruce, anthony_mccarten, douglas_urbanski]).
+nominacion(mejor_pelicula, 2018, [emma_thomas, christopher_nolan]).
+nominacion(mejor_pelicula, 2018, [sean_mckittrick, jason_blum, edward_h_hamm_jr, jordan_peele]).
+nominacion(mejor_pelicula, 2018, [scott_rudin, eli_bush, evelyn_oneill]).
+nominacion(mejor_pelicula, 2018, [joanne_sellar, paul_thomas_anderson, megan_ellison, daniel_lupi]).
+nominacion(mejor_pelicula, 2018, [amy_pascal, steven_spielberg, kristie_macosko_krieger]).
+nominacion(mejor_pelicula, 2018, [guillermo_del_toro, j_miles_dale]).
+nominacion(mejor_pelicula, 2018, [graham_broadbent, pete_czernin, martin_mcdonagh]).
+nominacion(mejor_actor, 2018, timothée_chalamet).
+nominacion(mejor_actor, 2018, daniel_day-lewis).
+nominacion(mejor_actor, 2018, daniel_kaluuya).
+nominacion(mejor_actor, 2018, gary_oldman).
+nominacion(mejor_actor, 2018, denzel_washington).
+nominacion(mejor_actriz, 2018, sally_hawkins).
+nominacion(mejor_actriz, 2018, frances_mcdormand).
+nominacion(mejor_actriz, 2018, margot_robbie).
+nominacion(mejor_actriz, 2018, saoirse_ronan).
+nominacion(mejor_actriz, 2018, meryl_streep).
+nominacion(mejor_actor_de_reparto, 2018, willem_dafoe).
+nominacion(mejor_actor_de_reparto, 2018, woody_harrelson).
+nominacion(mejor_actor_de_reparto, 2018, richard_jenkins).
+nominacion(mejor_actor_de_reparto, 2018, christopher_plummer).
+nominacion(mejor_actor_de_reparto, 2018, sam_rockwell).
+nominacion(mejor_actriz_de_reparto, 2018, mary_j_blige).
+nominacion(mejor_actriz_de_reparto, 2018, allison_janney).
+nominacion(mejor_actriz_de_reparto, 2018, lesley_manville).
+nominacion(mejor_actriz_de_reparto, 2018, laurie_metcalf).
+nominacion(mejor_actriz_de_reparto, 2018, octavia_spencer).
+nominacion(mejor_pelicula_animada, 2018, [tom_mcgrath, ramsey_naito]).
+nominacion(mejor_pelicula_animada, 2018, [nora_twomey, anthony_leo]).
+nominacion(mejor_pelicula_animada, 2018, [lee_unkrich, darla_k_anderson]).
+nominacion(mejor_pelicula_animada, 2018, carlos_saldanha).
+nominacion(mejor_pelicula_animada, 2018, [dorota_kobiela, hugh_welchman, ivan_mactaggart]).
+nominacion(mejor_fotografia, 2018, roger_a_deakins).
+nominacion(mejor_fotografia, 2018, bruno_delbonnel).
+nominacion(mejor_fotografia, 2018, hoyte_van_hoytema).
+nominacion(mejor_fotografia, 2018, rachel_morrison).
+nominacion(mejor_fotografia, 2018, dan_laustsen).
+nominacion(mejor_diseño_de_vestuario, 2018, jacqueline_durran).
+nominacion(mejor_diseño_de_vestuario, 2018, jacqueline_durran).
+nominacion(mejor_diseño_de_vestuario, 2018, mark_bridges).
+nominacion(mejor_diseño_de_vestuario, 2018, luis_sequeira).
+nominacion(mejor_diseño_de_vestuario, 2018, consolata_boyle).
+nominacion(mejor_director, 2018, christopher_nolan).
+nominacion(mejor_director, 2018, jordan_peele).
+nominacion(mejor_director, 2018, greta_gerwig).
+nominacion(mejor_director, 2018, paul_thomas_anderson).
+nominacion(mejor_director, 2018, guillermo_del_toro).
+nominacion(mejor_documental, 2018, [steve_james, mark_mitten, julie_goldman]).
+nominacion(mejor_documental, 2018, [agnès_varda, jr, rosalie_varda]).
+nominacion(mejor_documental, 2018, [bryan_fogel, dan_cogan]).
+nominacion(mejor_documental, 2018, [feras_fayyad, kareem_abeed, søren_steen_jespersen]).
+nominacion(mejor_documental, 2018, [yance_ford, joslyn_barnes]).
+nominacion(mejor_corto_documental, 2018, [laura_checkoway, thomas_lee_wright]).
+nominacion(mejor_corto_documental, 2018, frank_stiefel).
+nominacion(mejor_corto_documental, 2018, [elaine_mcmillion_sheldon, kerrin_sheldon]).
+nominacion(mejor_corto_documental, 2018, thomas_lennon).
+nominacion(mejor_corto_documental, 2018, [kate_davis, david_heilbroner]).
+nominacion(mejor_edicion, 2018, [paul_machliss, jonathan_amos]).
+nominacion(mejor_edicion, 2018, lee_smith).
+nominacion(mejor_edicion, 2018, tatiana_s_riegel).
+nominacion(mejor_edicion, 2018, sidney_wolinsky).
+nominacion(mejor_edicion, 2018, jon_gregory).
+nominacion(mejor_pelicula_extranjera, 2018, chile).
+nominacion(mejor_pelicula_extranjera, 2018, lebanon).
+nominacion(mejor_pelicula_extranjera, 2018, russia).
+nominacion(mejor_pelicula_extranjera, 2018, hungary).
+nominacion(mejor_pelicula_extranjera, 2018, sweden).
+nominacion(maquillaje_y_peinado, 2018, [kazuhiro_tsuji, david_malinowski, lucy_sibbick]).
+nominacion(maquillaje_y_peinado, 2018, [daniel_phillips, lou_sheppard]).
+nominacion(maquillaje_y_peinado, 2018, arjen_tuiten).
+nominacion(mejor_sountrack_original, 2018, hans_zimmer).
+nominacion(mejor_sountrack_original, 2018, jonny_greenwood).
+nominacion(mejor_sountrack_original, 2018, alexandre_desplat).
+nominacion(mejor_sountrack_original, 2018, john_williams).
+nominacion(mejor_sountrack_original, 2018, carter_burwell).
+nominacion(mejor_cancion_original, 2018, mighty_river).
+nominacion(mejor_cancion_original, 2018, mystery_of_love).
+nominacion(mejor_cancion_original, 2018, remember_me).
+nominacion(mejor_cancion_original, 2018, stand_up_for_something).
+nominacion(mejor_cancion_original, 2018, this_is_me).
+nominacion(mejor_diseño_de_produccion, 2018, [sarah_greenwood, katie_spencer]).
+nominacion(mejor_diseño_de_produccion, 2018, [dennis_gassner, alessandra_querzola]).
+nominacion(mejor_diseño_de_produccion, 2018, [sarah_greenwood, katie_spencer]).
+nominacion(mejor_diseño_de_produccion, 2018, [nathan_crowley, gary_fettis]).
+nominacion(mejor_diseño_de_produccion, 2018, [paul_denham_austerberry, shane_vieau, jeff_melvin]).
+nominacion(mejor_cortometraje_animado, 2018, [glen_keane, kobe_bryant]).
+nominacion(mejor_cortometraje_animado, 2018, [victor_caire, gabriel_grapperon]).
+nominacion(mejor_cortometraje_animado, 2018, [dave_mullins, dana_murray]).
+nominacion(mejor_cortometraje_animado, 2018, [max_porter, ru_kuwahata]).
+nominacion(mejor_cortometraje_animado, 2018, [jakob_schuh, jan_lachauer]).
+nominacion(mejor_cortometraje, 2018, reed_van_dyk).
+nominacion(mejor_cortometraje, 2018, [derin_seale, josh_lawson]).
+nominacion(mejor_cortometraje, 2018, kevin_wilson_jr).
+nominacion(mejor_cortometraje, 2018, [chris_overton, rachel_shenton]).
+nominacion(mejor_cortometraje, 2018, [katja_benrath, tobias_rosen]).
+nominacion(mejor_edicion_de_sonido, 2018, julian_slater).
+nominacion(mejor_edicion_de_sonido, 2018, [mark_mangini, theo_green]).
+nominacion(mejor_edicion_de_sonido, 2018, [richard_king, alex_gibson]).
+nominacion(mejor_edicion_de_sonido, 2018, [nathan_robitaille, nelson_ferreira]).
+nominacion(mejor_edicion_de_sonido, 2018, [matthew_wood, ren_klyce]).
+nominacion(mejor_mezcla_de_sonido, 2018, [julian_slater, tim_cavagin, mary_h_ellis]).
+nominacion(mejor_mezcla_de_sonido, 2018, [ron_bartlett, doug_hemphill, mac_ruth]).
+nominacion(mejor_mezcla_de_sonido, 2018, [mark_weingarten, gregg_landaker, gary_a_rizzo]).
+nominacion(mejor_mezcla_de_sonido, 2018, [christian_cooke, brad_zoern, glen_gauthier]).
+nominacion(mejor_mezcla_de_sonido, 2018, [david_parker, michael_semanick, ren_klyce, stuart_wilson]).
+nominacion(mejores_efectos_visuales, 2018, [john_nelson, gerd_nefzer, paul_lambert, richard_r_hoover]).
+nominacion(mejores_efectos_visuales, 2018, [christopher_townsend, guy_williams, jonathan_fawkner, dan_sudick]).
+nominacion(mejores_efectos_visuales, 2018, [stephen_rosenbaum, jeff_white, scott_benza, mike_meinardus]).
+nominacion(mejores_efectos_visuales, 2018, [ben_morris, mike_mulholland, neal_scanlan, chris_corbould]).
+nominacion(mejores_efectos_visuales, 2018, [joe_letteri, daniel_barrett, dan_lemmon, joel_whist]).
+nominacion(mejor_guion_adaptado, 2018, james_ivory).
+nominacion(mejor_guion_adaptado, 2018, [scott_neustadter, michael_h_weber]).
+nominacion(mejor_guion_adaptado, 2018, [scott_frank, james_mangold, michael_green, james_mangold]).
+nominacion(mejor_guion_adaptado, 2018, aaron_sorkin).
+nominacion(mejor_guion_adaptado, 2018, [virgil_williams, dee_rees]).
+nominacion(mejor_guion_original, 2018, [emily_v_gordon, kumail_nanjiani]).
+nominacion(mejor_guion_original, 2018, jordan_peele).
+nominacion(mejor_guion_original, 2018, greta_gerwig).
+nominacion(mejor_guion_original, 2018, [guillermo_del_toro, vanessa_taylor, guillermo_del_toro]).
+nominacion(mejor_guion_original, 2018, martin_mcdonagh).
+
+% GANADORES
+
+
 % REGLAS
 % Obtener todas las películas nominadas a Mejor Película en cierto año
 % nominadasMejorPelicula(2021, Nominadas_a_Mejor_Pelicula).
@@ -304,6 +411,13 @@ nominadosEn(Year, Nominacion, Pelicula) :- nominacion(Nominacion, Year, Pelicula
 % Obtener todos los ganadores en cierto año
 % ganadoresEn(2021, Categoria, Pelicula).
 ganadoresEn(Year, Nominacion, Pelicula) :- ganador(Nominacion, Year, Pelicula).
+
+% Saber si alguien o una película ha recibido una nominación
+% haSidoNominado(frances_mcdormand).
+haSidoNominado(Quien) :-
+    nominacion(Categoria, Edicion, Quien),
+    write('En la entrega '), write(Edicion), write(' de los Academy Awards'), nl,
+    write('Nominado(a) al OSCAR por: '), write(Categoria), nl.
 
 % Saber si alguien o una película ha recibido un OSCAR
 % haRecibidoUnOscar(frances_mcdormand).
