@@ -382,6 +382,129 @@ ganador(mejores_efectos_visuales, 2018, [john_nelson_gerd_nefzer_paul_lambert, r
 ganador(mejor_guion_adaptado, 2018, james_ivory).
 ganador(mejor_guion_original, 2018, jordan_peele).
 
+% Nominaciones 2019
+nominacion(mejor_actor, 2019, christian_bale).
+nominacion(mejor_actor, 2019, bradley_cooper).
+nominacion(mejor_actor, 2019, willem_dafoe).
+nominacion(mejor_actor, 2019, rami_malek).
+nominacion(mejor_actor, 2019, viggo_mortensen).
+nominacion(mejor_actor_de_reparto, 2019, mahershala_ali).
+nominacion(mejor_actor_de_reparto, 2019, adam_driver).
+nominacion(mejor_actor_de_reparto, 2019, sam_elliott).
+nominacion(mejor_actor_de_reparto, 2019, richard_e_grant).
+nominacion(mejor_actor_de_reparto, 2019, sam_rockwell).
+nominacion(mejor_actriz, 2019, yalitza_aparicio).
+nominacion(mejor_actriz, 2019, glenn_close).
+nominacion(mejor_actriz, 2019, olivia_colman).
+nominacion(mejor_actriz, 2019, lady_gaga).
+nominacion(mejor_actriz, 2019, melissa_mccarthy).
+nominacion(mejor_actriz_de_reparto, 2019, amy_adams).
+nominacion(mejor_actriz_de_reparto, 2019, marina_de_tavira).
+nominacion(mejor_actriz_de_reparto, 2019, regina_king).
+nominacion(mejor_actriz_de_reparto, 2019, emma_stone).
+nominacion(mejor_actriz_de_reparto, 2019, rachel_weisz).
+nominacion(mejor_pelicula_animada, 2019, [brad_bird, john_walker, nicole_paradis_grindle]).
+nominacion(mejor_pelicula_animada, 2019, [wes_anderson, scott_rudin, steven_rales, jeremy_dawson]).
+nominacion(mejor_pelicula_animada, 2019, [mamoru_hosoda, yuichiro_saito]).
+nominacion(mejor_pelicula_animada, 2019, [rich_moore, phil_johnston, clark_spencer]).
+nominacion(mejor_pelicula_animada, 2019, [bob_persichetti, peter_ramsey, rodney_rothman, phil_lord, christopher_miller]).
+nominacion(mejor_fotografia, 2019, lukasz_zal).
+nominacion(mejor_fotografia, 2019, robbie_ryan).
+nominacion(mejor_fotografia, 2019, caleb_deschanel).
+nominacion(mejor_fotografia, 2019, alfonso_cuaron).
+nominacion(mejor_fotografia, 2019, matthew_libatique).
+nominacion(mejor_diseño_de_vestuario, 2019, mary_zophres).
+nominacion(mejor_diseño_de_vestuario, 2019, ruth_carter).
+nominacion(mejor_diseño_de_vestuario, 2019, sandy_powell).
+nominacion(mejor_diseño_de_vestuario, 2019, sandy_powell).
+nominacion(mejor_diseño_de_vestuario, 2019, alexandra_byrne).
+nominacion(mejor_director, 2019, spike_lee).
+nominacion(mejor_director, 2019, pawel_pawlikowski).
+nominacion(mejor_director, 2019, yorgos_lanthimos).
+nominacion(mejor_director, 2019, alfonso_cuaron).
+nominacion(mejor_director, 2019, adam_mckay).
+nominacion(mejor_documental, 2019, [elizabeth_chai_vasarhelyi, jimmy_chin, evan_hayes, shannon_dill]).
+nominacion(mejor_documental, 2019, [ramell_ross, joslyn_barnes, su_kim]).
+nominacion(mejor_documental, 2019, [bing_liu, diane_quon]).
+nominacion(mejor_documental, 2019, [talal_derki, ansgar_frerich, eva_kemme, tobias_n_siebert]).
+nominacion(mejor_documental, 2019, [betsy_west, julie_cohen]).
+nominacion(mejor_corto_documental, 2019, [ed_perkins, jonathan_chinn]).
+nominacion(mejor_corto_documental, 2019, [rob_epstein, jeffrey_friedman]).
+nominacion(mejor_corto_documental, 2019, [skye_fitzgerald, bryn_mooser]).
+nominacion(mejor_corto_documental, 2019, marshall_curry).
+nominacion(mejor_corto_documental, 2019, [rayka_zehtabchi, melissa_berton]).
+nominacion(mejor_edicion, 2019, barry_alexander_brown).
+nominacion(mejor_edicion, 2019, john_ottman).
+nominacion(mejor_edicion, 2019, yorgos_mavropsaridis).
+nominacion(mejor_edicion, 2019, patrick_j_don_vito).
+nominacion(mejor_edicion, 2019, hank_corwin).
+nominacion(mejor_pelicula_extranjera, 2019, lebanon).
+nominacion(mejor_pelicula_extranjera, 2019, poland).
+nominacion(mejor_pelicula_extranjera, 2019, germany).
+nominacion(mejor_pelicula_extranjera, 2019, mexico).
+nominacion(mejor_pelicula_extranjera, 2019, japan).
+nominacion(mejor_maquillaje_y_peinado, 2019, [goran_lundstrom, pamela_goldammer]).
+nominacion(mejor_maquillaje_y_peinado, 2019, [jenny_shircore, marc_pilcher, jessica_brooks]).
+nominacion(mejor_maquillaje_y_peinado, 2019, [greg_cannom, kate_biscoe, patricia_dehaney]).
+nominacion(mejor_sountrack_original, 2019, ludwig_goransson).
+nominacion(mejor_sountrack_original, 2019, terence_blanchard).
+nominacion(mejor_sountrack_original, 2019, nicholas_britell).
+nominacion(mejor_sountrack_original, 2019, alexandre_desplat).
+nominacion(mejor_sountrack_original, 2019, marc_shaiman).
+nominacion(mejor_cancion_original, 2019, [kendrick_lamar, mark_sounwave_spears, anthony_top_dawg_tiffith, sza]).
+nominacion(mejor_cancion_original, 2019, diane_warren).
+nominacion(mejor_cancion_original, 2019, [marc_shaiman, scott_wittman]).
+nominacion(mejor_cancion_original, 2019, [lady_gaga, mark_ronson, anthony_rossomando, andrew_wyatt]).
+nominacion(mejor_cancion_original, 2019, [gillian_welch, david_rawlings]).
+nominacion(mejor_pelicula, 2019, kevin_feige_producer).
+nominacion(mejor_pelicula, 2019, [sean_mckittrick, jason_blum, raymond_mansfield, jordan_peele, spike_lee]).
+nominacion(mejor_pelicula, 2019, graham_king_producer).
+nominacion(mejor_pelicula, 2019, [ceci_dempsey, ed_guiney, lee_magiday, yorgos_lanthimos]).
+nominacion(mejor_pelicula, 2019, [jim_burke, charles_b_wessler, brian_currie, peter_farrelly, nick_vallelonga]).
+nominacion(mejor_pelicula, 2019, [gabriela_rodriguez, alfonso_cuaron]).
+nominacion(mejor_pelicula, 2019, [bill_gerber, bradley_cooper, lynette_howell_taylor]).
+nominacion(mejor_pelicula, 2019, [dede_gardner, jeremy_kleiner, adam_mckay, kevin_messick]).
+nominacion(mejor_diseño_de_produccion, 2019, [hannah_beachler, jay_hart]).
+nominacion(mejor_diseño_de_produccion, 2019, [fiona_crombie, alice_felton]).
+nominacion(mejor_diseño_de_produccion, 2019, [nathan_crowley, kathy_lucas]).
+nominacion(mejor_diseño_de_produccion, 2019, [john_myhre, gordon_sim]).
+nominacion(mejor_diseño_de_produccion, 2019, [eugenio_caballero, barbara_enriquez]).
+nominacion(mejor_cortometraje_animado, 2019, [alison_snowden, david_fine]).
+nominacion(mejor_cortometraje_animado, 2019, [domee_shi, becky_neiman-cobb]).
+nominacion(mejor_cortometraje_animado, 2019, [louise_bagnall, nuria_gonzalez_blanco]).
+nominacion(mejor_cortometraje_animado, 2019, [andrew_chesworth, bobby_pontillas]).
+nominacion(mejor_cortometraje_animado, 2019, trevor_jimenez).
+nominacion(mejor_cortometraje, 2019, [vincent_lambe, darren_mahon]).
+nominacion(mejor_cortometraje, 2019, [jeremy_comte, maria_gracia_turgeon]).
+nominacion(mejor_cortometraje, 2019, [marianne_farley, marie-helene_panisset]).
+nominacion(mejor_cortometraje, 2019, [rodrigo_sorogoyen, maria_del_puy_alvarado]).
+nominacion(mejor_cortometraje, 2019, [guy_nattiv, jaime_ray_newman]).
+nominacion(mejor_edicion_de_sonido, 2019, [benjamin_a_burtt, steve_boeddeker]).
+nominacion(mejor_edicion_de_sonido, 2019, [john_warhurst, nina_hartstone]).
+nominacion(mejor_edicion_de_sonido, 2019, [ai-ling_lee, mildred_iatrou_morgan]).
+nominacion(mejor_edicion_de_sonido, 2019, [ethan_van_der_ryn, erik_aadahl]).
+nominacion(mejor_edicion_de_sonido, 2019, [sergio_diaz, skip_lievsay]).
+nominacion(mejor_mezcla_de_sonido, 2019, [steve_boeddeker, brandon_proctor, peter_devlin]).
+nominacion(mejor_mezcla_de_sonido, 2019, [paul_massey, tim_cavagin, john_casali]).
+nominacion(mejor_mezcla_de_sonido, 2019, [jon_taylor_frank_a_montaño_ai-ling_lee, mary_h_ellis]).
+nominacion(mejor_mezcla_de_sonido, 2019, [skip_lievsay, craig_henighan, jose_antonio_garcia]).
+nominacion(mejor_mezcla_de_sonido, 2019, [tom_ozanich, dean_zupancic, jason_ruder, steve_morrow]).
+nominacion(mejores_efectos_visuales, 2019, [dan_deleeuw, kelly_port, russell_earl, dan_sudick]).
+nominacion(mejores_efectos_visuales, 2019, [christopher_lawrence, michael_eames, theo_jones, chris_corbould]).
+nominacion(mejores_efectos_visuales, 2019, [paul_lambert, ian_hunter, tristan_myles, j_d_schwalm]).
+nominacion(mejores_efectos_visuales, 2019, [roger_guyett, grady_cofer, matthew_e_butler, david_shirk]).
+nominacion(mejores_efectos_visuales, 2019, [rob_bredow, patrick_tubach, neal_scanlan, dominic_tuohy]).
+nominacion(mejor_guion_adaptado, 2019, [joel_coen, ethan_coen]).
+nominacion(mejor_guion_adaptado, 2019, [charlie_wachtel, david_rabinowitz, kevin_willmott, spike_lee]).
+nominacion(mejor_guion_adaptado, 2019, [nicole_holofcener, jeff_whitty]).
+nominacion(mejor_guion_adaptado, 2019, barry_jenkins).
+nominacion(mejor_guion_adaptado, 2019, [eric_roth, bradley_cooper, will_fetters]).
+nominacion(mejor_guion_original, 2019, [deborah_davis, tony_mcnamara]).
+nominacion(mejor_guion_original, 2019, paul_schrader).
+nominacion(mejor_guion_original, 2019, [nick_vallelonga, brian_currie, peter_farrelly]).
+nominacion(mejor_guion_original, 2019, alfonso_cuaron).
+nominacion(mejor_guion_original, 2019, adam_mckay).
+
 
 % REGLAS
 % Obtener todas las películas nominadas a Mejor Película en cierto año
