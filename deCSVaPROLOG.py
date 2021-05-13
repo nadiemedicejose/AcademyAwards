@@ -50,6 +50,7 @@ def reemplazar_caracteres(texto):
   g = '...'
   h = '__'
   i = "'"
+  j = '?'
 
   # Reemplazar por
   y = '_'
@@ -58,7 +59,21 @@ def reemplazar_caracteres(texto):
   # Cuando los caracteres son número
   texto = str(texto)
   
-  return texto.lower().replace(a, y).replace(b, z).replace(c, z).replace(d, y).replace(e, z).replace(f, z).replace(g, z).replace(i, y).replace(h, z)
+  return texto.lower().replace(a, y).replace(b, z).replace(c, z).replace(d, y).replace(e, z).replace(f, z).replace(g, z).replace(i, y).replace(j, z).replace(h, z)
+
+# Exclusivo para títulos de películas
+def caracteres_en_peliculas(texto):
+  # Caracteres a reemplazar
+  a = '&'
+  b = ','
+  c = '+'
+  
+  # Reemplazar por
+  x = 'plus'
+  y = 'and'
+  z = '_'
+  
+  return texto.replace(a, y).replace(c, x).replace(b, z)
 
 # Exclusivo para nombres del crew, p.e. cuando son más de uno
 # utilizar de forma adicional al anterior
@@ -92,6 +107,7 @@ df['category'] = df['category'].apply(reemplazar_caracteres)
 df['name'] = df['name'].apply(reemplazar_caracteres)
 df['name'] = df['name'].apply(separar_nombres)
 df['film'] = df['film'].apply(reemplazar_caracteres)
+df['film'] = df['film'].apply(caracteres_en_peliculas)
 
 # Mostrar en pantalla el dataframe completo
 # print(df)
