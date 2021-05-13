@@ -238,128 +238,128 @@ ganador(mejor_actriz, 2021, frances_mcdormand).
 
 %%%%%%%%%%%%%%%% ACADEMY AWARDS 2018 %%%%%%%%%%%%%%%%
 % NOMINACIONES
-nominacion(mejor_pelicula, 2018, [peter_spears, luca_guadagnino, emilie_georges, marco_morabito]).
-nominacion(mejor_pelicula, 2018, [tim_bevan, eric_fellner, lisa_bruce, anthony_mccarten, douglas_urbanski]).
-nominacion(mejor_pelicula, 2018, [emma_thomas, christopher_nolan]).
-nominacion(mejor_pelicula, 2018, [sean_mckittrick, jason_blum, edward_h_hamm_jr, jordan_peele]).
-nominacion(mejor_pelicula, 2018, [scott_rudin, eli_bush, evelyn_oneill]).
-nominacion(mejor_pelicula, 2018, [joanne_sellar, paul_thomas_anderson, megan_ellison, daniel_lupi]).
-nominacion(mejor_pelicula, 2018, [amy_pascal, steven_spielberg, kristie_macosko_krieger]).
-nominacion(mejor_pelicula, 2018, [guillermo_del_toro, j_miles_dale]).
-nominacion(mejor_pelicula, 2018, [graham_broadbent, pete_czernin, martin_mcdonagh]).
-nominacion(mejor_actor, 2018, timothée_chalamet).
-nominacion(mejor_actor, 2018, daniel_day-lewis).
-nominacion(mejor_actor, 2018, daniel_kaluuya).
-nominacion(mejor_actor, 2018, gary_oldman).
-nominacion(mejor_actor, 2018, denzel_washington).
-nominacion(mejor_actriz, 2018, sally_hawkins).
-nominacion(mejor_actriz, 2018, frances_mcdormand).
-nominacion(mejor_actriz, 2018, margot_robbie).
-nominacion(mejor_actriz, 2018, saoirse_ronan).
-nominacion(mejor_actriz, 2018, meryl_streep).
-nominacion(mejor_actor_de_reparto, 2018, willem_dafoe).
-nominacion(mejor_actor_de_reparto, 2018, woody_harrelson).
-nominacion(mejor_actor_de_reparto, 2018, richard_jenkins).
-nominacion(mejor_actor_de_reparto, 2018, christopher_plummer).
-nominacion(mejor_actor_de_reparto, 2018, sam_rockwell).
-nominacion(mejor_actriz_de_reparto, 2018, mary_j_blige).
-nominacion(mejor_actriz_de_reparto, 2018, allison_janney).
-nominacion(mejor_actriz_de_reparto, 2018, lesley_manville).
-nominacion(mejor_actriz_de_reparto, 2018, laurie_metcalf).
-nominacion(mejor_actriz_de_reparto, 2018, octavia_spencer).
-nominacion(mejor_pelicula_animada, 2018, [tom_mcgrath, ramsey_naito]).
-nominacion(mejor_pelicula_animada, 2018, [nora_twomey, anthony_leo]).
-nominacion(mejor_pelicula_animada, 2018, [lee_unkrich, darla_k_anderson]).
-nominacion(mejor_pelicula_animada, 2018, carlos_saldanha).
-nominacion(mejor_pelicula_animada, 2018, [dorota_kobiela, hugh_welchman, ivan_mactaggart]).
-nominacion(mejor_fotografia, 2018, roger_a_deakins).
-nominacion(mejor_fotografia, 2018, bruno_delbonnel).
-nominacion(mejor_fotografia, 2018, hoyte_van_hoytema).
-nominacion(mejor_fotografia, 2018, rachel_morrison).
-nominacion(mejor_fotografia, 2018, dan_laustsen).
-nominacion(mejor_diseño_de_vestuario, 2018, jacqueline_durran).
-nominacion(mejor_diseño_de_vestuario, 2018, jacqueline_durran).
-nominacion(mejor_diseño_de_vestuario, 2018, mark_bridges).
-nominacion(mejor_diseño_de_vestuario, 2018, luis_sequeira).
-nominacion(mejor_diseño_de_vestuario, 2018, consolata_boyle).
-nominacion(mejor_director, 2018, christopher_nolan).
-nominacion(mejor_director, 2018, jordan_peele).
-nominacion(mejor_director, 2018, greta_gerwig).
-nominacion(mejor_director, 2018, paul_thomas_anderson).
-nominacion(mejor_director, 2018, guillermo_del_toro).
-nominacion(mejor_documental, 2018, [steve_james, mark_mitten, julie_goldman]).
-nominacion(mejor_documental, 2018, [agnès_varda, jr, rosalie_varda]).
-nominacion(mejor_documental, 2018, [bryan_fogel, dan_cogan]).
-nominacion(mejor_documental, 2018, [feras_fayyad, kareem_abeed, søren_steen_jespersen]).
-nominacion(mejor_documental, 2018, [yance_ford, joslyn_barnes]).
-nominacion(mejor_corto_documental, 2018, [laura_checkoway, thomas_lee_wright]).
-nominacion(mejor_corto_documental, 2018, frank_stiefel).
-nominacion(mejor_corto_documental, 2018, [elaine_mcmillion_sheldon, kerrin_sheldon]).
-nominacion(mejor_corto_documental, 2018, thomas_lennon).
-nominacion(mejor_corto_documental, 2018, [kate_davis, david_heilbroner]).
-nominacion(mejor_edicion, 2018, [paul_machliss, jonathan_amos]).
-nominacion(mejor_edicion, 2018, lee_smith).
-nominacion(mejor_edicion, 2018, tatiana_s_riegel).
-nominacion(mejor_edicion, 2018, sidney_wolinsky).
-nominacion(mejor_edicion, 2018, jon_gregory).
-nominacion(mejor_pelicula_extranjera, 2018, chile).
-nominacion(mejor_pelicula_extranjera, 2018, lebanon).
-nominacion(mejor_pelicula_extranjera, 2018, russia).
-nominacion(mejor_pelicula_extranjera, 2018, hungary).
-nominacion(mejor_pelicula_extranjera, 2018, sweden).
-nominacion(mejor_maquillaje_y_peinado, 2018, [kazuhiro_tsuji, david_malinowski, lucy_sibbick]).
-nominacion(mejor_maquillaje_y_peinado, 2018, [daniel_phillips, lou_sheppard]).
-nominacion(mejor_maquillaje_y_peinado, 2018, arjen_tuiten).
-nominacion(mejor_sountrack_original, 2018, hans_zimmer).
-nominacion(mejor_sountrack_original, 2018, jonny_greenwood).
-nominacion(mejor_sountrack_original, 2018, alexandre_desplat).
-nominacion(mejor_sountrack_original, 2018, john_williams).
-nominacion(mejor_sountrack_original, 2018, carter_burwell).
-nominacion(mejor_cancion_original, 2018, mighty_river).
-nominacion(mejor_cancion_original, 2018, mystery_of_love).
-nominacion(mejor_cancion_original, 2018, remember_me).
-nominacion(mejor_cancion_original, 2018, stand_up_for_something).
-nominacion(mejor_cancion_original, 2018, this_is_me).
-nominacion(mejor_diseño_de_produccion, 2018, [sarah_greenwood, katie_spencer]).
-nominacion(mejor_diseño_de_produccion, 2018, [dennis_gassner, alessandra_querzola]).
-nominacion(mejor_diseño_de_produccion, 2018, [sarah_greenwood, katie_spencer]).
-nominacion(mejor_diseño_de_produccion, 2018, [nathan_crowley, gary_fettis]).
-nominacion(mejor_diseño_de_produccion, 2018, [paul_denham_austerberry, shane_vieau, jeff_melvin]).
-nominacion(mejor_cortometraje_animado, 2018, [glen_keane, kobe_bryant]).
-nominacion(mejor_cortometraje_animado, 2018, [victor_caire, gabriel_grapperon]).
-nominacion(mejor_cortometraje_animado, 2018, [dave_mullins, dana_murray]).
-nominacion(mejor_cortometraje_animado, 2018, [max_porter, ru_kuwahata]).
-nominacion(mejor_cortometraje_animado, 2018, [jakob_schuh, jan_lachauer]).
-nominacion(mejor_cortometraje, 2018, reed_van_dyk).
-nominacion(mejor_cortometraje, 2018, [derin_seale, josh_lawson]).
-nominacion(mejor_cortometraje, 2018, kevin_wilson_jr).
-nominacion(mejor_cortometraje, 2018, [chris_overton, rachel_shenton]).
-nominacion(mejor_cortometraje, 2018, [katja_benrath, tobias_rosen]).
-nominacion(mejor_edicion_de_sonido, 2018, julian_slater).
-nominacion(mejor_edicion_de_sonido, 2018, [mark_mangini, theo_green]).
-nominacion(mejor_edicion_de_sonido, 2018, [richard_king, alex_gibson]).
-nominacion(mejor_edicion_de_sonido, 2018, [nathan_robitaille, nelson_ferreira]).
-nominacion(mejor_edicion_de_sonido, 2018, [matthew_wood, ren_klyce]).
-nominacion(mejor_mezcla_de_sonido, 2018, [julian_slater, tim_cavagin, mary_h_ellis]).
-nominacion(mejor_mezcla_de_sonido, 2018, [ron_bartlett, doug_hemphill, mac_ruth]).
-nominacion(mejor_mezcla_de_sonido, 2018, [mark_weingarten, gregg_landaker, gary_a_rizzo]).
-nominacion(mejor_mezcla_de_sonido, 2018, [christian_cooke, brad_zoern, glen_gauthier]).
-nominacion(mejor_mezcla_de_sonido, 2018, [david_parker, michael_semanick, ren_klyce, stuart_wilson]).
-nominacion(mejores_efectos_visuales, 2018, [john_nelson, gerd_nefzer, paul_lambert, richard_r_hoover]).
-nominacion(mejores_efectos_visuales, 2018, [christopher_townsend, guy_williams, jonathan_fawkner, dan_sudick]).
-nominacion(mejores_efectos_visuales, 2018, [stephen_rosenbaum, jeff_white, scott_benza, mike_meinardus]).
-nominacion(mejores_efectos_visuales, 2018, [ben_morris, mike_mulholland, neal_scanlan, chris_corbould]).
-nominacion(mejores_efectos_visuales, 2018, [joe_letteri, daniel_barrett, dan_lemmon, joel_whist]).
-nominacion(mejor_guion_adaptado, 2018, james_ivory).
-nominacion(mejor_guion_adaptado, 2018, [scott_neustadter, michael_h_weber]).
-nominacion(mejor_guion_adaptado, 2018, [scott_frank, james_mangold, michael_green, james_mangold]).
-nominacion(mejor_guion_adaptado, 2018, aaron_sorkin).
-nominacion(mejor_guion_adaptado, 2018, [virgil_williams, dee_rees]).
-nominacion(mejor_guion_original, 2018, [emily_v_gordon, kumail_nanjiani]).
-nominacion(mejor_guion_original, 2018, jordan_peele).
-nominacion(mejor_guion_original, 2018, greta_gerwig).
-nominacion(mejor_guion_original, 2018, [guillermo_del_toro, vanessa_taylor, guillermo_del_toro]).
-nominacion(mejor_guion_original, 2018, martin_mcdonagh).
+nominacion(actor_in_a_leading_role, 2018, call_me_by_your_name).
+nominacion(actor_in_a_leading_role, 2018, phantom_thread).
+nominacion(actor_in_a_leading_role, 2018, get_out).
+nominacion(actor_in_a_leading_role, 2018, darkest_hour).
+nominacion(actor_in_a_leading_role, 2018, roman_jisrael,_esq_).
+nominacion(actor_in_a_supporting_role, 2018, the_florida_project).
+nominacion(actor_in_a_supporting_role, 2018, three_billboards_outside_ebbing,_missouri).
+nominacion(actor_in_a_supporting_role, 2018, the_shape_of_water).
+nominacion(actor_in_a_supporting_role, 2018, all_the_money_in_the_world).
+nominacion(actor_in_a_supporting_role, 2018, three_billboards_outside_ebbing,_missouri).
+nominacion(actress_in_a_leading_role, 2018, the_shape_of_water).
+nominacion(actress_in_a_leading_role, 2018, three_billboards_outside_ebbing,_missouri).
+nominacion(actress_in_a_leading_role, 2018, i,_tonya).
+nominacion(actress_in_a_leading_role, 2018, lady_bird).
+nominacion(actress_in_a_leading_role, 2018, the_post).
+nominacion(actress_in_a_supporting_role, 2018, mudbound).
+nominacion(actress_in_a_supporting_role, 2018, i,_tonya).
+nominacion(actress_in_a_supporting_role, 2018, phantom_thread).
+nominacion(actress_in_a_supporting_role, 2018, lady_bird).
+nominacion(actress_in_a_supporting_role, 2018, the_shape_of_water).
+nominacion(animated_feature_film, 2018, the_boss_baby).
+nominacion(animated_feature_film, 2018, the_breadwinner).
+nominacion(animated_feature_film, 2018, coco).
+nominacion(animated_feature_film, 2018, ferdinand).
+nominacion(animated_feature_film, 2018, loving_vincent).
+nominacion(cinematography, 2018, blade_runner_2049).
+nominacion(cinematography, 2018, darkest_hour).
+nominacion(cinematography, 2018, dunkirk).
+nominacion(cinematography, 2018, mudbound).
+nominacion(cinematography, 2018, the_shape_of_water).
+nominacion(costume_design, 2018, beauty_and_the_beast).
+nominacion(costume_design, 2018, darkest_hour).
+nominacion(costume_design, 2018, phantom_thread).
+nominacion(costume_design, 2018, the_shape_of_water).
+nominacion(costume_design, 2018, victoria_&_abdul).
+nominacion(directing, 2018, dunkirk).
+nominacion(directing, 2018, get_out).
+nominacion(directing, 2018, lady_bird).
+nominacion(directing, 2018, phantom_thread).
+nominacion(directing, 2018, the_shape_of_water).
+nominacion(documentary_feature, 2018, abacus_small_enough_to_jail).
+nominacion(documentary_feature, 2018, faces_places).
+nominacion(documentary_feature, 2018, icarus).
+nominacion(documentary_feature, 2018, last_men_in_aleppo).
+nominacion(documentary_feature, 2018, strong_island).
+nominacion(documentary_short_subject, 2018, edith+eddie).
+nominacion(documentary_short_subject, 2018, heaven_is_a_traffic_jam_on_the_405).
+nominacion(documentary_short_subject, 2018, heroine).
+nominacion(documentary_short_subject, 2018, knife_skills).
+nominacion(documentary_short_subject, 2018, traffic_stop).
+nominacion(film_editing, 2018, baby_driver).
+nominacion(film_editing, 2018, dunkirk).
+nominacion(film_editing, 2018, i,_tonya).
+nominacion(film_editing, 2018, the_shape_of_water).
+nominacion(film_editing, 2018, three_billboards_outside_ebbing,_missouri).
+nominacion(foreign_language_film, 2018, a_fantastic_woman).
+nominacion(foreign_language_film, 2018, the_insult).
+nominacion(foreign_language_film, 2018, loveless).
+nominacion(foreign_language_film, 2018, on_body_and_soul).
+nominacion(foreign_language_film, 2018, the_square).
+nominacion(makeup_and_hairstyling, 2018, darkest_hour).
+nominacion(makeup_and_hairstyling, 2018, victoria_&_abdul).
+nominacion(makeup_and_hairstyling, 2018, wonder).
+nominacion(music_original_score, 2018, dunkirk).
+nominacion(music_original_score, 2018, phantom_thread).
+nominacion(music_original_score, 2018, the_shape_of_water).
+nominacion(music_original_score, 2018, star_wars_the_last_jedi).
+nominacion(music_original_score, 2018, three_billboards_outside_ebbing,_missouri).
+nominacion(music_original_song, 2018, mudbound).
+nominacion(music_original_song, 2018, call_me_by_your_name).
+nominacion(music_original_song, 2018, coco).
+nominacion(music_original_song, 2018, marshall).
+nominacion(music_original_song, 2018, the_greatest_showman).
+nominacion(best_picture, 2018, call_me_by_your_name).
+nominacion(best_picture, 2018, darkest_hour).
+nominacion(best_picture, 2018, dunkirk).
+nominacion(best_picture, 2018, get_out).
+nominacion(best_picture, 2018, lady_bird).
+nominacion(best_picture, 2018, phantom_thread).
+nominacion(best_picture, 2018, the_post).
+nominacion(best_picture, 2018, the_shape_of_water).
+nominacion(best_picture, 2018, three_billboards_outside_ebbing,_missouri).
+nominacion(production_design, 2018, beauty_and_the_beast).
+nominacion(production_design, 2018, blade_runner_2049).
+nominacion(production_design, 2018, darkest_hour).
+nominacion(production_design, 2018, dunkirk).
+nominacion(production_design, 2018, the_shape_of_water).
+nominacion(short_film_animated, 2018, dear_basketball).
+nominacion(short_film_animated, 2018, garden_party).
+nominacion(short_film_animated, 2018, lou).
+nominacion(short_film_animated, 2018, negative_space).
+nominacion(short_film_animated, 2018, revolting_rhymes).
+nominacion(short_film_live_action, 2018, dekalb_elementary).
+nominacion(short_film_live_action, 2018, the_eleven_o_clock).
+nominacion(short_film_live_action, 2018, my_nephew_emmett).
+nominacion(short_film_live_action, 2018, the_silent_child).
+nominacion(short_film_live_action, 2018, watu_wote/all_of_us).
+nominacion(sound_editing, 2018, baby_driver).
+nominacion(sound_editing, 2018, blade_runner_2049).
+nominacion(sound_editing, 2018, dunkirk).
+nominacion(sound_editing, 2018, the_shape_of_water).
+nominacion(sound_editing, 2018, star_wars_the_last_jedi).
+nominacion(sound_mixing, 2018, baby_driver).
+nominacion(sound_mixing, 2018, blade_runner_2049).
+nominacion(sound_mixing, 2018, dunkirk).
+nominacion(sound_mixing, 2018, the_shape_of_water).
+nominacion(sound_mixing, 2018, star_wars_the_last_jedi).
+nominacion(visual_effects, 2018, blade_runner_2049).
+nominacion(visual_effects, 2018, guardians_of_the_galaxy_vol2).
+nominacion(visual_effects, 2018, kong_skull_island).
+nominacion(visual_effects, 2018, star_wars_the_last_jedi).
+nominacion(visual_effects, 2018, war_for_the_planet_of_the_apes).
+nominacion(writing_adapted_screenplay, 2018, call_me_by_your_name).
+nominacion(writing_adapted_screenplay, 2018, the_disaster_artist).
+nominacion(writing_adapted_screenplay, 2018, logan).
+nominacion(writing_adapted_screenplay, 2018, molly_s_game).
+nominacion(writing_adapted_screenplay, 2018, mudbound).
+nominacion(writing_original_screenplay, 2018, the_big_sick).
+nominacion(writing_original_screenplay, 2018, get_out).
+nominacion(writing_original_screenplay, 2018, lady_bird).
+nominacion(writing_original_screenplay, 2018, the_shape_of_water).
+nominacion(writing_original_screenplay, 2018, three_billboards_outside_ebbing,_missouri).
 
 % GANADORES
 ganador(mejor_actor, 2018, gary_oldman).
@@ -388,127 +388,127 @@ ganador(mejor_guion_adaptado, 2018, call_me_by_your_name).
 ganador(mejor_guion_original, 2018, get_out).
 
 % Nominaciones 2019
-nominacion(mejor_actor, 2019, christian_bale).
-nominacion(mejor_actor, 2019, bradley_cooper).
-nominacion(mejor_actor, 2019, willem_dafoe).
-nominacion(mejor_actor, 2019, rami_malek).
-nominacion(mejor_actor, 2019, viggo_mortensen).
-nominacion(mejor_actor_de_reparto, 2019, mahershala_ali).
-nominacion(mejor_actor_de_reparto, 2019, adam_driver).
-nominacion(mejor_actor_de_reparto, 2019, sam_elliott).
-nominacion(mejor_actor_de_reparto, 2019, richard_e_grant).
-nominacion(mejor_actor_de_reparto, 2019, sam_rockwell).
-nominacion(mejor_actriz, 2019, yalitza_aparicio).
-nominacion(mejor_actriz, 2019, glenn_close).
-nominacion(mejor_actriz, 2019, olivia_colman).
-nominacion(mejor_actriz, 2019, lady_gaga).
-nominacion(mejor_actriz, 2019, melissa_mccarthy).
-nominacion(mejor_actriz_de_reparto, 2019, amy_adams).
-nominacion(mejor_actriz_de_reparto, 2019, marina_de_tavira).
-nominacion(mejor_actriz_de_reparto, 2019, regina_king).
-nominacion(mejor_actriz_de_reparto, 2019, emma_stone).
-nominacion(mejor_actriz_de_reparto, 2019, rachel_weisz).
-nominacion(mejor_pelicula_animada, 2019, incredibles_2).
-nominacion(mejor_pelicula_animada, 2019, isle_of_dogs).
-nominacion(mejor_pelicula_animada, 2019, mirai).
-nominacion(mejor_pelicula_animada, 2019, ralph_breaks_the_internet).
-nominacion(mejor_pelicula_animada, 2019, spider-man_into_the_spider-verse).
-nominacion(mejor_fotografia, 2019, lukasz_zal).
-nominacion(mejor_fotografia, 2019, robbie_ryan).
-nominacion(mejor_fotografia, 2019, caleb_deschanel).
-nominacion(mejor_fotografia, 2019, alfonso_cuaron).
-nominacion(mejor_fotografia, 2019, matthew_libatique).
-nominacion(mejor_diseño_de_vestuario, 2019, mary_zophres).
-nominacion(mejor_diseño_de_vestuario, 2019, ruth_carter).
-nominacion(mejor_diseño_de_vestuario, 2019, sandy_powell).
-nominacion(mejor_diseño_de_vestuario, 2019, sandy_powell).
-nominacion(mejor_diseño_de_vestuario, 2019, alexandra_byrne).
-nominacion(mejor_director, 2019, spike_lee).
-nominacion(mejor_director, 2019, pawel_pawlikowski).
-nominacion(mejor_director, 2019, yorgos_lanthimos).
-nominacion(mejor_director, 2019, alfonso_cuaron).
-nominacion(mejor_director, 2019, adam_mckay).
-nominacion(mejor_documental, 2019, free_solo).
-nominacion(mejor_documental, 2019, hale_county_this_morning_this_evening).
-nominacion(mejor_documental, 2019, minding_the_gap).
-nominacion(mejor_documental, 2019, of_fathers_sons).
-nominacion(mejor_documental, 2019, rbg).
-nominacion(mejor_corto_documental, 2019, black_sheep).
-nominacion(mejor_corto_documental, 2019, end_game).
-nominacion(mejor_corto_documental, 2019, lifeboat).
-nominacion(mejor_corto_documental, 2019, a_night_at_the_garden).
-nominacion(mejor_corto_documental, 2019, period_end_of_sentence).
-nominacion(mejor_edicion, 2019, barry_alexander_brown).
-nominacion(mejor_edicion, 2019, john_ottman).
-nominacion(mejor_edicion, 2019, yorgos_mavropsaridis).
-nominacion(mejor_edicion, 2019, patrick_j_don_vito).
-nominacion(mejor_edicion, 2019, hank_corwin).
-nominacion(mejor_pelicula_extranjera, 2019, capernaum).
-nominacion(mejor_pelicula_extranjera, 2019, cold_war).
-nominacion(mejor_pelicula_extranjera, 2019, never_look_away).
-nominacion(mejor_pelicula_extranjera, 2019, roma).
-nominacion(mejor_pelicula_extranjera, 2019, shoplifters).
-nominacion(mejor_maquillaje_y_peinado, 2019, [goran_lundstrom, pamela_goldammer]).
-nominacion(mejor_maquillaje_y_peinado, 2019, [jenny_shircore, marc_pilcher, jessica_brooks]).
-nominacion(mejor_maquillaje_y_peinado, 2019, [greg_cannom, kate_biscoe, patricia_dehaney]).
-nominacion(mejor_sountrack_original, 2019, ludwig_goransson).
-nominacion(mejor_sountrack_original, 2019, terence_blanchard).
-nominacion(mejor_sountrack_original, 2019, nicholas_britell).
-nominacion(mejor_sountrack_original, 2019, alexandre_desplat).
-nominacion(mejor_sountrack_original, 2019, marc_shaiman).
-nominacion(mejor_cancion_original, 2019, black_panther).
-nominacion(mejor_cancion_original, 2019, rbg).
-nominacion(mejor_cancion_original, 2019, mary_poppins_returns).
-nominacion(mejor_cancion_original, 2019, a_star_is_born).
-nominacion(mejor_cancion_original, 2019, the_ballad_of_buster_scruggs).
-nominacion(mejor_pelicula, 2019, black_panther).
-nominacion(mejor_pelicula, 2019, blackkklansman).
-nominacion(mejor_pelicula, 2019, bohemian_rhapsody).
-nominacion(mejor_pelicula, 2019, the_favourite).
-nominacion(mejor_pelicula, 2019, green_book).
-nominacion(mejor_pelicula, 2019, roma).
-nominacion(mejor_pelicula, 2019, a_star_is_born).
-nominacion(mejor_pelicula, 2019, vice).
-nominacion(mejor_diseño_de_produccion, 2019, [hannah_beachler, jay_hart]).
-nominacion(mejor_diseño_de_produccion, 2019, [fiona_crombie, alice_felton]).
-nominacion(mejor_diseño_de_produccion, 2019, [nathan_crowley, kathy_lucas]).
-nominacion(mejor_diseño_de_produccion, 2019, [john_myhre, gordon_sim]).
-nominacion(mejor_diseño_de_produccion, 2019, [eugenio_caballero, barbara_enriquez]).
-nominacion(mejor_cortometraje_animado, 2019, animal_behaviour).
-nominacion(mejor_cortometraje_animado, 2019, bao).
-nominacion(mejor_cortometraje_animado, 2019, late_afternoon).
-nominacion(mejor_cortometraje_animado, 2019, one_small_step).
-nominacion(mejor_cortometraje_animado, 2019, weekends).
-nominacion(mejor_cortometraje, 2019, detainment).
-nominacion(mejor_cortometraje, 2019, fauve).
-nominacion(mejor_cortometraje, 2019, marguerite).
-nominacion(mejor_cortometraje, 2019, mother).
-nominacion(mejor_cortometraje, 2019, skin).
-nominacion(mejor_edicion_de_sonido, 2019, [benjamin_a_burtt, steve_boeddeker]).
-nominacion(mejor_edicion_de_sonido, 2019, [john_warhurst, nina_hartstone]).
-nominacion(mejor_edicion_de_sonido, 2019, [ai-ling_lee, mildred_iatrou_morgan]).
-nominacion(mejor_edicion_de_sonido, 2019, [ethan_van_der_ryn, erik_aadahl]).
-nominacion(mejor_edicion_de_sonido, 2019, [sergio_diaz, skip_lievsay]).
-nominacion(mejor_mezcla_de_sonido, 2019, [steve_boeddeker, brandon_proctor, peter_devlin]).
-nominacion(mejor_mezcla_de_sonido, 2019, [paul_massey, tim_cavagin, john_casali]).
-nominacion(mejor_mezcla_de_sonido, 2019, [jon_taylor_frank_a_montaño_ai-ling_lee, mary_h_ellis]).
-nominacion(mejor_mezcla_de_sonido, 2019, [skip_lievsay, craig_henighan, jose_antonio_garcia]).
-nominacion(mejor_mezcla_de_sonido, 2019, [tom_ozanich, dean_zupancic, jason_ruder, steve_morrow]).
-nominacion(mejores_efectos_visuales, 2019, [dan_deleeuw, kelly_port, russell_earl, dan_sudick]).
-nominacion(mejores_efectos_visuales, 2019, [christopher_lawrence, michael_eames, theo_jones, chris_corbould]).
-nominacion(mejores_efectos_visuales, 2019, [paul_lambert, ian_hunter, tristan_myles, j_d_schwalm]).
-nominacion(mejores_efectos_visuales, 2019, [roger_guyett, grady_cofer, matthew_e_butler, david_shirk]).
-nominacion(mejores_efectos_visuales, 2019, [rob_bredow, patrick_tubach, neal_scanlan, dominic_tuohy]).
-nominacion(mejor_guion_adaptado, 2019, [joel_coen, ethan_coen]).
-nominacion(mejor_guion_adaptado, 2019, [charlie_wachtel, david_rabinowitz, kevin_willmott, spike_lee]).
-nominacion(mejor_guion_adaptado, 2019, [nicole_holofcener, jeff_whitty]).
-nominacion(mejor_guion_adaptado, 2019, barry_jenkins).
-nominacion(mejor_guion_adaptado, 2019, [eric_roth, bradley_cooper, will_fetters]).
-nominacion(mejor_guion_original, 2019, the_favourite).
-nominacion(mejor_guion_original, 2019, first_reformed).
-nominacion(mejor_guion_original, 2019, green_book).
-nominacion(mejor_guion_original, 2019, roma).
-nominacion(mejor_guion_original, 2019, vice).
+nominacion(actor_in_a_leading_role, 2019, vice).
+nominacion(actor_in_a_leading_role, 2019, a_star_is_born).
+nominacion(actor_in_a_leading_role, 2019, at_eternity_s_gate).
+nominacion(actor_in_a_leading_role, 2019, bohemian_rhapsody).
+nominacion(actor_in_a_leading_role, 2019, green_book).
+nominacion(actor_in_a_supporting_role, 2019, green_book).
+nominacion(actor_in_a_supporting_role, 2019, blackkklansman).
+nominacion(actor_in_a_supporting_role, 2019, a_star_is_born).
+nominacion(actor_in_a_supporting_role, 2019, can_you_ever_forgive_me?).
+nominacion(actor_in_a_supporting_role, 2019, vice).
+nominacion(actress_in_a_leading_role, 2019, roma).
+nominacion(actress_in_a_leading_role, 2019, the_wife).
+nominacion(actress_in_a_leading_role, 2019, the_favourite).
+nominacion(actress_in_a_leading_role, 2019, a_star_is_born).
+nominacion(actress_in_a_leading_role, 2019, can_you_ever_forgive_me?).
+nominacion(actress_in_a_supporting_role, 2019, vice).
+nominacion(actress_in_a_supporting_role, 2019, roma).
+nominacion(actress_in_a_supporting_role, 2019, if_beale_street_could_talk).
+nominacion(actress_in_a_supporting_role, 2019, the_favourite).
+nominacion(actress_in_a_supporting_role, 2019, the_favourite).
+nominacion(animated_feature_film, 2019, incredibles_2).
+nominacion(animated_feature_film, 2019, isle_of_dogs).
+nominacion(animated_feature_film, 2019, mirai).
+nominacion(animated_feature_film, 2019, ralph_breaks_the_internet).
+nominacion(animated_feature_film, 2019, spider-man_into_the_spider-verse).
+nominacion(cinematography, 2019, cold_war).
+nominacion(cinematography, 2019, the_favourite).
+nominacion(cinematography, 2019, never_look_away).
+nominacion(cinematography, 2019, roma).
+nominacion(cinematography, 2019, a_star_is_born).
+nominacion(costume_design, 2019, the_ballad_of_buster_scruggs).
+nominacion(costume_design, 2019, black_panther).
+nominacion(costume_design, 2019, the_favourite).
+nominacion(costume_design, 2019, mary_poppins_returns).
+nominacion(costume_design, 2019, mary_queen_of_scots).
+nominacion(directing, 2019, blackkklansman).
+nominacion(directing, 2019, cold_war).
+nominacion(directing, 2019, the_favourite).
+nominacion(directing, 2019, roma).
+nominacion(directing, 2019, vice).
+nominacion(documentary_feature, 2019, free_solo).
+nominacion(documentary_feature, 2019, hale_county_this_morning,_this_evening).
+nominacion(documentary_feature, 2019, minding_the_gap).
+nominacion(documentary_feature, 2019, of_fathers_and_sons).
+nominacion(documentary_feature, 2019, rbg).
+nominacion(documentary_short_subject, 2019, black_sheep).
+nominacion(documentary_short_subject, 2019, end_game).
+nominacion(documentary_short_subject, 2019, lifeboat).
+nominacion(documentary_short_subject, 2019, a_night_at_the_garden).
+nominacion(documentary_short_subject, 2019, periodend_of_sentence_).
+nominacion(film_editing, 2019, blackkklansman).
+nominacion(film_editing, 2019, bohemian_rhapsody).
+nominacion(film_editing, 2019, the_favourite).
+nominacion(film_editing, 2019, green_book).
+nominacion(film_editing, 2019, vice).
+nominacion(foreign_language_film, 2019, capernaum).
+nominacion(foreign_language_film, 2019, cold_war).
+nominacion(foreign_language_film, 2019, never_look_away).
+nominacion(foreign_language_film, 2019, roma).
+nominacion(foreign_language_film, 2019, shoplifters).
+nominacion(makeup_and_hairstyling, 2019, border).
+nominacion(makeup_and_hairstyling, 2019, mary_queen_of_scots).
+nominacion(makeup_and_hairstyling, 2019, vice).
+nominacion(music_original_score, 2019, black_panther).
+nominacion(music_original_score, 2019, blackkklansman).
+nominacion(music_original_score, 2019, if_beale_street_could_talk).
+nominacion(music_original_score, 2019, isle_of_dogs).
+nominacion(music_original_score, 2019, mary_poppins_returns).
+nominacion(music_original_song, 2019, black_panther).
+nominacion(music_original_song, 2019, rbg).
+nominacion(music_original_song, 2019, mary_poppins_returns).
+nominacion(music_original_song, 2019, a_star_is_born).
+nominacion(music_original_song, 2019, the_ballad_of_buster_scruggs).
+nominacion(best_picture, 2019, black_panther).
+nominacion(best_picture, 2019, blackkklansman).
+nominacion(best_picture, 2019, bohemian_rhapsody).
+nominacion(best_picture, 2019, the_favourite).
+nominacion(best_picture, 2019, green_book).
+nominacion(best_picture, 2019, roma).
+nominacion(best_picture, 2019, a_star_is_born).
+nominacion(best_picture, 2019, vice).
+nominacion(production_design, 2019, black_panther).
+nominacion(production_design, 2019, the_favourite).
+nominacion(production_design, 2019, first_man).
+nominacion(production_design, 2019, mary_poppins_returns).
+nominacion(production_design, 2019, roma).
+nominacion(short_film_animated, 2019, animal_behaviour).
+nominacion(short_film_animated, 2019, bao).
+nominacion(short_film_animated, 2019, late_afternoon).
+nominacion(short_film_animated, 2019, one_small_step).
+nominacion(short_film_animated, 2019, weekends).
+nominacion(short_film_live_action, 2019, detainment).
+nominacion(short_film_live_action, 2019, fauve).
+nominacion(short_film_live_action, 2019, marguerite).
+nominacion(short_film_live_action, 2019, mother).
+nominacion(short_film_live_action, 2019, skin).
+nominacion(sound_editing, 2019, black_panther).
+nominacion(sound_editing, 2019, bohemian_rhapsody).
+nominacion(sound_editing, 2019, first_man).
+nominacion(sound_editing, 2019, a_quiet_place).
+nominacion(sound_editing, 2019, roma).
+nominacion(sound_mixing, 2019, black_panther).
+nominacion(sound_mixing, 2019, bohemian_rhapsody).
+nominacion(sound_mixing, 2019, first_man).
+nominacion(sound_mixing, 2019, roma).
+nominacion(sound_mixing, 2019, a_star_is_born).
+nominacion(visual_effects, 2019, avengers_infinity_war).
+nominacion(visual_effects, 2019, christopher_robin).
+nominacion(visual_effects, 2019, first_man).
+nominacion(visual_effects, 2019, ready_player_one).
+nominacion(visual_effects, 2019, solo_a_star_wars_story).
+nominacion(writing_adapted_screenplay, 2019, the_ballad_of_buster_scruggs).
+nominacion(writing_adapted_screenplay, 2019, blackkklansman).
+nominacion(writing_adapted_screenplay, 2019, can_you_ever_forgive_me?).
+nominacion(writing_adapted_screenplay, 2019, if_beale_street_could_talk).
+nominacion(writing_adapted_screenplay, 2019, a_star_is_born).
+nominacion(writing_original_screenplay, 2019, the_favourite).
+nominacion(writing_original_screenplay, 2019, first_reformed).
+nominacion(writing_original_screenplay, 2019, green_book).
+nominacion(writing_original_screenplay, 2019, roma).
+nominacion(writing_original_screenplay, 2019, vice).
 
 escritor(the_favourite, [deborah_davis, tony_mcnamara]).
 escritor(first_reformed, paul_schrader).

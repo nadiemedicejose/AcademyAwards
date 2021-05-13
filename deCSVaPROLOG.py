@@ -20,7 +20,7 @@ df = pd.read_csv('the_oscar_award.csv')
 df.drop(columns = ['year_film', 'ceremony', 'winner'], axis = 1, inplace = True)
 
 # Excluir entregas, excepto
-excluir_entregas_menos = df['year_ceremony'] != 2020
+excluir_entregas_menos = df['year_ceremony'] != 2018
 df.drop(index=df[excluir_entregas_menos].index, inplace = True)
 
 # Excluir categorías que no necesitamos
@@ -33,6 +33,9 @@ excluir_cateogoria = df['category'] == 'SPECIAL AWARD'
 df.drop(index=df[excluir_cateogoria].index, inplace = True)
 
 excluir_cateogoria = df['category'] == 'JEAN HERSHOLT HUMANITARIAN AWARD'
+df.drop(index=df[excluir_cateogoria].index, inplace = True)
+
+excluir_cateogoria = df['category'] == 'IRVING G. THALBERG MEMORIAL AWARD'
 df.drop(index=df[excluir_cateogoria].index, inplace = True)
 
 # Reemplazar caracteres
@@ -51,6 +54,9 @@ def reemplazar_caracteres(texto):
   # Reemplazar por
   y = '_'
   z = ''
+  
+  # Cuando los caracteres son número
+  texto = str(texto)
   
   return texto.lower().replace(a, y).replace(b, z).replace(c, z).replace(d, y).replace(e, z).replace(f, z).replace(g, z).replace(i, y).replace(h, z)
 
