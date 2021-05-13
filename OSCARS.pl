@@ -242,19 +242,19 @@ nominacion(actor_in_a_leading_role, 2018, call_me_by_your_name).
 nominacion(actor_in_a_leading_role, 2018, phantom_thread).
 nominacion(actor_in_a_leading_role, 2018, get_out).
 nominacion(actor_in_a_leading_role, 2018, darkest_hour).
-nominacion(actor_in_a_leading_role, 2018, roman_jisrael__esq_).
+nominacion(actor_in_a_leading_role, 2018, roman_j_israel_esq).
 nominacion(actor_in_a_supporting_role, 2018, the_florida_project).
-nominacion(actor_in_a_supporting_role, 2018, three_billboards_outside_ebbing__missouri).
+nominacion(actor_in_a_supporting_role, 2018, three_billboards_outside_ebbing_missouri).
 nominacion(actor_in_a_supporting_role, 2018, the_shape_of_water).
 nominacion(actor_in_a_supporting_role, 2018, all_the_money_in_the_world).
-nominacion(actor_in_a_supporting_role, 2018, three_billboards_outside_ebbing__missouri).
+nominacion(actor_in_a_supporting_role, 2018, three_billboards_outside_ebbing_missouri).
 nominacion(actress_in_a_leading_role, 2018, the_shape_of_water).
-nominacion(actress_in_a_leading_role, 2018, three_billboards_outside_ebbing__missouri).
-nominacion(actress_in_a_leading_role, 2018, i__tonya).
+nominacion(actress_in_a_leading_role, 2018, three_billboards_outside_ebbing_missouri).
+nominacion(actress_in_a_leading_role, 2018, i_tonya).
 nominacion(actress_in_a_leading_role, 2018, lady_bird).
 nominacion(actress_in_a_leading_role, 2018, the_post).
 nominacion(actress_in_a_supporting_role, 2018, mudbound).
-nominacion(actress_in_a_supporting_role, 2018, i__tonya).
+nominacion(actress_in_a_supporting_role, 2018, i_tonya).
 nominacion(actress_in_a_supporting_role, 2018, phantom_thread).
 nominacion(actress_in_a_supporting_role, 2018, lady_bird).
 nominacion(actress_in_a_supporting_role, 2018, the_shape_of_water).
@@ -290,9 +290,9 @@ nominacion(documentary_short_subject, 2018, knife_skills).
 nominacion(documentary_short_subject, 2018, traffic_stop).
 nominacion(film_editing, 2018, baby_driver).
 nominacion(film_editing, 2018, dunkirk).
-nominacion(film_editing, 2018, i__tonya).
+nominacion(film_editing, 2018, i_tonya).
 nominacion(film_editing, 2018, the_shape_of_water).
-nominacion(film_editing, 2018, three_billboards_outside_ebbing__missouri).
+nominacion(film_editing, 2018, three_billboards_outside_ebbing_missouri).
 nominacion(foreign_language_film, 2018, a_fantastic_woman).
 nominacion(foreign_language_film, 2018, the_insult).
 nominacion(foreign_language_film, 2018, loveless).
@@ -305,7 +305,7 @@ nominacion(music_original_score, 2018, dunkirk).
 nominacion(music_original_score, 2018, phantom_thread).
 nominacion(music_original_score, 2018, the_shape_of_water).
 nominacion(music_original_score, 2018, star_wars_the_last_jedi).
-nominacion(music_original_score, 2018, three_billboards_outside_ebbing__missouri).
+nominacion(music_original_score, 2018, three_billboards_outside_ebbing_missouri).
 nominacion(music_original_song, 2018, mudbound).
 nominacion(music_original_song, 2018, call_me_by_your_name).
 nominacion(music_original_song, 2018, coco).
@@ -319,7 +319,7 @@ nominacion(best_picture, 2018, lady_bird).
 nominacion(best_picture, 2018, phantom_thread).
 nominacion(best_picture, 2018, the_post).
 nominacion(best_picture, 2018, the_shape_of_water).
-nominacion(best_picture, 2018, three_billboards_outside_ebbing__missouri).
+nominacion(best_picture, 2018, three_billboards_outside_ebbing_missouri).
 nominacion(production_design, 2018, beauty_and_the_beast).
 nominacion(production_design, 2018, blade_runner_2049).
 nominacion(production_design, 2018, darkest_hour).
@@ -331,10 +331,10 @@ nominacion(short_film_animated, 2018, lou).
 nominacion(short_film_animated, 2018, negative_space).
 nominacion(short_film_animated, 2018, revolting_rhymes).
 nominacion(short_film_live_action, 2018, dekalb_elementary).
-nominacion(short_film_live_action, 2018, the_eleven_o_clock).
+nominacion(short_film_live_action, 2018, the_eleven_oclock).
 nominacion(short_film_live_action, 2018, my_nephew_emmett).
 nominacion(short_film_live_action, 2018, the_silent_child).
-nominacion(short_film_live_action, 2018, watu_wote/all_of_us).
+nominacion(short_film_live_action, 2018, watu_woteall_of_us).
 nominacion(sound_editing, 2018, baby_driver).
 nominacion(sound_editing, 2018, blade_runner_2049).
 nominacion(sound_editing, 2018, dunkirk).
@@ -346,20 +346,21 @@ nominacion(sound_mixing, 2018, dunkirk).
 nominacion(sound_mixing, 2018, the_shape_of_water).
 nominacion(sound_mixing, 2018, star_wars_the_last_jedi).
 nominacion(visual_effects, 2018, blade_runner_2049).
-nominacion(visual_effects, 2018, guardians_of_the_galaxy_vol2).
+nominacion(visual_effects, 2018, guardians_of_the_galaxy_vol_2).
 nominacion(visual_effects, 2018, kong_skull_island).
 nominacion(visual_effects, 2018, star_wars_the_last_jedi).
 nominacion(visual_effects, 2018, war_for_the_planet_of_the_apes).
 nominacion(writing_adapted_screenplay, 2018, call_me_by_your_name).
 nominacion(writing_adapted_screenplay, 2018, the_disaster_artist).
 nominacion(writing_adapted_screenplay, 2018, logan).
-nominacion(writing_adapted_screenplay, 2018, molly_s_game).
+nominacion(writing_adapted_screenplay, 2018, mollys_game).
 nominacion(writing_adapted_screenplay, 2018, mudbound).
 nominacion(writing_original_screenplay, 2018, the_big_sick).
 nominacion(writing_original_screenplay, 2018, get_out).
 nominacion(writing_original_screenplay, 2018, lady_bird).
 nominacion(writing_original_screenplay, 2018, the_shape_of_water).
-nominacion(writing_original_screenplay, 2018, three_billboards_outside_ebbing__missouri).
+nominacion(writing_original_screenplay, 2018, three_billboards_outside_ebbing_missouri).
+
 
 % GANADORES
 ganador(mejor_actor, 2018, gary_oldman).
@@ -390,7 +391,7 @@ ganador(mejor_guion_original, 2018, get_out).
 % Nominaciones 2019
 nominacion(actor_in_a_leading_role, 2019, vice).
 nominacion(actor_in_a_leading_role, 2019, a_star_is_born).
-nominacion(actor_in_a_leading_role, 2019, at_eternity_s_gate).
+nominacion(actor_in_a_leading_role, 2019, at_eternitys_gate).
 nominacion(actor_in_a_leading_role, 2019, bohemian_rhapsody).
 nominacion(actor_in_a_leading_role, 2019, green_book).
 nominacion(actor_in_a_supporting_role, 2019, green_book).
@@ -429,7 +430,7 @@ nominacion(directing, 2019, the_favourite).
 nominacion(directing, 2019, roma).
 nominacion(directing, 2019, vice).
 nominacion(documentary_feature, 2019, free_solo).
-nominacion(documentary_feature, 2019, hale_county_this_morning__this_evening).
+nominacion(documentary_feature, 2019, hale_county_this_morning_this_evening).
 nominacion(documentary_feature, 2019, minding_the_gap).
 nominacion(documentary_feature, 2019, of_fathers_and_sons).
 nominacion(documentary_feature, 2019, rbg).
@@ -437,7 +438,7 @@ nominacion(documentary_short_subject, 2019, black_sheep).
 nominacion(documentary_short_subject, 2019, end_game).
 nominacion(documentary_short_subject, 2019, lifeboat).
 nominacion(documentary_short_subject, 2019, a_night_at_the_garden).
-nominacion(documentary_short_subject, 2019, periodend_of_sentence_).
+nominacion(documentary_short_subject, 2019, period_end_of_sentence).
 nominacion(film_editing, 2019, blackkklansman).
 nominacion(film_editing, 2019, bohemian_rhapsody).
 nominacion(film_editing, 2019, the_favourite).
@@ -518,7 +519,7 @@ escritor(vice, adam_mckay).
 
 % Nominaciones 2020
 nominacion(actor_in_a_leading_role, 2020, pain_and_glory).
-nominacion(actor_in_a_leading_role, 2020, once_upon_a_time_in_hollywood).
+nominacion(actor_in_a_leading_role, 2020, once_upon_a_timein_hollywood).
 nominacion(actor_in_a_leading_role, 2020, marriage_story).
 nominacion(actor_in_a_leading_role, 2020, joker).
 nominacion(actor_in_a_leading_role, 2020, the_two_popes).
@@ -526,7 +527,7 @@ nominacion(actor_in_a_supporting_role, 2020, a_beautiful_day_in_the_neighborhood
 nominacion(actor_in_a_supporting_role, 2020, the_two_popes).
 nominacion(actor_in_a_supporting_role, 2020, the_irishman).
 nominacion(actor_in_a_supporting_role, 2020, the_irishman).
-nominacion(actor_in_a_supporting_role, 2020, once_upon_a_time_in_hollywood).
+nominacion(actor_in_a_supporting_role, 2020, once_upon_a_timein_hollywood).
 nominacion(actress_in_a_leading_role, 2020, harriet).
 nominacion(actress_in_a_leading_role, 2020, marriage_story).
 nominacion(actress_in_a_leading_role, 2020, little_women).
@@ -546,16 +547,16 @@ nominacion(cinematography, 2020, the_irishman).
 nominacion(cinematography, 2020, joker).
 nominacion(cinematography, 2020, the_lighthouse).
 nominacion(cinematography, 2020, 1917).
-nominacion(cinematography, 2020, once_upon_a_time_in_hollywood).
+nominacion(cinematography, 2020, once_upon_a_timein_hollywood).
 nominacion(costume_design, 2020, the_irishman).
 nominacion(costume_design, 2020, jojo_rabbit).
 nominacion(costume_design, 2020, joker).
 nominacion(costume_design, 2020, little_women).
-nominacion(costume_design, 2020, once_upon_a_time_in_hollywood).
+nominacion(costume_design, 2020, once_upon_a_timein_hollywood).
 nominacion(directing, 2020, the_irishman).
 nominacion(directing, 2020, joker).
 nominacion(directing, 2020, 1917).
-nominacion(directing, 2020, once_upon_a_time_in_hollywood).
+nominacion(directing, 2020, once_upon_a_timein_hollywood).
 nominacion(directing, 2020, parasite).
 nominacion(documentary_feature, 2020, american_factory).
 nominacion(documentary_feature, 2020, the_cave).
@@ -563,9 +564,9 @@ nominacion(documentary_feature, 2020, the_edge_of_democracy).
 nominacion(documentary_feature, 2020, for_sama).
 nominacion(documentary_feature, 2020, honeyland).
 nominacion(documentary_short_subject, 2020, in_the_absence).
-nominacion(documentary_short_subject, 2020, learning_to_skateboard_in_a_warzone_if_you_re_a_girl).
+nominacion(documentary_short_subject, 2020, learning_to_skateboard_in_a_warzone_if_youre_a_girl)
 nominacion(documentary_short_subject, 2020, life_overtakes_me).
-nominacion(documentary_short_subject, 2020, stlouis_superman).
+nominacion(documentary_short_subject, 2020, st_louis_superman).
 nominacion(documentary_short_subject, 2020, walk_run_cha-cha).
 nominacion(film_editing, 2020, ford_v_ferrari).
 nominacion(film_editing, 2020, the_irishman).
@@ -574,7 +575,7 @@ nominacion(film_editing, 2020, joker).
 nominacion(film_editing, 2020, parasite).
 nominacion(international_feature_film, 2020, corpus_christi).
 nominacion(international_feature_film, 2020, honeyland).
-nominacion(international_feature_film, 2020, les_miserables).
+nominacion(international_feature_film, 2020, les_misérables).
 nominacion(international_feature_film, 2020, pain_and_glory).
 nominacion(international_feature_film, 2020, parasite).
 nominacion(makeup_and_hairstyling, 2020, bombshell).
@@ -599,12 +600,12 @@ nominacion(best_picture, 2020, joker).
 nominacion(best_picture, 2020, little_women).
 nominacion(best_picture, 2020, marriage_story).
 nominacion(best_picture, 2020, 1917).
-nominacion(best_picture, 2020, once_upon_a_time_in_hollywood).
+nominacion(best_picture, 2020, once_upon_a_timein_hollywood).
 nominacion(best_picture, 2020, parasite).
 nominacion(production_design, 2020, the_irishman).
 nominacion(production_design, 2020, jojo_rabbit).
 nominacion(production_design, 2020, 1917).
-nominacion(production_design, 2020, once_upon_a_time_in_hollywood).
+nominacion(production_design, 2020, once_upon_a_timein_hollywood).
 nominacion(production_design, 2020, parasite).
 nominacion(short_film_animated, 2020, dcera_daughter).
 nominacion(short_film_animated, 2020, hair_love).
@@ -613,19 +614,19 @@ nominacion(short_film_animated, 2020, memorable).
 nominacion(short_film_animated, 2020, sister).
 nominacion(short_film_live_action, 2020, brotherhood).
 nominacion(short_film_live_action, 2020, nefta_football_club).
-nominacion(short_film_live_action, 2020, the_neighborswindow).
+nominacion(short_film_live_action, 2020, the_neighbors_window).
 nominacion(short_film_live_action, 2020, saria).
 nominacion(short_film_live_action, 2020, a_sister).
 nominacion(sound_editing, 2020, ford_v_ferrari).
 nominacion(sound_editing, 2020, joker).
 nominacion(sound_editing, 2020, 1917).
-nominacion(sound_editing, 2020, once_upon_a_time_in_hollywood).
+nominacion(sound_editing, 2020, once_upon_a_timein_hollywood).
 nominacion(sound_editing, 2020, star_wars_the_rise_of_skywalker).
 nominacion(sound_mixing, 2020, ad_astra).
 nominacion(sound_mixing, 2020, ford_v_ferrari).
 nominacion(sound_mixing, 2020, joker).
 nominacion(sound_mixing, 2020, 1917).
-nominacion(sound_mixing, 2020, once_upon_a_time_in_hollywood).
+nominacion(sound_mixing, 2020, once_upon_a_timein_hollywood).
 nominacion(visual_effects, 2020, avengers_endgame).
 nominacion(visual_effects, 2020, the_irishman).
 nominacion(visual_effects, 2020, the_lion_king).
@@ -639,8 +640,9 @@ nominacion(writing_adapted_screenplay, 2020, the_two_popes).
 nominacion(writing_original_screenplay, 2020, knives_out).
 nominacion(writing_original_screenplay, 2020, marriage_story).
 nominacion(writing_original_screenplay, 2020, 1917).
-nominacion(writing_original_screenplay, 2020, once_upon_a_time_in_hollywood).
+nominacion(writing_original_screenplay, 2020, once_upon_a_timein_hollywood).
 nominacion(writing_original_screenplay, 2020, parasite).
+
 
 % REGLAS
 nominadosPor(Nominacion, Year) :-
