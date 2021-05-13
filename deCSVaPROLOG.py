@@ -105,5 +105,5 @@ categoria = df.category
 receptor = df.name
 pelicula = df.film
 
-predicado = 'nominado(' + categoria + ', ' + entrega + ', ' + pelicula + ').'
+predicado = 'nominacion(' + categoria + ', ' + entrega + ', ' + pelicula + ').'
 print(predicado.to_string(index = False))
