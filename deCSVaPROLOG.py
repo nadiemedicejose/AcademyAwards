@@ -16,12 +16,16 @@ pd.set_option('display.max_colwidth', None)
 # Leer dataset en formato CSV
 df = pd.read_csv('the_oscar_award.csv')
 
-# Ecluir columnas
-df.drop(columns = ['year_film', 'ceremony', 'winner'], axis = 1, inplace = True)
+# Excluir columnas
+df.drop(columns = ['year_film', 'ceremony'], axis = 1, inplace = True)
 
 # Excluir entregas, excepto
-excluir_entregas_menos = df['year_ceremony'] != 2020
+excluir_entregas_menos = df['year_ceremony'] != 2018
 df.drop(index=df[excluir_entregas_menos].index, inplace = True)
+
+# ¿Nominados o ganadores?
+ganadores = df['winner'] != True
+df.drop(index=df[ganadores].index, inplace = True)
 
 # Excluir categorías que no necesitamos
 # HONORARY AWARD
@@ -124,5 +128,5 @@ categoria = df.category
 receptor = df.name
 pelicula = df.film
 
-predicado = 'nominacion(' + categoria + ', ' + entrega + ', ' + pelicula + ').'
+predicado = 'ganador(' + categoria + ', ' + entrega + ', ' + pelicula + ').'
 print(predicado.to_string(index = False))

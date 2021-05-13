@@ -23,9 +23,6 @@ Que se puede traducir como alerta para predicados repetidos.
 
 
 %%%%%%%%%%%%%%%% PELICULAS %%%%%%%%%%%%%%%%
-
-
-
 pelicula(the_shape_of_water, 2018).
 director(the_shape_of_water, guillermo_del_toro).
 
@@ -168,7 +165,6 @@ maquillaje(las_horas_oscuras, [kazujiro_tsuji, ivana_primorac, luck_sibbick]).
 diseñoproduccion(las_horas_oscuras, [sarah_greenwood, katie_spencer]).
 efectosvisuales(las_horas_oscuras, gary_oldman).
 guion(las_horas_oscuras, anthony_mcCarten).
-nominacion(kristin_scott_Thomas, 2018, las_horas_oscuras).
 
 % Cast
 actor(las_horas_oscuras,gary_oldman).
@@ -185,7 +181,6 @@ maquillaje(dunkerque, [kazujiro_tsuji, david_malinowski, luck_sibbick]).
 diseñoproduccion(dunkerque, [nathan_crowley, gary_fettis]).
 efectosvisuales(dunkerque, gary_oldman).
 guion(dunkerque, chhristopher_nolan).
-nominacion(chhristopher_nolan, 2018, dunkerque).
 
 % Pelicula dejame salir 2017 nominacion 2018
 pelicula(dejame_salir,2018).
@@ -198,7 +193,6 @@ edicion(dejame_salir, gregory_plotkin ).
 maquillaje(dejame_salir, malenie_deforrest).
 diseñoproduccion(dejame_salir, [blumhouse_productions, qc_entertainment]).
 guion(dejame_salir, jordan_peele ).
-nominacion(jordan_peele, 2018, dejame_salir).
 
 % Cast
 actor(dejame_salir, daniel_kaluuya).
@@ -214,30 +208,88 @@ actriz(dejame_salir,kara_hayward).
 actriz(dejame_salir,jane_allen).
 actriz(dejame_salir,julie_ann_doan).
 
-%%%%%%%%%%%%%%%% ACADEMY AWARDS 2021 %%%%%%%%%%%%%%%%
-% NOMINACIONES
-nominacion(mejor_pelicula, 2021, nomadland).
-nominacion(mejor_actriz, 2021, nomadland).
-nominacion(mejor_director, 2021, nomadland).
-nominacion(mejor_fotografia, 2021, nomadland).
-nominacion(mejor_edicion, 2021, nomadland).
-nominacion(mejor_adaptacion, 2021, nomadland).
+%%%%%%%%%%%%%%%% THE WINNERS %%%%%%%%%%%%%%%%
 
-nominacion(mejor_pelicula, 2021, the_father).
-nominacion(mejor_actor, 2021, the_father).
-nominacion(mejor_actriz_reparto, 2021, the_father).
-nominacion(mejor_adaptacion, 2021, the_father).
-nominacion(mejor_edicion, 2021, the_father).
-nominacion(mejor_diseñoproduccion, 2021, the_father).
+% ACADEMY AWARDS 2020
+ganador(actor_in_a_leading_role, 2020, joker).
+ganador(actor_in_a_supporting_role, 2020, once_upon_a_timein_hollywood).
+ganador(actress_in_a_leading_role, 2020, judy).
+ganador(actress_in_a_supporting_role, 2020, marriage_story).
+ganador(animated_feature_film, 2020, toy_story_4).
+ganador(cinematography, 2020, 1917).
+ganador(costume_design, 2020, little_women).
+ganador(directing, 2020, parasite).
+ganador(documentary_feature, 2020, american_factory).
+ganador(documentary_short_subject, 2020, learning_to_skateboard_in_a_warzone_if_youre_a_girl).
+ganador(film_editing, 2020, ford_v_ferrari).
+ganador(international_feature_film, 2020, parasite).
+ganador(makeup_and_hairstyling, 2020, bombshell).
+ganador(music_original_score, 2020, joker).
+ganador(music_original_song, 2020, rocketman).
+ganador(best_picture, 2020, parasite).
+ganador(production_design, 2020, once_upon_a_timein_hollywood).
+ganador(short_film_animated, 2020, hair_love).
+ganador(short_film_live_action, 2020, the_neighbors_window).
+ganador(sound_editing, 2020, ford_v_ferrari).
+ganador(sound_mixing, 2020, 1917).
+ganador(visual_effects, 2020, 1917).
+ganador(writing_adapted_screenplay, 2020, jojo_rabbit).
+ganador(writing_original_screenplay, 2020, parasite).
 
-% GANADORES
-ganador(mejor_pelicula, 2021, nomadland).
-ganador(mejor_director, 2021, chloe_zhao).
-ganador(mejor_actriz, 2021, frances_mcdormand).
+% ACADEMY AWARDS 2019
+ganador(actor_in_a_leading_role, 2019, bohemian_rhapsody).
+ganador(actor_in_a_supporting_role, 2019, green_book).
+ganador(actress_in_a_leading_role, 2019, the_favourite).
+ganador(actress_in_a_supporting_role, 2019, if_beale_street_could_talk).
+ganador(animated_feature_film, 2019, spider-man_into_the_spider-verse).
+ganador(cinematography, 2019, roma).
+ganador(costume_design, 2019, black_panther).
+ganador(directing, 2019, roma).
+ganador(documentary_feature, 2019, free_solo).
+ganador(documentary_short_subject, 2019, period_end_of_sentence).
+ganador(film_editing, 2019, bohemian_rhapsody).
+ganador(foreign_language_film, 2019, roma).
+ganador(makeup_and_hairstyling, 2019, vice).
+ganador(music_original_score, 2019, black_panther).
+ganador(music_original_song, 2019, a_star_is_born).
+ganador(best_picture, 2019, green_book).
+ganador(production_design, 2019, black_panther).
+ganador(short_film_animated, 2019, bao).
+ganador(short_film_live_action, 2019, skin).
+ganador(sound_editing, 2019, bohemian_rhapsody).
+ganador(sound_mixing, 2019, bohemian_rhapsody).
+ganador(visual_effects, 2019, first_man).
+ganador(writing_adapted_screenplay, 2019, blackkklansman).
+ganador(writing_original_screenplay, 2019, green_book).
 
+% ACADEMY AWARDS 2018
+ganador(actor_in_a_leading_role, 2018, darkest_hour).
+ganador(actor_in_a_supporting_role, 2018, three_billboards_outside_ebbing_missouri).
+ganador(actress_in_a_leading_role, 2018, three_billboards_outside_ebbing_missouri).
+ganador(actress_in_a_supporting_role, 2018, i_tonya).
+ganador(animated_feature_film, 2018, coco).
+ganador(cinematography, 2018, blade_runner_2049).
+ganador(costume_design, 2018, phantom_thread).
+ganador(directing, 2018, the_shape_of_water).
+ganador(documentary_feature, 2018, icarus).
+ganador(documentary_short_subject, 2018, heaven_is_a_traffic_jam_on_the_405).
+ganador(film_editing, 2018, dunkirk).
+ganador(foreign_language_film, 2018, a_fantastic_woman).
+ganador(makeup_and_hairstyling, 2018, darkest_hour).
+ganador(music_original_score, 2018, the_shape_of_water).
+ganador(music_original_song, 2018, coco).
+ganador(best_picture, 2018, the_shape_of_water).
+ganador(production_design, 2018, the_shape_of_water).
+ganador(short_film_animated, 2018, dear_basketball).
+ganador(short_film_live_action, 2018, the_silent_child).
+ganador(sound_editing, 2018, dunkirk).
+ganador(sound_mixing, 2018, dunkirk).
+ganador(visual_effects, 2018, blade_runner_2049).
+ganador(writing_adapted_screenplay, 2018, call_me_by_your_name).
+ganador(writing_original_screenplay, 2018, get_out).
 
-%%%%%%%%%%%%%%%% ACADEMY AWARDS 2018 %%%%%%%%%%%%%%%%
-% NOMINACIONES
+%%%%%%%%%%%%%%%% THE NOMINEES %%%%%%%%%%%%%%%%
+% ACADEMY AWARDS 2018
 nominacion(actor_in_a_leading_role, 2018, call_me_by_your_name).
 nominacion(actor_in_a_leading_role, 2018, phantom_thread).
 nominacion(actor_in_a_leading_role, 2018, get_out).
@@ -361,34 +413,7 @@ nominacion(writing_original_screenplay, 2018, lady_bird).
 nominacion(writing_original_screenplay, 2018, the_shape_of_water).
 nominacion(writing_original_screenplay, 2018, three_billboards_outside_ebbing_missouri).
 
-
-% GANADORES
-ganador(mejor_actor, 2018, gary_oldman).
-ganador(mejor_actor_de_reparto, 2018, sam_rockwell).
-ganador(mejor_actriz, 2018, frances_mcdormand).
-ganador(mejor_actriz_de_reparto, 2018, allison_janney).
-ganador(mejor_pelicula_animada, 2018, coco).
-ganador(mejor_fotografia, 2018, blade_runner_2049).
-ganador(mejor_diseño_de_vestuario, 2018, phantom_thread).
-ganador(mejor_director, 2018, the_shape_of_water).
-ganador(mejor_documental, 2018, icarus).
-ganador(mejor_corto_documental, 2018, heaven_is_a_traffic_jam_on_the_405).
-ganador(mejor_edicion, 2018, lee_smith).
-ganador(mejor_pelicula_extranjera, 2018, a_fantastic_woman).
-ganador(mejor_maquillaje_y_peinado, 2018, darkest_hour).
-ganador(mejor_sountrack_original, 2018, the_shape_of_water).
-ganador(mejor_cancion_original, 2018, coco).
-ganador(mejor_pelicula, 2018, the_shape_of_water).
-ganador(mejor_diseño_de_produccion, 2018, the_shape_of_water).
-ganador(mejor_cortometraje_animado, 2018, dear_basketball).
-ganador(mejor_cortometraje, 2018, the_silent_child).
-ganador(mejor_edicion_de_sonido, 2018, dunkirk).
-ganador(mejor_mezcla_de_sonido, 2018, dunkirk).
-ganador(mejores_efectos_visuales, 2018, blade_runner_2049).
-ganador(mejor_guion_adaptado, 2018, call_me_by_your_name).
-ganador(mejor_guion_original, 2018, get_out).
-
-% Nominaciones 2019
+% ACADEMY AWARDS 2019
 nominacion(actor_in_a_leading_role, 2019, vice).
 nominacion(actor_in_a_leading_role, 2019, a_star_is_born).
 nominacion(actor_in_a_leading_role, 2019, at_eternitys_gate).
@@ -511,13 +536,7 @@ nominacion(writing_original_screenplay, 2019, green_book).
 nominacion(writing_original_screenplay, 2019, roma).
 nominacion(writing_original_screenplay, 2019, vice).
 
-escritor(the_favourite, [deborah_davis, tony_mcnamara]).
-escritor(first_reformed, paul_schrader).
-escritor(green_book, [nick_vallelonga, brian_currie, peter_farrelly]).
-escritor(roma, alfonso_cuaron).
-escritor(vice, adam_mckay).
-
-% Nominaciones 2020
+% ACADEMY AWARDS 2020
 nominacion(actor_in_a_leading_role, 2020, pain_and_glory).
 nominacion(actor_in_a_leading_role, 2020, once_upon_a_timein_hollywood).
 nominacion(actor_in_a_leading_role, 2020, marriage_story).
@@ -564,7 +583,7 @@ nominacion(documentary_feature, 2020, the_edge_of_democracy).
 nominacion(documentary_feature, 2020, for_sama).
 nominacion(documentary_feature, 2020, honeyland).
 nominacion(documentary_short_subject, 2020, in_the_absence).
-nominacion(documentary_short_subject, 2020, learning_to_skateboard_in_a_warzone_if_youre_a_girl)
+nominacion(documentary_short_subject, 2020, learning_to_skateboard_in_a_warzone_if_youre_a_girl).
 nominacion(documentary_short_subject, 2020, life_overtakes_me).
 nominacion(documentary_short_subject, 2020, st_louis_superman).
 nominacion(documentary_short_subject, 2020, walk_run_cha-cha).
@@ -642,7 +661,6 @@ nominacion(writing_original_screenplay, 2020, marriage_story).
 nominacion(writing_original_screenplay, 2020, 1917).
 nominacion(writing_original_screenplay, 2020, once_upon_a_timein_hollywood).
 nominacion(writing_original_screenplay, 2020, parasite).
-
 
 % REGLAS
 nominadosPor(Nominacion, Year) :-
