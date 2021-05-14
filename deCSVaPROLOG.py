@@ -20,27 +20,27 @@ df = pd.read_csv('the_oscar_award.csv')
 df.drop(columns = ['year_film', 'ceremony'], axis = 1, inplace = True)
 
 # Excluir entregas, excepto
-excluir_entregas_menos = df['year_ceremony'] != 2018
+excluir_entregas_menos = df['year_ceremony'] != 2019
 df.drop(index=df[excluir_entregas_menos].index, inplace = True)
 
 # ¿Nominados o ganadores?
-ganadores = df['winner'] != True
-df.drop(index=df[ganadores].index, inplace = True)
+# ganadores = df['winner'] != False
+# df.drop(index=df[ganadores].index, inplace = True)
 
 # Excluir categorías que no necesitamos
 # HONORARY AWARD
 # JEAN HERSHOLT HUMANITARIAN AWARD
-excluir_cateogoria = df['category'] == 'HONORARY AWARD'
-df.drop(index=df[excluir_cateogoria].index, inplace = True)
+excluir_categoria = df['category'] == 'HONORARY AWARD'
+df.drop(index=df[excluir_categoria].index, inplace=True)
 
-excluir_cateogoria = df['category'] == 'SPECIAL AWARD'
-df.drop(index=df[excluir_cateogoria].index, inplace = True)
+excluir_categoria = df['category'] == 'SPECIAL AWARD'
+df.drop(index=df[excluir_categoria].index, inplace=True)
 
-excluir_cateogoria = df['category'] == 'JEAN HERSHOLT HUMANITARIAN AWARD'
-df.drop(index=df[excluir_cateogoria].index, inplace = True)
+excluir_categoria = df['category'] == 'JEAN HERSHOLT HUMANITARIAN AWARD'
+df.drop(index=df[excluir_categoria].index, inplace=True)
 
-excluir_cateogoria = df['category'] == 'IRVING G. THALBERG MEMORIAL AWARD'
-df.drop(index=df[excluir_cateogoria].index, inplace = True)
+excluir_categoria = df['category'] == 'IRVING G. THALBERG MEMORIAL AWARD'
+df.drop(index=df[excluir_categoria].index, inplace=True)
 
 # Reemplazar caracteres
 def reemplazar_caracteres(texto):
@@ -63,15 +63,15 @@ def reemplazar_caracteres(texto):
 def caracteres_en_peliculas(texto):
   # Eliminar caracteres
   texto = texto.replace(',', '')
-  
+
   # Caracteres a reemplazar
   a = '&'
   b = '+'
-  
+
   # Reemplazar por
   x = 'plus'
   y = 'and'
-  
+
   return texto.replace(a, 'and').replace(b, 'plus')
 
 # Exclusivo para nombres del crew, p.e. cuando son más de uno
@@ -79,11 +79,13 @@ def caracteres_en_peliculas(texto):
 def separar_nombres(texto):
   # Convertir en cadenas y transformar a minusculas
   texto = str(texto).lower()
-  
+
   eliminar_caracteres = ['written by ',
                          'screenplay by ',
                          'production design ',
+                         'production design: ',
                          'set decoration ',
+                         'set decoration: ',
                          ', producer',
                          ', producers',
                          'music and lyric by ',
@@ -117,16 +119,76 @@ df['film'] = df['film'].apply(reemplazar_caracteres)
 # Tengo pensado hacerlo con el método split y join
 
 
-
 # Concatenar en formato predicados para exportar a Prolog
 # Convertir numero a string para concatenar
 df['year_ceremony'] = df['year_ceremony'].apply(str)
 
-# Identificar las columnas en el dataframe
-entrega = df.year_ceremony
-categoria = df.category
-receptor = df.name
-pelicula = df.film
+# Este método genera los predicados para todas las nominaciones y ganadores:
+def obtenerNominaciones():
+  # Identificar las columnas en el dataframe
+  entrega = df.year_ceremony
+  categoria = df.category
+  pelicula = df.film
 
-predicado = 'ganador(' + categoria + ', ' + entrega + ', ' + pelicula + ').'
-print(predicado.to_string(index = False))
+  predicado = 'nominacion(' + categoria + ', ' + \
+    entrega + ', ' + pelicula + ').'
+  print(predicado.to_string(index=False))
+
+# Este método excluye todas las otras categorías excepto una:
+def generar_predicados_categoria(categoria, nombre_predicado):
+  # Filtrar categorías
+  filtrar_categorias = (df['category'] == categoria)
+  temp_df = df[filtrar_categorias]
+
+  predicado = nombre_predicado + '(' + temp_df.film + ', ' + temp_df.name + ').'
+  print(predicado.to_string(index=False) + '\r')
+
+# Obtener nombre(s) de todos los nominados al OSCAR
+def obtenerNombresNominados():
+  # Obtener todos los predicados de acuerdo a su categoría
+  # y según el diccionario siguiente:
+  categories = {
+      'actor_in_a_leading_role': 'actor_principal',
+      'actor_in_a_supporting_role': 'actor_secundario',
+      'actress_in_a_leading_role': 'actriz_principal',
+      'actress_in_a_supporting_role': 'actriz_secundaria',
+      'animated_feature_film': 'pelicula_animada',
+      'cinematography': 'fotografia',
+      'costume_design': 'diseño_vestuario',
+      'directing': 'director',
+      'documentary_feature': 'documental',
+      'documentary_short_subject': 'corto_documental',
+      'film_editing': 'edicion',
+      'foreign_language_film': 'pelicula_extranjera',
+      'international_feature_film': 'pelicula_extranjera',
+      'makeup_and_hairstyling': 'maquillaje_y_peinado',
+      'music_original_score': 'sountrack_original',
+      'music_original_song': 'cancion_original',
+      'best_picture': 'mejor_pelicula',
+      'production_design': 'diseño_produccion',
+      'short_film_animated': 'corto_animado',
+      'short_film_live_action': 'cortometraje',
+      'sound_editing': 'edicion_sonido',
+      'sound_mixing': 'mezcla_sonido',
+      'visual_effects': 'efectos_visuales',
+      'writing_adapted_screenplay': 'guion_adaptado',
+      'writing_original_screenplay': 'guion_original',
+  }
+
+  # Convertir: llaves --> listas
+  def obtenerLlaves(dict):
+    return list(dict.keys())
+
+  # Convertir: valores --> listas
+  def obtenerValores(dict):
+    return list(dict.values())
+
+  # Listas de valores obtenidos del diccionario
+  categorias = obtenerLlaves(categories)
+  predicados = obtenerValores(categories)
+
+  for i in range(len(categories)):
+    generar_predicados_categoria(categorias[i], predicados[i])
+
+# obtenerNombresNominados()
+# obtenerNominaciones()
