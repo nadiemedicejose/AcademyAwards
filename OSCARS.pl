@@ -4,212 +4,203 @@ Este código es necesario para evitar errores similares a este:
 Que se puede traducir como alerta para predicados repetidos.
 */
 :- discontiguous
-    pelicula/2,
-    director/2,
-    musica/2,
+    actor_principal/2,
+    actor_secundario/2,
+    actriz_principal/2,
+    actriz_secundaria/2,
+    pelicula_animada/2,
     fotografia/2,
-    actor/2,
-    actriz/2,
-    productor/2,
-    guion/2,
+    diseño_vestuario/2,
+    director/2,
+    documental/2,
+    corto_documental/2,
     edicion/2,
-    maquillaje/2,
-    diseñoproduccion/2,
-    diseñovestuario/2,
-    efectosvisuales/2,
-    nominacion/2,
-    nominacion/3,
-    ganador/3.
-
+    pelicula_extranjera/2,
+    maquillaje_y_peinado/2,
+    sountrack_original/2,
+    cancion_original/2,
+    mejor_pelicula/2,
+    diseño_produccion/2,
+    corto_animado/2,
+    cortometraje/2,
+    edicion_sonido/2,
+    mezcla_sonido/2,
+    efectos_visuales/2,
+    guion_adaptado/2,
+    guion_original/2.
 
 %%%%%%%%%%%%%%%% PELICULAS %%%%%%%%%%%%%%%%
-pelicula(the_shape_of_water, 2018).
-director(the_shape_of_water, guillermo_del_toro).
-
-
-% --> JOSE <-- %
-
-% Nomadland (2020) obtuvo 6 nominaciones por: Mejor Película (productores),
-% Mejor Actriz, Mejor Director, Mejor Fotografía, Mejor Edición y Mejor Guión Adaptado.
-
-pelicula(nomadland, 2020).
-productor(nomadland, [mollye_asher, dan_janvey, frances_mcdormand, peter_spears, chloe_zhao]).
-director(nomadland, chloe_zhao).
-fotografia(nomadland, joshua_james_richards).
-edicion(nomadland, chloe_zhao).
-guion(nomadland, chloe_zhao).
-
-% Cast
-actriz(nomadland, frances_mcdormand).
-actor(nomadland, david_strathairn).
-
-% The Father (2021) obtuvo 6 nominaciones por: Mejor Película, Mejor Actor,
-% Mejor Actriz de Reparto, Mejor Guión Adaptado, Mejor Edición, Mejor Diseño de Producción.
-
-pelicula(the_father, 2021).
-productor(the_father, [david_parfitt, jean-lous_livi, philippe_carcassonne]).
-guion(the_father, [florian_zeller, christopher_hampton]).
-edicion(the_father, yorgos_lamprinos).
-diseñoproduccion(the_father, [peter_francis, cathy_featherstone]).
-
-% Cast
-actor(the_father, anthony_hopkins).
-actriz(the_father, olivia_colman).
-
-
-% --> LEO <-- %
-pelicula(le_mans66, 2019).
-pelicula(el_irlandes, 2019).
+% ACADEMY AWARDS 2020
+pelicula(a_beautiful_day_in_the_neighborhood, 2019).
+pelicula(richard_jewell, 2019).
+pelicula(how_to_train_your_dragon_the_hidden_world, 2019).
+pelicula(i_lost_my_body, 2019).
+pelicula(klaus, 2019).
+pelicula(missing_link, 2019).
+pelicula(the_lighthouse, 2019).
+pelicula(american_factory, 2019).
+pelicula(the_cave, 2019).
+pelicula(the_edge_of_democracy, 2019).
+pelicula(for_sama, 2019).
+pelicula(in_the_absence, 2019).
+pelicula(learning_to_skateboard_in_a_warzone_if_youre_a_girl, 2019).
+pelicula(life_overtakes_me, 2019).
+pelicula(st_louis_superman, 2019).
+pelicula(walk_run_cha-cha, 2019).
+pelicula(corpus_christi, 2019).
+pelicula(honeyland, 2019).
+pelicula(les_misérables, 2019).
+pelicula(pain_and_glory, 2019).
+pelicula(bombshell, 2019).
+pelicula(judy, 2019).
+pelicula(maleficent_mistress_of_evil, 2019).
+pelicula(toy_story_4, 2019).
+pelicula(rocketman, 2019).
+pelicula(breakthrough, 2019).
+pelicula(frozen_ii, 2019).
+pelicula(harriet, 2019).
+pelicula(dcera_daughter, 2019).
+pelicula(hair_love, 2019).
+pelicula(kitbull, 2019).
+pelicula(memorable, 2019).
+pelicula(sister, 2019).
+pelicula(brotherhood, 2019).
+pelicula(nefta_football_club, 2019).
+pelicula(the_neighbors_window, 2019).
+pelicula(saria, 2019).
+pelicula(a_sister, 2019).
+pelicula(ad_astra, 2019).
+pelicula(ford_v_ferrari, 2019).
+pelicula(avengers_endgame, 2019).
+pelicula(the_lion_king, 2019).
+pelicula(star_wars_the_rise_of_skywalker, 2019).
+pelicula(the_irishman, 2019).
 pelicula(jojo_rabbit, 2019).
 pelicula(joker, 2019).
-pelicula(mujercitas, 2019).
-pelicula(historia_de_un_matrimonio, 2019).
+pelicula(little_women, 2019).
+pelicula(the_two_popes, 2019).
+pelicula(knives_out, 2019).
+pelicula(marriage_story, 2019).
 pelicula(1917, 2019).
-pelicula(erase_una_vez_en_hollywood, 2019).
-pelicula(parasitos, 2019).
+pelicula(once_upon_a_timein_hollywood, 2019).
+pelicula(parasite, 2019).
 
-actor(dolor_y_gloria, antonio_banderas).
-actor(erase_una_vez_en_hollywood, leonardo_diCaprio).
-actor(historia_de_un_matrimonio, adam_driver).
-actor(joker, joaquin_phoenix).
-actor(los_dos_papas, jonathan_pryce).
+% ACADEMY AWARDS 2019
+pelicula(at_eternitys_gate, 2018).
+pelicula(the_wife, 2018).
+pelicula(incredibles_2, 2018).
+pelicula(mirai, 2018).
+pelicula(ralph_breaks_the_internet, 2018).
+pelicula(spider-man_into_the_spider-verse, 2018).
+pelicula(free_solo, 2018).
+pelicula(hale_county_this_morning_this_evening, 2018).
+pelicula(minding_the_gap, 2018).
+pelicula(of_fathers_and_sons, 2018).
+pelicula(black_sheep, 2018).
+pelicula(end_game, 2018).
+pelicula(lifeboat, 2018).
+pelicula(a_night_at_the_garden, 2018).
+pelicula(period_end_of_sentence, 2018).
+pelicula(capernaum, 2018).
+pelicula(cold_war, 2018).
+pelicula(never_look_away, 2018).
+pelicula(shoplifters, 2018).
+pelicula(border, 2018).
+pelicula(mary_queen_of_scots, 2018).
+pelicula(isle_of_dogs, 2018).
+pelicula(rbg, 2018).
+pelicula(mary_poppins_returns, 2018).
+pelicula(animal_behaviour, 2018).
+pelicula(bao, 2018).
+pelicula(late_afternoon, 2018).
+pelicula(one_small_step, 2018).
+pelicula(weekends, 2018).
+pelicula(detainment, 2018).
+pelicula(fauve, 2018).
+pelicula(marguerite, 2018).
+pelicula(mother, 2018).
+pelicula(skin, 2018).
+pelicula(a_quiet_place, 2018).
+pelicula(black_panther, 2018).
+pelicula(bohemian_rhapsody, 2018).
+pelicula(avengers_infinity_war, 2018).
+pelicula(christopher_robin, 2018).
+pelicula(first_man, 2018).
+pelicula(ready_player_one, 2018).
+pelicula(solo_a_star_wars_story, 2018).
+pelicula(the_ballad_of_buster_scruggs, 2018).
+pelicula(blackkklansman, 2018).
+pelicula(can_you_ever_forgive_me, 2018).
+pelicula(if_beale_street_could_talk, 2018).
+pelicula(a_star_is_born, 2018).
+pelicula(the_favourite, 2018).
+pelicula(first_reformed, 2018).
+pelicula(green_book, 2018).
+pelicula(roma, 2018).
+pelicula(vice, 2018).
 
-actriz(harriet, cynthia_erivo).
-actriz(mujercitas, saoirse_ronan).
-actriz(judy, renee_zellweger).
-actriz(el_escandalo, charlizetheron).
-actriz(historia_de_un_matrimonio, scarlett_johansson).
-
-productor(le_mans66, [peter_chernin, alex_young, lucas_foster, kevin_halloran, james_mangold]).
-productor(el_irlandes, [martin_scorsese, robert_de_niro, jane_rosenthal, gaston_pavlovich, emma_tillinger_koskoff]).
-productor(jojo_rabbit, [carthew_neal, taika_waititi, chelsea_winstanley]).
-productor(joker, [todd_phillips, bradley_cooper, emma_tillinger_koskoff]).
-
-% --> MIKE <-- %
-
-% Entrega 2019 Avengers End-Games
-pelicula(avengers-endgame,2019).
-productor(avengers-enndgame,kevin_feige).
-director(avengers-endgame, [anthony_russo, joe_russo]).
-guion(avengers-endgame, [christopher_markus, stephen_mcfeely]).
-musica(avenger-endgame, alan_silvestri).
-
-% Cast
-actor(avengers-endgame, robert_downey_jr).
-actor(avengers-endgame, chris_evans).
-actor(avengers-endgame, mark_ruffalo).
-actor(avengers-endgame, chris_hemsworth).
-actor(avengers-endgame, scarlett_johansson).
-actor(avengers-endgame, jeremy_renner).
-actor(avengers-endgame, don_cheadle).
-actor(avengers-endgame, paul_rudd).
-actor(avenger-endgame, brie_larson).
-actor(avenger-endgame, karen_gillan).
-actor(avenger-endgame, danai_gurira).
-actor(avenger-endgame, benedict_wong).
-actor(avenger-endgame, jon_favreau).
-actor(avenger-endgame, bradley_cooper).
-actor(avenger-endgame, gwyneth_paltrow).
-actor(avenger-endgame, josh_brolin).
-
-% Pelicula en Pathera Black 2019
-pelicula(patherbalck, 2019).
-director(patherblack, ryan_coogler).
-productor(patherblack, kevin_feige).
-guion(patherblack, [ryan_coogler, joe_robert_cole]).
-musica(patherblack, [ludwing_goransoon, kendrick_lamar]).
-fotografia(patherblack, rachel_morrison).
-vestuario(patherblack, ruth_e_carter).
-
-% Cast
-actor(patherblack, chadwick_boseman).
-actor(patherblack, michael_b_jordan).
-actor(patherblack, danai_gurira).
-actor(patherblack, letitia_wright).
-actor(patherblack, daniel_kaluuya).
-actor(patherblack, martin_freeman).
-actor(patherblack, winston_duke).
-actor(patherblack, angela_bassett).
-actor(patherblack, foress_whitaker).
-actor(patherblack, andy_serkis).
-
-% Pelicula BlacKkKlansman 2019
-pelicula(blackkklansman,2019).
-director(blackkklansman, spike_lee).
-productor(blackkklansman, [jason_blum, spike_lee, raymond_manshield, sean_mckittrick, jordan_peele]).
-guion(blackkklansman, spike_lee).
-musica(blackkklansman, terence_blanchard).
-fotografia(blackkklansman, chaysen_irvin).
-
-% Cast
-actor(blackkklansman, john_david_washington).
-actor(blackkklansman, adam_driver).
-actor(blackkklansman, topher_grace).
-actor(blackkklansman, jasper_paakkonen).
-actor(blackkklansman, corey_hawkins).
-actor(blackkklansman, paul_walter_hauser).
-actor(blackkklansman, harry_belafonte).
-
-
-% --> SOFI <-- %
-
-% Pelicula El instante mas oscuro (darkest hour) 2017 nominación 2018
-pelicula(las_horas_oscuras,2017).
-productor(las_horas_oscuras, [anthony_mcCarten, douglas_urbanski, lisa_bruce, tim_bevan, eric_fallner, james_biddle]).
-director(las_horas_oscuras, joe_wright).
-fotografia(las_horas_oscuras,bruno_delbonnel).
-musica(las_horas_oscuras, dario_marianelli).
-diseñovestuario(las_horas_oscuras, jacqueline_durran).
-edicion(las_horas_oscuras, valerio_bonelli).
-maquillaje(las_horas_oscuras, [kazujiro_tsuji, ivana_primorac, luck_sibbick]).
-diseñoproduccion(las_horas_oscuras, [sarah_greenwood, katie_spencer]).
-efectosvisuales(las_horas_oscuras, gary_oldman).
-guion(las_horas_oscuras, anthony_mcCarten).
-
-% Cast
-actor(las_horas_oscuras,gary_oldman).
-actriz(las_horas_oscuras,kiristin_scott_thomas).
-
-% Película dunkerque 2017 nominación 2018
-pelicula(dunkerque,2017).
-productor(dunkerque, [christopher_nolan, emma_thomas]).
-director(dunkerque, christopher_nolan).
-fotografia(dunkerque, hoyte_van_hoytema).
-musica(dunkerque, hans_zimmer).
-edicion(dunkerque, [richard_king, alex_gibson]).
-maquillaje(dunkerque, [kazujiro_tsuji, david_malinowski, luck_sibbick]).
-diseñoproduccion(dunkerque, [nathan_crowley, gary_fettis]).
-efectosvisuales(dunkerque, gary_oldman).
-guion(dunkerque, chhristopher_nolan).
-
-% Pelicula dejame salir 2017 nominacion 2018
-pelicula(dejame_salir,2018).
-productor(dejame_salir, [sean_mcKittrick, jason_blum, edward_h, jordan_peele]).
-director(dejame_salir,jordan_peele ).
-fotografia(dejame_salir, toby_oliver).
-musica(dejame_salir, michael_abels).
-diseñovestuario(dejame_salir, nadine_haders).
-edicion(dejame_salir, gregory_plotkin ).
-maquillaje(dejame_salir, malenie_deforrest).
-diseñoproduccion(dejame_salir, [blumhouse_productions, qc_entertainment]).
-guion(dejame_salir, jordan_peele ).
-
-% Cast
-actor(dejame_salir, daniel_kaluuya).
-actriz(dejame_salir,allison_williams).
-actriz(dejame_salir,catherine_keenner).
-actriz(dejame_salir,betty_gabriel).
-actriz(dejame_salir,erika_elexander).
-actriz(dejame_salir,lupita_nyong).
-actriz(dejame_salir,elisabeth_moss).
-actriz(dejame_salir,geraldine_singer).
-actriz(dejame_salir,ashley_leConte).
-actriz(dejame_salir,kara_hayward).
-actriz(dejame_salir,jane_allen).
-actriz(dejame_salir,julie_ann_doan).
+% ACADEMY AWARDS 2018
+pelicula(roman_j_israel_esq, 2017).
+pelicula(the_florida_project, 2017).
+pelicula(all_the_money_in_the_world, 2017).
+pelicula(the_boss_baby, 2017).
+pelicula(the_breadwinner, 2017).
+pelicula(ferdinand, 2017).
+pelicula(loving_vincent, 2017).
+pelicula(abacus_small_enough_to_jail, 2017).
+pelicula(faces_places, 2017).
+pelicula(icarus, 2017).
+pelicula(last_men_in_aleppo, 2017).
+pelicula(strong_island, 2017).
+pelicula(edithpluseddie, 2017).
+pelicula(heaven_is_a_traffic_jam_on_the_405, 2017).
+pelicula(heroine, 2017).
+pelicula(knife_skills, 2017).
+pelicula(traffic_stop, 2017).
+pelicula(i_tonya, 2017).
+pelicula(a_fantastic_woman, 2017).
+pelicula(the_insult, 2017).
+pelicula(loveless, 2017).
+pelicula(on_body_and_soul, 2017).
+pelicula(the_square, 2017).
+pelicula(victoria_and_abdul, 2017).
+pelicula(wonder, 2017).
+pelicula(coco, 2017).
+pelicula(marshall, 2017).
+pelicula(the_greatest_showman, 2017).
+pelicula(phantom_thread, 2017).
+pelicula(the_post, 2017).
+pelicula(beauty_and_the_beast, 2017).
+pelicula(darkest_hour, 2017).
+pelicula(dear_basketball, 2017).
+pelicula(garden_party, 2017).
+pelicula(lou, 2017).
+pelicula(negative_space, 2017).
+pelicula(revolting_rhymes, 2017).
+pelicula(dekalb_elementary, 2017).
+pelicula(the_eleven_oclock, 2017).
+pelicula(my_nephew_emmett, 2017).
+pelicula(the_silent_child, 2017).
+pelicula(watu_woteall_of_us, 2017).
+pelicula(baby_driver, 2017).
+pelicula(dunkirk, 2017).
+pelicula(blade_runner_2049, 2017).
+pelicula(guardians_of_the_galaxy_vol_2, 2017).
+pelicula(kong_skull_island, 2017).
+pelicula(star_wars_the_last_jedi, 2017).
+pelicula(war_for_the_planet_of_the_apes, 2017).
+pelicula(call_me_by_your_name, 2017).
+pelicula(the_disaster_artist, 2017).
+pelicula(logan, 2017).
+pelicula(mollys_game, 2017).
+pelicula(mudbound, 2017).
+pelicula(the_big_sick, 2017).
+pelicula(get_out, 2017).
+pelicula(lady_bird, 2017).
+pelicula(the_shape_of_water, 2017).
+pelicula(three_billboards_outside_ebbing_missouri, 2017).
 
 %%%%%%%%%%%%%%%% THE WINNERS %%%%%%%%%%%%%%%%
-
 % ACADEMY AWARDS 2020
 ganador(actor_in_a_leading_role, 2020, joker).
 ganador(actor_in_a_supporting_role, 2020, once_upon_a_timein_hollywood).
@@ -661,6 +652,379 @@ nominacion(writing_original_screenplay, 2020, marriage_story).
 nominacion(writing_original_screenplay, 2020, 1917).
 nominacion(writing_original_screenplay, 2020, once_upon_a_timein_hollywood).
 nominacion(writing_original_screenplay, 2020, parasite).
+
+% ACADEMY AWARDS 2018 NOMINEES
+actor_principal(call_me_by_your_name, timothée_chalamet).
+actor_principal(phantom_thread, daniel_day-lewis).
+actor_principal(get_out, daniel_kaluuya).
+actor_principal(darkest_hour, gary_oldman).
+actor_principal(roman_j_israel_esq, denzel_washington).
+actor_secundario(the_florida_project, willem_dafoe).
+actor_secundario(three_billboards_outside_ebbing_missouri, woody_harrelson).
+actor_secundario(the_shape_of_water, richard_jenkins).
+actor_secundario(all_the_money_in_the_world, christopher_plummer).
+actor_secundario(three_billboards_outside_ebbing_missouri, sam_rockwell).
+actriz_principal(the_shape_of_water, sally_hawkins).
+actriz_principal(three_billboards_outside_ebbing_missouri, frances_mcdormand).
+actriz_principal(i_tonya, margot_robbie).
+actriz_principal(lady_bird, saoirse_ronan).
+actriz_principal(the_post, meryl_streep).
+actriz_secundaria(mudbound, mary_j_blige).
+actriz_secundaria(i_tonya, allison_janney).
+actriz_secundaria(phantom_thread, lesley_manville).
+actriz_secundaria(lady_bird, laurie_metcalf).
+actriz_secundaria(the_shape_of_water, octavia_spencer).
+pelicula_animada(the_boss_baby, [tom_mcgrath,ramsey_naito]).
+pelicula_animada(the_breadwinner, [nora_twomey,anthony_leo]).
+pelicula_animada(coco, [lee_unkrich,darla_k_anderson]).
+pelicula_animada(ferdinand, [carlos_saldanha,lori_forte]).
+pelicula_animada(loving_vincent, [dorota_kobiela,hugh_welchman,ivan_mactaggart]).
+fotografia(blade_runner_2049, roger_a_deakins).
+fotografia(darkest_hour, bruno_delbonnel).
+fotografia(dunkirk, hoyte_van_hoytema).
+fotografia(mudbound, rachel_morrison).
+fotografia(the_shape_of_water, dan_laustsen).
+diseño_vestuario(beauty_and_the_beast, jacqueline_durran).
+diseño_vestuario(darkest_hour, jacqueline_durran).
+diseño_vestuario(phantom_thread, mark_bridges).
+diseño_vestuario(the_shape_of_water, luis_sequeira).
+diseño_vestuario(victoria_and_abdul, consolata_boyle).
+director(dunkirk, christopher_nolan).
+director(get_out, jordan_peele).
+director(lady_bird, greta_gerwig).
+director(phantom_thread, paul_thomas_anderson).
+director(the_shape_of_water, guillermo_del_toro).
+documental(abacus_small_enough_to_jail, [steve_james,mark_mitten,julie_goldman]).
+documental(faces_places, [agnès_varda,jr,rosalie_varda]).
+documental(icarus, [bryan_fogel,dan_cogan]).
+documental(last_men_in_aleppo, [feras_fayyad,kareem_abeed,søren_steen_jespersen]).
+documental(strong_island, [yance_ford,joslyn_barnes]).
+corto_documental(edithpluseddie, [laura_checkoway,thomas_lee_wright]).
+corto_documental(heaven_is_a_traffic_jam_on_the_405, frank_stiefel).
+corto_documental(heroine, [elaine_mcmillion_sheldon,kerrin_sheldon]).
+corto_documental(knife_skills, thomas_lennon).
+corto_documental(traffic_stop, [kate_davis,david_heilbroner]).
+edicion(baby_driver, [paul_machliss,jonathan_amos]).
+edicion(dunkirk, lee_smith).
+edicion(i_tonya, tatiana_s_riegel).
+edicion(the_shape_of_water, sidney_wolinsky).
+edicion(three_billboards_outside_ebbing_missouri, jon_gregory).
+pelicula_extranjera(a_fantastic_woman, chile).
+pelicula_extranjera(the_insult, lebanon).
+pelicula_extranjera(loveless, russia).
+pelicula_extranjera(on_body_and_soul, hungary).
+pelicula_extranjera(the_square, sweden).
+maquillaje_y_peinado(darkest_hour, [kazuhiro_tsuji,david_malinowski,lucy_sibbick]).
+maquillaje_y_peinado(victoria_and_abdul, [daniel_phillips,lou_sheppard]).
+maquillaje_y_peinado(wonder, arjen_tuiten).
+sountrack_original(dunkirk, hans_zimmer).
+sountrack_original(phantom_thread, jonny_greenwood).
+sountrack_original(the_shape_of_water, alexandre_desplat).
+sountrack_original(star_wars_the_last_jedi, john_williams).
+sountrack_original(three_billboards_outside_ebbing_missouri, carter_burwell).
+cancion_original(mudbound, [mary_j_blige,raphael_saadiq,taura_stinson]).
+cancion_original(call_me_by_your_name, sufjan_stevens).
+cancion_original(coco, [kristen_anderson-lopez,robert_lopez]).
+cancion_original(marshall, [diane_warren,lonnie_r_lynn]).
+cancion_original(the_greatest_showman, [benj_pasek,justin_paul]).
+mejor_pelicula(call_me_by_your_name, [peter_spears,luca_guadagnino,emilie_georges,marco_morabitos]).
+mejor_pelicula(darkest_hour, [tim_bevan,eric_fellner,lisa_bruce,anthony_mccarten,douglas_urbanskis]).
+mejor_pelicula(dunkirk, [emma_thomas,christopher_nolans]).
+mejor_pelicula(get_out, [sean_mckittrick,jason_blum,edward_h_hamm_jr,jordan_peeles]).
+mejor_pelicula(lady_bird, [scott_rudin,eli_bush,evelyn_oneills]).
+mejor_pelicula(phantom_thread, [joanne_sellar,paul_thomas_anderson,megan_ellison,daniel_lupis]).
+mejor_pelicula(the_post, [amy_pascal,steven_spielberg,kristie_macosko_kriegers]).
+mejor_pelicula(the_shape_of_water, [guillermo_del_toro,j_miles_dales]).
+mejor_pelicula(three_billboards_outside_ebbing_missouri, [graham_broadbent,pete_czernin,martin_mcdonaghs]).
+diseño_produccion(beauty_and_the_beast, [sarah_greenwood,katie_spencer]).
+diseño_produccion(blade_runner_2049, [dennis_gassner,alessandra_querzola]).
+diseño_produccion(darkest_hour, [sarah_greenwood,katie_spencer]).
+diseño_produccion(dunkirk, [nathan_crowley,gary_fettis]).
+diseño_produccion(the_shape_of_water, [paul_denham_austerberry,shane_vieau,jeffrey_a_melvin]).
+corto_animado(dear_basketball, [glen_keane,kobe_bryant]).
+corto_animado(garden_party, [victor_caire,gabriel_grapperon]).
+corto_animado(lou, [dave_mullins,dana_murray]).
+corto_animado(negative_space, [max_porter,ru_kuwahata]).
+corto_animado(revolting_rhymes, [jakob_schuh,jan_lachauer]).
+cortometraje(dekalb_elementary, reed_van_dyk).
+cortometraje(the_eleven_oclock, [derin_seale,josh_lawson]).
+cortometraje(my_nephew_emmett, [kevin_wilson,jr]).
+cortometraje(the_silent_child, [chris_overton,rachel_shenton]).
+cortometraje(watu_woteall_of_us, [katja_benrath,tobias_rosen]).
+edicion_sonido(baby_driver, julian_slater).
+edicion_sonido(blade_runner_2049, [mark_mangini,theo_green]).
+edicion_sonido(dunkirk, [richard_king,alex_gibson]).
+edicion_sonido(the_shape_of_water, [nathan_robitaille,nelson_ferreira]).
+edicion_sonido(star_wars_the_last_jedi, [matthew_wood,ren_klyce]).
+mezcla_sonido(baby_driver, [julian_slater,tim_cavagin,mary_h_ellis]).
+mezcla_sonido(blade_runner_2049, [ron_bartlett,doug_hemphill,mac_ruth]).
+mezcla_sonido(dunkirk, [gregg_landaker,gary_a_rizzo,mark_weingarten]).
+mezcla_sonido(the_shape_of_water, [christian_cooke,brad_zoern,glen_gauthier]).
+mezcla_sonido(star_wars_the_last_jedi, [david_parker,michael_semanick,ren_klyce,stuart_wilson]).
+efectos_visuales(blade_runner_2049, [john_nelson,gerd_nefzer,paul_lambert,richard_r_hoover]).
+efectos_visuales(guardians_of_the_galaxy_vol_2, [christopher_townsend,guy_williams,jonathan_fawkner,dan_sudick]).
+efectos_visuales(kong_skull_island, [stephen_rosenbaum,jeff_white,scott_benza,mike_meinardus]).
+efectos_visuales(star_wars_the_last_jedi, [ben_morris,mike_mulholland,neal_scanlan,chris_corbould]).
+efectos_visuales(war_for_the_planet_of_the_apes, [joe_letteri,daniel_barrett,dan_lemmon,joel_whist]).
+guion_adaptado(call_me_by_your_name, james_ivory).
+guion_adaptado(the_disaster_artist, [scott_neustadter,michael_h_weber]).
+guion_adaptado(logan, [scott_frank,james_mangold,michael_green]).
+guion_adaptado(mollys_game, aaron_sorkin).
+guion_adaptado(mudbound, [virgil_williams,dee_rees]).
+guion_original(the_big_sick, [emily_v_gordon,kumail_nanjiani]).
+guion_original(get_out, jordan_peele).
+guion_original(lady_bird, greta_gerwig).
+guion_original(the_shape_of_water, [guillermo_del_toro,vanessa_taylor]).
+guion_original(three_billboards_outside_ebbing_missouri, martin_mcdonagh).
+
+% ACADEMY AWARDS 2019 NOMINEES
+actor_principal(vice, christian_bale).
+actor_principal(a_star_is_born, bradley_cooper).
+actor_principal(at_eternitys_gate, willem_dafoe).
+actor_principal(bohemian_rhapsody, rami_malek).
+actor_principal(green_book, viggo_mortensen).
+actor_secundario(green_book, mahershala_ali).
+actor_secundario(blackkklansman, adam_driver).
+actor_secundario(a_star_is_born, sam_elliott).
+actor_secundario(can_you_ever_forgive_me, richard_e_grant).
+actor_secundario(vice, sam_rockwell).
+actriz_principal(roma, yalitza_aparicio).
+actriz_principal(the_wife, glenn_close).
+actriz_principal(the_favourite, olivia_colman).
+actriz_principal(a_star_is_born, lady_gaga).
+actriz_principal(can_you_ever_forgive_me, melissa_mccarthy).
+actriz_secundaria(vice, amy_adams).
+actriz_secundaria(roma, marina_de_tavira).
+actriz_secundaria(if_beale_street_could_talk, regina_king).
+actriz_secundaria(the_favourite, emma_stone).
+actriz_secundaria(the_favourite, rachel_weisz).
+pelicula_animada(incredibles_2, [brad_bird,john_walker,nicole_paradis_grindle]).
+pelicula_animada(isle_of_dogs, [wes_anderson,scott_rudin,steven_rales,jeremy_dawson]).
+pelicula_animada(mirai, [mamoru_hosoda,yuichiro_saito]).
+pelicula_animada(ralph_breaks_the_internet, [rich_moore,phil_johnston,clark_spencer]).
+pelicula_animada(spider-man_into_the_spider-verse, [bob_persichetti,peter_ramsey,rodney_rothman,phil_lord,christopher_miller]).
+fotografia(cold_war, lukasz_zal).
+fotografia(the_favourite, robbie_ryan).
+fotografia(never_look_away, caleb_deschanel).
+fotografia(roma, alfonso_cuarón).
+fotografia(a_star_is_born, matthew_libatique).
+diseño_vestuario(the_ballad_of_buster_scruggs, mary_zophres).
+diseño_vestuario(black_panther, ruth_carter).
+diseño_vestuario(the_favourite, sandy_powell).
+diseño_vestuario(mary_poppins_returns, sandy_powell).
+diseño_vestuario(mary_queen_of_scots, alexandra_byrne).
+director(blackkklansman, spike_lee).
+director(cold_war, pawel_pawlikowski).
+director(the_favourite, yorgos_lanthimos).
+director(roma, alfonso_cuarón).
+director(vice, adam_mckay).
+documental(free_solo, [elizabeth_chai_vasarhelyi,jimmy_chin,evan_hayes,shannon_dill]).
+documental(hale_county_this_morning_this_evening, [ramell_ross,joslyn_barnes,su_kim]).
+documental(minding_the_gap, [bing_liu,diane_quon]).
+documental(of_fathers_and_sons, [talal_derki,ansgar_frerich,eva_kemme,tobias_n_siebert]).
+documental(rbg, [betsy_west,julie_cohen]).
+corto_documental(black_sheep, [ed_perkins,jonathan_chinn]).
+corto_documental(end_game, [rob_epstein,jeffrey_friedman]).
+corto_documental(lifeboat, [skye_fitzgerald,bryn_mooser]).
+corto_documental(a_night_at_the_garden, marshall_curry).
+corto_documental(period_end_of_sentence, [rayka_zehtabchi,melissa_berton]).
+edicion(blackkklansman, barry_alexander_brown).
+edicion(bohemian_rhapsody, john_ottman).
+edicion(the_favourite, yorgos_mavropsaridis).
+edicion(green_book, patrick_j_don_vito).
+edicion(vice, hank_corwin).
+pelicula_extranjera(capernaum, lebanon).
+pelicula_extranjera(cold_war, poland).
+pelicula_extranjera(never_look_away, germany).
+pelicula_extranjera(roma, mexico).
+pelicula_extranjera(shoplifters, japan).
+maquillaje_y_peinado(border, [göran_lundström,pamela_goldammer]).
+maquillaje_y_peinado(mary_queen_of_scots, [jenny_shircore,marc_pilcher,jessica_brooks]).
+maquillaje_y_peinado(vice, [greg_cannom,kate_biscoe,patricia_dehaney]).
+sountrack_original(black_panther, ludwig_goransson).
+sountrack_original(blackkklansman, terence_blanchard).
+sountrack_original(if_beale_street_could_talk, nicholas_britell).
+sountrack_original(isle_of_dogs, alexandre_desplat).
+sountrack_original(mary_poppins_returns, marc_shaiman).
+cancion_original(black_panther, [kendrick_lamar,mark_sounwave_spears,anthony_top_dawg_tiffith,sza]).
+cancion_original(rbg, diane_warren).
+cancion_original(mary_poppins_returns, [marc_shaiman,scott_wittman]).
+cancion_original(a_star_is_born, [lady_gaga,mark_ronson,anthony_rossomando,andrew_wyatt]).
+cancion_original(the_ballad_of_buster_scruggs, [gillian_welch,david_rawlings]).
+mejor_pelicula(black_panther, kevin_feige).
+mejor_pelicula(blackkklansman, [sean_mckittrick,jason_blum,raymond_mansfield,jordan_peele,spike_lees]).
+mejor_pelicula(bohemian_rhapsody, graham_king).
+mejor_pelicula(the_favourite, [ceci_dempsey,ed_guiney,lee_magiday,yorgos_lanthimoss]).
+mejor_pelicula(green_book, [jim_burke,charles_b_wessler,brian_currie,peter_farrelly,nick_vallelongas]).
+mejor_pelicula(roma, [gabriela_rodríguez,alfonso_cuaróns]).
+mejor_pelicula(a_star_is_born, [bill_gerber,bradley_cooper,lynette_howell_taylors]).
+mejor_pelicula(vice, [dede_gardner,jeremy_kleiner,adam_mckay,kevin_messicks]).
+diseño_produccion(black_panther, [hannah_beachler,jay_hart]).
+diseño_produccion(the_favourite, [fiona_crombie,alice_felton]).
+diseño_produccion(first_man, [nathan_crowley,kathy_lucas]).
+diseño_produccion(mary_poppins_returns, [john_myhre,gordon_sim]).
+diseño_produccion(roma, [eugenio_caballero,bárbara_enríquez]).
+corto_animado(animal_behaviour, [alison_snowden,david_fine]).
+corto_animado(bao, [domee_shi,becky_neiman-cobb]).
+corto_animado(late_afternoon, [louise_bagnall,nuria_gonzález_blanco]).
+corto_animado(one_small_step, [andrew_chesworth,bobby_pontillas]).
+corto_animado(weekends, trevor_jimenez).
+cortometraje(detainment, [vincent_lambe,darren_mahon]).
+cortometraje(fauve, [jeremy_comte,maria_gracia_turgeon]).
+cortometraje(marguerite, [marianne_farley,marie-hélène_panisset]).
+cortometraje(mother, [rodrigo_sorogoyen,maría_del_puy_alvarado]).
+cortometraje(skin, [guy_nattiv,jaime_ray_newman]).
+edicion_sonido(black_panther, [benjamin_a_burtt,steve_boeddeker]).
+edicion_sonido(bohemian_rhapsody, [john_warhurst,nina_hartstone]).
+edicion_sonido(first_man, [ai-ling_lee,mildred_iatrou_morgan]).
+edicion_sonido(a_quiet_place, [ethan_van_der_ryn,erik_aadahl]).
+edicion_sonido(roma, [sergio_díaz,skip_lievsay]).
+mezcla_sonido(black_panther, [steve_boeddeker,brandon_proctor,peter_devlin]).
+mezcla_sonido(bohemian_rhapsody, [paul_massey,tim_cavagin,john_casali]).
+mezcla_sonido(first_man, [jon_taylor,frank_a_montaño,ai-ling_lee,mary_h_ellis]).
+mezcla_sonido(roma, [skip_lievsay,craig_henighan,josé_antonio_garcía]).
+mezcla_sonido(a_star_is_born, [tom_ozanich,dean_zupancic,jason_ruder,steve_morrow]).
+efectos_visuales(avengers_infinity_war, [dan_deleeuw,kelly_port,russell_earl,dan_sudick]).
+efectos_visuales(christopher_robin, [christopher_lawrence,michael_eames,theo_jones,chris_corbould]).
+efectos_visuales(first_man, [paul_lambert,ian_hunter,tristan_myles,jd_schwalm]).
+efectos_visuales(ready_player_one, [roger_guyett,grady_cofer,matthew_e_butler,david_shirk]).
+efectos_visuales(solo_a_star_wars_story, [rob_bredow,patrick_tubach,neal_scanlan,dominic_tuohy]).
+guion_adaptado(the_ballad_of_buster_scruggs, [joel_coen,ethan_coen]).
+guion_adaptado(blackkklansman, [charlie_wachtel,david_rabinowitz,kevin_willmott,spike_lee]).
+guion_adaptado(can_you_ever_forgive_me, [nicole_holofcener,jeff_whitty]).
+guion_adaptado(if_beale_street_could_talk, barry_jenkins).
+guion_adaptado(a_star_is_born, [eric_roth,bradley_cooper,will_fetters]).
+guion_original(the_favourite, [deborah_davis,tony_mcnamara]).
+guion_original(first_reformed, paul_schrader).
+guion_original(green_book, [nick_vallelonga,brian_currie,peter_farrelly]).
+guion_original(roma, alfonso_cuarón).
+guion_original(vice, adam_mckay).
+
+% ACADEMY AWARDS 2020 THE NOMINEES
+actor_principal(pain_and_glory, antonio_banderas).
+actor_principal(once_upon_a_timein_hollywood, leonardo_dicaprio).
+actor_principal(marriage_story, adam_driver).
+actor_principal(joker, joaquin_phoenix).
+actor_principal(the_two_popes, jonathan_pryce).
+actor_secundario(a_beautiful_day_in_the_neighborhood, tom_hanks).
+actor_secundario(the_two_popes, anthony_hopkins).
+actor_secundario(the_irishman, al_pacino).
+actor_secundario(the_irishman, joe_pesci).
+actor_secundario(once_upon_a_timein_hollywood, brad_pitt).
+actriz_principal(harriet, cynthia_erivo).
+actriz_principal(marriage_story, scarlett_johansson).
+actriz_principal(little_women, saoirse_ronan).
+actriz_principal(bombshell, charlize_theron).
+actriz_principal(judy, renée_zellweger).
+actriz_secundaria(richard_jewell, kathy_bates).
+actriz_secundaria(marriage_story, laura_dern).
+actriz_secundaria(jojo_rabbit, scarlett_johansson).
+actriz_secundaria(little_women, florence_pugh).
+actriz_secundaria(bombshell, margot_robbie).
+pelicula_animada(how_to_train_your_dragon_the_hidden_world, [dean_deblois,bradford_lewis,bonnie_arnold]).
+pelicula_animada(i_lost_my_body, [jérémy_clapin,marc_du_pontavice]).
+pelicula_animada(klaus, [sergio_pablos,jinko_gotoh,marisa_román]).
+pelicula_animada(missing_link, [chris_butler,arianne_sutner,travis_knight]).
+pelicula_animada(toy_story_4, [josh_cooley,mark_nielsen,jonas_rivera]).
+fotografia(the_irishman, rodrigo_prieto).
+fotografia(joker, lawrence_sher).
+fotografia(the_lighthouse, jarin_blaschke).
+fotografia(1917, roger_deakins).
+fotografia(once_upon_a_timein_hollywood, robert_richardson).
+diseño_vestuario(the_irishman, [sandy_powell,christopher_peterson]).
+diseño_vestuario(jojo_rabbit, mayes_c_rubeo).
+diseño_vestuario(joker, mark_bridges).
+diseño_vestuario(little_women, jacqueline_durran).
+diseño_vestuario(once_upon_a_timein_hollywood, arianne_phillips).
+director(the_irishman, martin_scorsese).
+director(joker, todd_phillips).
+director(1917, sam_mendes).
+director(once_upon_a_timein_hollywood, quentin_tarantino).
+director(parasite, bong_joon_ho).
+documental(american_factory, [steven_bognar,julia_reichert,jeff_reichert]).
+documental(the_cave, [feras_fayyad,kirstine_barfod,sigrid_dyekjær]).
+documental(the_edge_of_democracy, [petra_costa,joanna_natasegara,shane_boris,tiago_pavan]).
+documental(for_sama, [waad_al-kateab,edward_watts]).
+documental(honeyland, [ljubo_stefanov,tamara_kotevska,atanas_georgiev]).
+corto_documental(in_the_absence, [yi_seung-jun,gary_byung-seok_kam]).
+corto_documental(learning_to_skateboard_in_a_warzone_if_youre_a_girl, [carol_dysinger,elena_andreicheva]).
+corto_documental(life_overtakes_me, [john_haptas,kristine_samuelson]).
+corto_documental(st_louis_superman, [smriti_mundhra,sami_khan]).
+corto_documental(walk_run_cha-cha, [laura_nix,colette_sandstedt]).
+edicion(ford_v_ferrari, [michael_mccusker,andrew_buckland]).
+edicion(the_irishman, thelma_schoonmaker).
+edicion(jojo_rabbit, tom_eagles).
+edicion(joker, jeff_groth).
+edicion(parasite, yang_jinmo).
+pelicula_extranjera(corpus_christi, poland).
+pelicula_extranjera(honeyland, north_macedonia).
+pelicula_extranjera(les_misérables, france).
+pelicula_extranjera(pain_and_glory, spain).
+pelicula_extranjera(parasite, south_korea).
+maquillaje_y_peinado(bombshell, [kazu_hiro,anne_morgan,vivian_baker]).
+maquillaje_y_peinado(joker, [nicki_ledermann,kay_georgiou]).
+maquillaje_y_peinado(judy, jeremy_woodhead).
+maquillaje_y_peinado(maleficent_mistress_of_evil, [paul_gooch,arjen_tuiten,david_white]).
+maquillaje_y_peinado(1917, [naomi_donne,tristan_versluis,rebecca_cole]).
+sountrack_original(joker, hildur_guðnadóttir).
+sountrack_original(little_women, alexandre_desplat).
+sountrack_original(marriage_story, randy_newman).
+sountrack_original(1917, thomas_newman).
+sountrack_original(star_wars_the_rise_of_skywalker, john_williams).
+cancion_original(toy_story_4, randy_newman).
+cancion_original(rocketman, [elton_john,bernie_taupin]).
+cancion_original(breakthrough, diane_warren).
+cancion_original(frozen_ii, [kristen_anderson-lopez,robert_lopez]).
+cancion_original(harriet, [joshuah_brian_campbell,cynthia_erivo]).
+mejor_pelicula(ford_v_ferrari, [peter_chernin,jenno_topping,james_mangolds]).
+mejor_pelicula(the_irishman, [martin_scorsese,robert_de_niro,jane_rosenthal,emma_tillinger_koskoffs]).
+mejor_pelicula(jojo_rabbit, [carthew_neal,taika_waititi,chelsea_winstanleys]).
+mejor_pelicula(joker, [todd_phillips,bradley_cooper,emma_tillinger_koskoffs]).
+mejor_pelicula(little_women, amy_pascal).
+mejor_pelicula(marriage_story, [noah_baumbach,david_heymans]).
+mejor_pelicula(1917, [sam_mendes,pippa_harris,jayne-ann_tenggren,callum_mcdougalls]).
+mejor_pelicula(once_upon_a_timein_hollywood, [david_heyman,shannon_mcintosh,quentin_tarantinos]).
+mejor_pelicula(parasite, [kwak_sin_ae,bong_joon_hos]).
+diseño_produccion(the_irishman, [bob_shaw,regina_graves]).
+diseño_produccion(jojo_rabbit, [ra_vincent,nora_sopková]).
+diseño_produccion(1917, [dennis_gassner,lee_sandales]).
+diseño_produccion(once_upon_a_timein_hollywood, [barbara_ling,nancy_haigh]).
+diseño_produccion(parasite, [lee_ha_jun,cho_won_woo]).
+corto_animado(dcera_daughter, daria_kashcheeva).
+corto_animado(hair_love, [matthew_a_cherry,karen_rupert_toliver]).
+corto_animado(kitbull, [rosana_sullivan,kathryn_hendrickson]).
+corto_animado(memorable, [bruno_collet,jean-françois_le_corre]).
+corto_animado(sister, siqi_song).
+cortometraje(brotherhood, [meryam_joobeur,maria_gracia_turgeon]).
+cortometraje(nefta_football_club, [yves_piat,damien_megherbi]).
+cortometraje(the_neighbors_window, marshall_curry).
+cortometraje(saria, [bryan_buckley,matt_lefebvre]).
+cortometraje(a_sister, delphine_girard).
+edicion_sonido(ford_v_ferrari, donald_sylvester).
+edicion_sonido(joker, alan_robert_murray).
+edicion_sonido(1917, [oliver_tarney,rachael_tate]).
+edicion_sonido(once_upon_a_timein_hollywood, wylie_stateman).
+edicion_sonido(star_wars_the_rise_of_skywalker, [matthew_wood,david_acord]).
+mezcla_sonido(ad_astra, [gary_rydstrom,tom_johnson,mark_ulano]).
+mezcla_sonido(ford_v_ferrari, [paul_massey,david_giammarco,steven_a_morrow]).
+mezcla_sonido(joker, [tom_ozanich,dean_zupancic,tod_maitland]).
+mezcla_sonido(1917, [mark_taylor,stuart_wilson]).
+mezcla_sonido(once_upon_a_timein_hollywood, [michael_minkler,christian_p_minkler,mark_ulano]).
+efectos_visuales(avengers_endgame, [dan_deleeuw,russell_earl,matt_aitken,dan_sudick]).
+efectos_visuales(the_irishman, [pablo_helman,leandro_estebecorena,nelson_sepulveda-fauser,stephane_grabli]).
+efectos_visuales(the_lion_king, [robert_legato,adam_valdez,andrew_r_jones,elliot_newman]).
+efectos_visuales(1917, [guillaume_rocheron,greg_butler,dominic_tuohy]).
+efectos_visuales(star_wars_the_rise_of_skywalker, [roger_guyett,neal_scanlan,patrick_tubach,dominic_tuohy]).
+guion_adaptado(the_irishman, steven_zaillian).
+guion_adaptado(jojo_rabbit, taika_waititi).
+guion_adaptado(joker, [todd_phillips,scott_silver]).
+guion_adaptado(little_women, greta_gerwig).
+guion_adaptado(the_two_popes, anthony_mccarten).
+guion_original(knives_out, rian_johnson).
+guion_original(marriage_story, noah_baumbach).
+guion_original(1917, [sam_mendes,krysty_wilson-cairns]).
+guion_original(once_upon_a_timein_hollywood, quentin_tarantino).
+guion_original(parasite, [bong_joon_ho,han_jin_won]).
 
 % REGLAS
 nominadosPor(Nominacion, Year) :-
