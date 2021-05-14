@@ -102,6 +102,16 @@ def separar_nombres(texto):
 
   for char in reemplazar_con_comas:
     texto = texto.replace(char, ',')
+    
+  # Validar si es una lista de nombres, eliminar duplicados y agregar corchetes
+  if ',' in texto:
+    # separar
+    lista_nombres = texto.split(',')
+    # eliminar duplicados
+    arr_nombres = pd.unique(lista_nombres)
+    # re agrupar
+    nombres = ','.join(arr_nombres)
+    texto = '[' + nombres + ']'
 
   return texto
 
@@ -114,10 +124,6 @@ df['film'] = df['film'].apply(reemplazar_caracteres)
 
 # Mostrar en pantalla el dataframe completo
 # print(df)
-
-# Agregar corchetes [] a los campos donde nombre sea una lista
-# Tengo pensado hacerlo con el método split y join
-
 
 # Concatenar en formato predicados para exportar a Prolog
 # Convertir numero a string para concatenar
@@ -190,5 +196,5 @@ def obtenerNombresNominados():
   for i in range(len(categories)):
     generar_predicados_categoria(categorias[i], predicados[i])
 
-# obtenerNombresNominados()
+obtenerNombresNominados()
 # obtenerNominaciones()
