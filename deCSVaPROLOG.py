@@ -17,10 +17,10 @@ pd.set_option('display.max_colwidth', None)
 df = pd.read_csv('the_oscar_award.csv')
 
 # Excluir columnas
-df.drop(columns = ['year_film', 'ceremony'], axis = 1, inplace = True)
+df.drop(columns = ['ceremony'], axis = 1, inplace = True)
 
 # Excluir entregas, excepto
-excluir_entregas_menos = df['year_ceremony'] != 2019
+excluir_entregas_menos = df['year_ceremony'] != 2020
 df.drop(index=df[excluir_entregas_menos].index, inplace = True)
 
 # ¿Nominados o ganadores?
@@ -136,8 +136,7 @@ def obtenerNominaciones():
   categoria = df.category
   pelicula = df.film
 
-  predicado = 'nominacion(' + categoria + ', ' + \
-    entrega + ', ' + pelicula + ').'
+  predicado = 'nominacion(' + categoria + ', ' + entrega + ', ' + pelicula + ').'
   print(predicado.to_string(index=False))
 
 # Este método excluye todas las otras categorías excepto una:
@@ -196,5 +195,14 @@ def obtenerNombresNominados():
   for i in range(len(categories)):
     generar_predicados_categoria(categorias[i], predicados[i])
 
-obtenerNombresNominados()
+def obtenerPeliculas():
+  # Convertir numero a string para concatenar
+  df['year_film'] = df['year_film'].apply(str)
+  df['film'].unique()
+  
+  predicado = 'pelicula(' + df.film + ', ' + df.year_film + ').'
+  print(predicado.to_string(index=False))
+
+# obtenerNombresNominados()
 # obtenerNominaciones()
+obtenerPeliculas()
