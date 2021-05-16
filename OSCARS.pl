@@ -28,8 +28,7 @@ Que se puede traducir como alerta para predicados repetidos.
     efectos_visuales/2,
     guion_adaptado/2,
     guion_original/2,
-    pelicula/2,
-    ganadores/2.
+    pelicula/2.
 
 %%%%%%%%%%%%%%%% PELICULAS %%%%%%%%%%%%%%%%
 % ACADEMY AWARDS 2020
@@ -1029,6 +1028,40 @@ guion_original(once_upon_a_timein_hollywood, quentin_tarantino).
 guion_original(parasite, [bong_joon_ho,han_jin_won]).
 
 % REGLAS
+% Mostrar todas las nominaciones de una película
+% nominacionesDe(a_star_is_born).
+nominacionesDe(Pelicula) :-
+    pelicula(Pelicula, Release),
+    write('Estrenada en '), write(Release), write(', '),
+    write(Pelicula), write(' fue nominada por: '), nl, nl,
+    nominacion(Categoria, _, Pelicula),
+    write(Categoria), nl.
+
+% Mostrar todos los OSCARS recibidos por una película
+% ganadoraDe(a_star_is_born).
+ganadoraDe(Pelicula) :-
+    pelicula(Pelicula, Release),
+    write('Estrenada en '), write(Release), write(', '),
+    write(Pelicula), write(' fue ganadora por: '), nl, nl,
+    ganador(Categoria, _, Pelicula),
+    write(Categoria), nl.
+
+% Mostrar el título de las Películas que recibieron el OSCAR según la categoría
+% recibeElOscarPor(actor_in_a_leading_role).
+recibeElOscarPor(Categoria) :-
+    write('Películas ganadoras del OSCAR en la categoría '),
+    write(Categoria), write(': '), nl, nl,
+    ganador(Categoria, _, Ganador),
+    write(Ganador), nl.
+
+% Mostrar nombre(s) de quien recibió el OSCAR según la categoría
+% QuienRecibeElOscarPor(actor_in_a_leading_role).
+quienRecibeElOscarPor(Categoria) :-
+    write('Ganador(es) del OSCAR en la categoría '),
+    write(Categoria), write(': '), nl, nl,
+    ganador(Categoria, _, Pelicula),
+    write(Pelicula), nl.
+
 % Saber si alguien ha escrito el guión para una película nominada
 % esEscritor(bradley_cooper).
 esEscritor(Quien) :-
