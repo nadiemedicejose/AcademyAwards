@@ -1029,36 +1029,60 @@ guion_original(once_upon_a_timein_hollywood, quentin_tarantino).
 guion_original(parasite, [bong_joon_ho,han_jin_won]).
 
 % REGLAS
-nominadosPor(Nominacion, Year) :-
-    nominacion(Nominacion, Year, Pelicula),
+% Saber si alguien ha escrito el guión para una película nominada
+% esEscritor(bradley_cooper).
+esEscritor(Quien) :-
+    guion_adaptado(_, Escritores),
+    member(Quien, Escritores).
+
+esEscritor(_) :-
+    guion_adaptado(_, _).
+
+esEscritor(Quien) :-
+    guion_original(_, Escritores),
+    member(Quien, Escritores).
+
+esEscritor(_) :-
+    guion_original(_, _).
+
+% Mostrar el título de las películas escrita por un autor
+% escritasPor(bradley_cooper).
+escritasPor(Quien) :-
+    guion_adaptado(Pelicula, Escritores),
+    member(Quien, Escritores),
     write(Pelicula), nl.
 
-escritaPor(Pelicula) :-
-    escritor(Pelicula, Escritor),
-    write(Escritor).
+escritasPor(Quien) :-
+    guion_adaptado(Pelicula, Quien),
+    write(Pelicula), nl.
 
-% Obtener todas las películas nominadas a Mejor Película en cierto año
-% nominadasMejorPelicula(2021, Nominadas_a_Mejor_Pelicula).
-nominadasMejorPelicula(Year, Pelicula) :- nominacion(mejor_pelicula, Year, Pelicula).
+escritasPor(Quien) :-
+    guion_original(Pelicula, Escritores),
+    member(Quien, Escritores),
+    write(Pelicula), nl.
 
-% Obtener Mejor Película ganadora del OSCAR en cierto año
-% ganadoraMejorPelicula(2021, Ganadora_Mejor_Pelicula).
-ganadoraMejorPelicula(Year, Pelicula) :- ganador(mejor_pelicula, Year, Pelicula).
+escritasPor(Quien) :-
+    guion_original(Pelicula, Quien),
+    write(Pelicula), nl.
 
-% Obtener todas las nominaciones en cierto año
-% nominadosEn(2021, Nominacion, Pelicula).
-nominadosEn(Year, Nominacion, Pelicula) :- nominacion(Nominacion, Year, Pelicula).
+% Mostrar el nombre de escritor(es), según el título de la película
+escritorDe(Pelicula) :-
+	guion_adaptado(Pelicula, Escritores),
+	member(Quien, Escritores),
+	write(Quien), nl.
 
-% Obtener todos los ganadores en cierto año
-% ganadoresEn(2021, Categoria, Pelicula).
-ganadoresEn(Year, Nominacion, Pelicula) :- ganador(Nominacion, Year, Pelicula).
+escritorDe(Pelicula) :-
+    guion_adaptado(Pelicula, Escritores),
+    write(Escritores), nl.
 
-% Saber si alguien o una película ha recibido una nominación
-% haSidoNominado(frances_mcdormand).
-haSidoNominado(Quien) :-
-    nominacion(Categoria, Edicion, Quien),
-    write('En la entrega '), write(Edicion), write(' de los Academy Awards'), nl,
-    write('Nominado(a) al OSCAR por: '), write(Categoria), nl.
+escritorDe(Pelicula) :-
+    guion_adaptado(Pelicula, Escritores),
+    
+    write(Escritores), nl.
+
+escritorDe(Pelicula) :-
+    guion_original(Pelicula, Escritores),
+    write(Escritores), nl.
 
 % Saber si alguien o una película ha recibido un OSCAR
 % haRecibidoUnOscar(frances_mcdormand).
@@ -1067,38 +1091,8 @@ haRecibidoUnOscar(Quien) :-
     write('En la entrega '), write(Edicion), write(' de los Academy Awards'), nl,
     write('Ganador(a) del OSCAR por: '), write(Categoria), nl.
 
-% Obtener todo el elenco de una película
-% cast(the_father).
-cast(Pelicula) :-
-    actor(Pelicula, Actor),
-    write(Actor), nl,
-    actriz(Pelicula, Actriz),
-    write(Actriz), nl.
-
-% Obtener el nombre de los productores de una película
-% productores(nomadland).
-productores(Pelicula) :-
-    productor(Pelicula, Productor),
-    write(Productor), nl.
-
-% Obtener detalles de la Mejor Película en cierto año
-% mejorPelicula(2021).
-mejorPelicula(Year) :-
-    ganador(mejor_pelicula, Year, Pelicula),
-    pelicula(Pelicula, Release),
-    director(Pelicula, Director),
-    write('Ganadora del OSCAR por Mejor Película en el año '), write(Year), nl,
-    write('Película: '),
-    write(Pelicula), nl,
-    write('Director: '),
-    write(Director), nl,
-    write('Año de estreno: '),
-    write(Release), nl,
-    write('Entregado a: '), nl,
-    productores(Pelicula), nl,
-    write('Elenco: '), nl,
-    cast(Pelicula).
-
+% Obtener un resumen de todos los ganadores dado el año
+% ganadores(2020).
 ganadores(Year) :-
     ganador(best_picture, Year, F1),
     write('Mejor Película: '), nl,
@@ -1196,10 +1190,10 @@ ganadores(Year) :-
     write('Mejor Guión Original: '), nl,
     write(N24), nl.
 
-iniciar(Y) :-
+% Empezar el Sistema Experto
+iniciar(si) :-
     write('Sistema Experto sobre los Academy Awards'), nl,
     write('¿Cuál año deseas ver?'), nl,
     read(Year), nl,
     write('Los ganadores de este año son:'), nl,
     ganadores(Year), nl.
-
