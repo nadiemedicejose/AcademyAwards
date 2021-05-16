@@ -27,7 +27,9 @@ Que se puede traducir como alerta para predicados repetidos.
     mezcla_sonido/2,
     efectos_visuales/2,
     guion_adaptado/2,
-    guion_original/2.
+    guion_original/2,
+    pelicula/2,
+    ganadores/2.
 
 %%%%%%%%%%%%%%%% PELICULAS %%%%%%%%%%%%%%%%
 % ACADEMY AWARDS 2020
@@ -213,7 +215,7 @@ ganador(directing, 2020, parasite).
 ganador(documentary_feature, 2020, american_factory).
 ganador(documentary_short_subject, 2020, learning_to_skateboard_in_a_warzone_if_youre_a_girl).
 ganador(film_editing, 2020, ford_v_ferrari).
-ganador(international_feature_film, 2020, parasite).
+ganador(foreign_language_film, 2020, parasite).
 ganador(makeup_and_hairstyling, 2020, bombshell).
 ganador(music_original_score, 2020, joker).
 ganador(music_original_song, 2020, rocketman).
@@ -583,11 +585,11 @@ nominacion(film_editing, 2020, the_irishman).
 nominacion(film_editing, 2020, jojo_rabbit).
 nominacion(film_editing, 2020, joker).
 nominacion(film_editing, 2020, parasite).
-nominacion(international_feature_film, 2020, corpus_christi).
-nominacion(international_feature_film, 2020, honeyland).
-nominacion(international_feature_film, 2020, les_misérables).
-nominacion(international_feature_film, 2020, pain_and_glory).
-nominacion(international_feature_film, 2020, parasite).
+nominacion(foreign_language_film, 2020, corpus_christi).
+nominacion(foreign_language_film, 2020, honeyland).
+nominacion(foreign_language_film, 2020, les_misérables).
+nominacion(foreign_language_film, 2020, pain_and_glory).
+nominacion(foreign_language_film, 2020, parasite).
 nominacion(makeup_and_hairstyling, 2020, bombshell).
 nominacion(makeup_and_hairstyling, 2020, joker).
 nominacion(makeup_and_hairstyling, 2020, judy).
@@ -1093,21 +1095,111 @@ mejorPelicula(Year) :-
     write('Año de estreno: '),
     write(Release), nl,
     write('Entregado a: '), nl,
-    productores(Pelicula),nl,
+    productores(Pelicula), nl,
     write('Elenco: '), nl,
     cast(Pelicula).
 
-% musica(Pelicula, Musica),
-% diseñovestuario(Pelicula, Diseñador),
-% maquillaje(Pelicula, Maquillaje),
-% efectosvisuales(Pelicula, Efectos_Visuales),
-% write('Productores: '),
-% write(Productor), nl,
-% write('Director de Fotografía: '), nl,
-% write(Fotografia), nl,
-% write('Edición: '), nl,
-% write(Editor), nl,
-% write('Diseño de Producción: '), nl,
-% write(Decorador_Set), nl,
-% write('Guión: '), nl,
-% write(Escritor).
+ganadores(Year) :-
+    ganador(best_picture, Year, F1),
+    write('Mejor Película: '), nl,
+    write(F1), nl, nl,
+    ganador(actor_in_a_leading_role, Year, F2),
+    actor_principal(F2, N2),
+    write('Mejor Actor Principal: '), nl,
+    write(N2), nl, nl,
+    ganador(actor_in_a_supporting_role, Year, F3),
+    actor_secundario(F3, N3),
+    write('Mejor Actor Secundario: '), nl,
+    write(N3), nl, nl,
+    ganador(actress_in_a_leading_role, Year, F4),
+    actriz_principal(F4, N4),
+    write('Mejor Actriz: '), nl,
+    write(N4), nl, nl,
+    ganador(actress_in_a_supporting_role, Year, F5),
+    actriz_secundaria(F5, N5),
+    write('Mejor Actriz Secundaria: '), nl,
+    write(N5), nl, nl,
+    ganador(animated_feature_film, Year, F6),
+    %pelicula_animada(F6, N6),
+    write('Mejor Película Animada: '), nl,
+    write(F6), nl, nl,
+    ganador(cinematography, Year, F7),
+    fotografia(F7, N7),
+    write('Mejor Fotografia: '), nl,
+    write(N7), nl, nl,
+    ganador(costume_design, Year, F8),
+    diseño_vestuario(F8, N8),
+    write('Mejor Vestuario: '), nl,
+    write(N8), nl, nl,
+    ganador(directing, Year, F9),
+    director(F9, N9),
+    write('Mejor Director: '), nl,
+    write(N9), nl, nl,
+    ganador(documentary_feature, Year, F10),
+    %documental(F10, N10),
+    write('Mejor Documental: '), nl,
+    write(F10), nl, nl,
+    ganador(documentary_short_subject, Year, F11),
+    %corto_documental(F11, N11),
+    write('Mejor Corto Documental: '), nl,
+    write(F11), nl, nl,
+    ganador(film_editing, Year, F12),
+    edicion(F12, N12),
+    write('Mejor Edicion: '), nl,
+    write(N12), nl, nl,
+    ganador(foreign_language_film, Year, F13),
+    %pelicula_extranjera(F13, N13),
+    write('Mejor Película extrangera: '), nl,
+    write(F13), nl, nl,
+    % ganador(foreign_language_film, Year, F14),
+    % pelicula_extranjera(F14, N14),
+    % write('Mejor Película extrangera: '), nl,
+    % write(N14), nl, nl,
+    ganador(makeup_and_hairstyling, Year, F15),
+    maquillaje_y_peinado(F15, N15),
+    write('Mejor Maquillaje y peinado: '), nl,
+    write(N15), nl, nl,
+    ganador(music_original_score, Year, F16),
+    sountrack_original(F16, N16),
+    write('Mejor Soundtrack original: '), nl,
+    write(N16), nl, nl,
+    ganador(music_original_song, Year, F17),
+    cancion_original(F17, N17),
+    write('Mejor Cancion original: '), nl,
+    write(N17), nl, nl,
+    ganador(short_film_animated, Year, F18),
+    %corto_animado(F18, N18),
+    write('Mejor Cortometraje Animado: '), nl,
+    write(F18), nl, nl,
+    ganador(short_film_live_action, Year, F19),
+    %cortometraje(F19, N19),
+    write('Mejor Cortometraje: '), nl,
+    write(F19), nl, nl,
+    ganador(sound_editing, Year, F20),
+    edicion_sonido(F20, N20),
+    write('Mejor Edición de Sonido: '), nl,
+    write(N20), nl, nl,
+    ganador(sound_mixing, Year, F21),
+    mezcla_sonido(F21, N21),
+    write('Mejor Mezcla de Sonido: '), nl,
+    write(N21), nl, nl,
+    ganador(visual_effects, Year, F22),
+    efectos_visuales(F22, N22),
+    write('Mejores Efectos Visuales: '), nl,
+    write(N22), nl, nl,
+    ganador(writing_adapted_screenplay, Year, F23),
+    guion_adaptado(F23, N23),
+    write('Mejor Guión Adaptado: '), nl,
+    write(N23), nl, nl,
+    ganador(writing_original_screenplay, Year, F24),
+    guion_original(F24, N24),
+    write('Mejor Guión Original: '), nl,
+    write(N24), nl.
+
+iniciar(Y) :-
+    write('Sistema Experto sobre los Academy Awards'), nl,
+    write('¿Cuál año deseas ver?'), nl,
+    read(Year), nl,
+    write('Los ganadores de este año son:'), nl,
+    ganadores(Year), nl.
+
