@@ -7,22 +7,22 @@ La base de conocmiento ha sido creada a partir de las categorias de premios en l
 * nominacion(categoría, año de nominación, producción).
 * ganador(categoría, año de nominación, producción).
 
-* pelicula(nombre de la pelicula, año de estreno).
-* actor_principal(nombre de la pelicula, actor).
-* actor_secundario(nombre de la pelicula, actor).
-* actriz_principal(nombre de la pelicula, actriz).
-* actriz_secundaria(nombre de la pelicula, actriz).
-* pelicula_animada(nombre de la pelicula, productores).
-* fotografia(nombre de la pelicula, director de fotografia).
-* diseño_vestuario(nombre de la pelicula, diseñador).
-* director(nombre de la pelicula, director).
-* documental(nombre de la pelicula, productores).
-* corto_documental(nombre de la pelicula, productores).
-* edicion(nombre de la pelicula, editor).
-* pelicula_extranjera(nombre de la pelicula, pais).
-* maquillaje_y_peinado(nombre de la pelicula, crew).
-* sountrack_original(nombre de la pelicula, compositor).
-* cancion_original(nombre de la pelicula, escritores).
+* pelicula(produccion, año de estreno).
+* actor_principal(produccion, actor).
+* actor_secundario(produccion, actor).
+* actriz_principal(produccion, actriz).
+* actriz_secundaria(produccion, actriz).
+* pelicula_animada(produccion, productores).
+* fotografia(produccion, director de fotografia).
+* diseño_vestuario(produccion, diseñador).
+* director(produccion, director).
+* documental(produccion, productores).
+* corto_documental(produccion, productores).
+* edicion(produccion, editor).
+* pelicula_extranjera(produccion, pais).
+* maquillaje_y_peinado(produccion, crew).
+* sountrack_original(produccion, compositor).
+* cancion_original(produccion, escritores).
 * mejor_pelicula(pelicula, productores).
 * diseño_produccion(pelicula, decoradores).
 * corto_animado(produccion, productores).
@@ -39,4 +39,3 @@ La base de conocmiento ha sido creada a partir de las categorias de premios en l
 * En la entrega 2020, la categoría Foreign Language Film (Mejor Película Extranjera) fue renombrada a International Feature Film (Mejor Película Internacional).
 * Para mantener la consistencia de este sistema experto, se agruparon las dos categorías antes mencionadas.
 * Este sistema experto sólo considera aquellos datos recolectados en el sitio oficial de los Academy Awards, por lo tanto, no ofrece información completa de las distintas producciones.
-* 
