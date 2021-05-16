@@ -1028,6 +1028,91 @@ guion_original(once_upon_a_timein_hollywood, quentin_tarantino).
 guion_original(parasite, [bong_joon_ho,han_jin_won]).
 
 % REGLAS
+% Mostrar los detalles de la Mejor Película en cierto año
+% mejorPelicula(2021).
+mejorPelicula(Year) :-
+    write('Ganadora del OSCAR por Mejor Película en el año '), write(Year), nl,
+    ganador(best_picture, Year, Pelicula), nl,
+    write('Película: '), write(Pelicula), nl,
+    pelicula(Pelicula, Release),
+    write('Año de estreno: '), write(Release), nl,
+    director(Pelicula, Director),
+    write('Director: '), write(Director), nl,
+    actriz_principal(Pelicula, Actriz),
+    write('Actriz principal: '), write(Actriz), nl,
+    actor_secundario(Pelicula, Actor),
+    write('Actor secundario: '), write(Actor).
+
+actoresNominados(Pelicula) :-
+    actorNominado(Pelicula);
+    actrizNominada(Pelicula).
+
+
+actorNominado(Pelicula) :-
+    actorPrincipalSiNominado(Pelicula);
+    actorSecundarioSiNominado(Pelicula).
+
+% Mostrar nombre sólo si el actor principal ha sido nominado
+actorPrincipalSiNominado(Pelicula) :-
+    actorPrincipalNominado(Pelicula),
+    actor_principal(Pelicula, Actor),
+    write('Actor principal: '), write(Actor), nl.
+
+% Consultar si el actor principal de X película ha sido nominado
+actorPrincipalNominado(Pelicula) :-
+    nominacion(actor_in_a_leading_role, _, Pelicula),
+    actor_principal(Pelicula, _).
+
+% Mostrar nombre sólo si el actor secundario ha sido nominado
+actorSecundarioSiNominado(Pelicula) :-
+    actorSecundarioNominado(Pelicula),
+    actor_secundario(Pelicula, Actor),
+    write('Actor secundario: '), write(Actor), nl.
+
+% Consultar si el actor secundario de X película ha sido nominado
+actorSecundarioNominado(Pelicula) :-
+    nominacion(actor_in_a_supporting_role, _, Pelicula),
+    actor_secundario(Pelicula, _).
+
+actrizNominada(Pelicula) :-
+    actrizPrincipalSiNominada(Pelicula);
+    actrizSecundariaSiNominada(Pelicula).
+
+% Mostrar nombre sólo si la actriz principal ha sido nominada
+actrizPrincipalSiNominada(Pelicula) :-
+    actrizPrincipalNominada(Pelicula),
+    actriz_principal(Pelicula, Actriz),
+    write('Actriz principal: '), write(Actriz), nl.
+
+% Consultar si la actriz principal de X película ha sido nominada
+actrizPrincipalNominada(Pelicula) :-
+    nominacion(actress_in_a_leading_role, _, Pelicula),
+    actriz_principal(Pelicula, _).
+
+% Mostrar nombre sólo si la actriz secundaria ha sido nominada
+actrizSecundariaSiNominada(Pelicula) :-
+    actrizSecundariaNominada(Pelicula),
+    actriz_secundaria(Pelicula, Actriz),
+    write('Actriz secundaria: '), write(Actriz), nl.
+
+% Consultar si la actriz secundaria de X película ha sido nominada
+actrizSecundariaNominada(Pelicula) :-
+    nominacion(actress_in_a_supporting_role, _, Pelicula),
+    actriz_secundaria(Pelicula, _).
+
+% Mostrar el nombre del director de una película nominada por Mejor Director
+% directorDe(roma).
+directorDe(Pelicula) :-
+    director(Pelicula, Director),
+    write(Director).
+
+% Mostrar el nombre del actor principal
+% de una película nominada por actor_in_a_leading_role
+% actorPrincipalDe(joker).
+actorPrincipalDe(Pelicula) :-
+    actor_principal(Pelicula, Actor),
+    write(Actor).
+
 % Mostrar todas las nominaciones de una película
 % nominacionesDe(a_star_is_born).
 nominacionesDe(Pelicula) :-
