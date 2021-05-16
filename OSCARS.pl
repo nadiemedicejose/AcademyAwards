@@ -1054,14 +1054,6 @@ recibeElOscarPor(Categoria) :-
     ganador(Categoria, _, Ganador),
     write(Ganador), nl.
 
-% Mostrar nombre(s) de quien recibió el OSCAR según la categoría
-% QuienRecibeElOscarPor(actor_in_a_leading_role).
-quienRecibeElOscarPor(Categoria) :-
-    write('Ganador(es) del OSCAR en la categoría '),
-    write(Categoria), write(': '), nl, nl,
-    ganador(Categoria, _, Pelicula),
-    write(Pelicula), nl.
-
 % Saber si alguien ha escrito el guión para una película nominada
 % esEscritor(bradley_cooper).
 esEscritor(Quien) :-
