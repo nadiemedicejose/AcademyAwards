@@ -1225,16 +1225,11 @@ esEscritor(_) :-
 % Mostrar el título de las películas escrita por un autor
 % escritasPor(bradley_cooper).
 escritasPor(Quien) :-
-    guion_adaptado(Pelicula, Escritores),
-    member(Quien, Escritores),
-    write(Pelicula), nl.
-
-escritasPor(Quien) :-
     guion_adaptado(Pelicula, Quien),
     write(Pelicula), nl.
 
 escritasPor(Quien) :-
-    guion_original(Pelicula, Escritores),
+    guion_adaptado(Pelicula, Escritores),
     member(Quien, Escritores),
     write(Pelicula), nl.
 
@@ -1242,24 +1237,29 @@ escritasPor(Quien) :-
     guion_original(Pelicula, Quien),
     write(Pelicula), nl.
 
+escritasPor(Quien) :-
+    guion_original(Pelicula, Escritores),
+    member(Quien, Escritores),
+    write(Pelicula), nl.
+
 % Mostrar el nombre de escritor(es), según el título de la película
+escritorDe(Pelicula) :-
+    guion_adaptado(Pelicula, Escritor),
+    write(Escritor), nl.
+
 escritorDe(Pelicula) :-
 	guion_adaptado(Pelicula, Escritores),
 	member(Quien, Escritores),
 	write(Quien), nl.
 
 escritorDe(Pelicula) :-
-    guion_adaptado(Pelicula, Escritor),
+    guion_original(Pelicula, Escritor),
     write(Escritor), nl.
 
 escritorDe(Pelicula) :-
     guion_original(Pelicula, Escritores),
 	member(Quien, Escritores),
 	write(Quien), nl.
-
-escritorDe(Pelicula) :-
-    guion_original(Pelicula, Escritor),
-    write(Escritor), nl.
 
 % Saber si alguien o una película ha recibido un OSCAR
 % haRecibidoUnOscar(frances_mcdormand).
