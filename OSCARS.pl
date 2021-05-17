@@ -1031,7 +1031,8 @@ guion_original(parasite, [bong_joon_ho,han_jin_won]).
 peliculaNominada(Pelicula) :-
     produccionNominada(Pelicula);
     castNominado(Pelicula);
-    crewNominado(Pelicula).
+    crewNominado(Pelicula);
+    escritorNominado(Pelicula).
 
 % Mostrar los detalles de la Mejor Película en cierto año
 % mejorPeliculaPorAño(2021).
@@ -1171,7 +1172,16 @@ mejorCortometrajeNominacion(Produccion) :-
 % Obtener las nominaciones del crew
 crewNominado(Produccion) :-
     nominadaMejorDirector(Produccion);
-    nominadaMejorFotografia(Produccion).
+    nominadaMejorFotografia(Produccion);
+    nominadaMejorDiseñoDeVestuario(Produccion);
+    nominadaMejorEdicion(Produccion);
+    nominadaMejorMaquillajePeinado(Produccion);
+    nominadaMejorSoundtrackOriginal(Produccion);
+    nominadaMejorCancionOriginal(Produccion);
+    nominadaMejorDiseñoDeProduccion(Produccion);
+    nominadaMejorEdicionSonido(Produccion);
+    nominadaMejorMezclaSonido(Produccion);
+    nominadaMejoresEfectosVisuales(Produccion).
 
 nominadaMejorDirector(Produccion) :-
     mejorDirectorNominacion(Produccion),
@@ -1190,6 +1200,110 @@ nominadaMejorFotografia(Produccion) :-
 mejorFotografiaNominacion(Produccion) :-
     nominacion(cinematography, _, Produccion),
     fotografia(Produccion, _).
+
+nominadaMejorDiseñoDeVestuario(Produccion) :-
+    mejorDiseñoDeVestuarioNominacion(Produccion),
+    diseño_vestuario(Produccion, Diseñador),
+    write('Nominada a Mejor Diseño de Vestuario: '), write(Diseñador), nl.
+  
+mejorDiseñoDeVestuarioNominacion(Produccion) :-
+    nominacion(costume_design, _, Produccion),
+    diseño_vestuario(Produccion, _).
+
+nominadaMejorEdicion(Produccion) :-
+    mejorMejorEdicionNominacion(Produccion),
+    edicion(Produccion, Editor),
+    write('Nominada a Mejor Edición: '), write(Editor), nl.
+  
+mejorMejorEdicionNominacion(Produccion) :-
+    nominacion(film_editing, _, Produccion),
+    edicion(Produccion, _).
+
+nominadaMejorMaquillajePeinado(Produccion) :-
+    mejorMaquillajePeinadoNominacion(Produccion),
+    maquillaje_y_peinado(Produccion, Artist),
+    write('Nominada a Mejor Maquillaje y Peinado: '), write(Artist), nl.
+  
+mejorMaquillajePeinadoNominacion(Produccion) :-
+    nominacion(makeup_and_hairstyling, _, Produccion),
+    maquillaje_y_peinado(Produccion, _).
+
+nominadaMejorSoundtrackOriginal(Produccion) :-
+    mejorSoundtrackOriginalNominacion(Produccion),
+    sountrack_original(Produccion, Compositor),
+    write('Nominada a Mejor Soundtrack Original: '), write(Compositor), nl.
+  
+mejorSoundtrackOriginalNominacion(Produccion) :-
+    nominacion(music_original_score, _, Produccion),
+    sountrack_original(Produccion, _).
+
+nominadaMejorCancionOriginal(Produccion) :-
+    mejorCancionOriginalNominacion(Produccion),
+    cancion_original(Produccion, Compositor),
+    write('Nominada a Mejor Canción Original: '), write(Compositor), nl.
+  
+mejorCancionOriginalNominacion(Produccion) :-
+    nominacion(music_original_song, _, Produccion),
+    cancion_original(Produccion, _).
+
+nominadaMejorDiseñoDeProduccion(Produccion) :-
+    mejorDiseñoDeProduccionNominacion(Produccion),
+    diseño_produccion(Produccion, Decorador),
+    write('Nominada a Diseño de Producción: '), write(Decorador), nl.
+  
+mejorDiseñoDeProduccionNominacion(Produccion) :-
+    nominacion(production_design, _, Produccion),
+    diseño_produccion(Produccion, _).
+
+nominadaMejorEdicionSonido(Produccion) :-
+    mejorEdicionSonidoNominacion(Produccion),
+    edicion_sonido(Produccion, EditorDeSonido),
+    write('Nominada a Mejor Edición de Sonido: '), write(EditorDeSonido), nl.
+  
+mejorEdicionSonidoNominacion(Produccion) :-
+    nominacion(sound_editing, _, Produccion),
+    edicion_sonido(Produccion, _).
+
+nominadaMejorMezclaSonido(Produccion) :-
+    mejorMezclaSonidoNominacion(Produccion),
+    mezcla_sonido(Produccion, IngenieroDeSonido),
+    write('Nominada a Mejor Mezcla de Sonido: '), write(IngenieroDeSonido), nl.
+  
+mejorMezclaSonidoNominacion(Produccion) :-
+    nominacion(sound_mixing, _, Produccion),
+    mezcla_sonido(Produccion, _).
+
+nominadaMejoresEfectosVisuales(Produccion) :-
+    mejoresEfectosVisualesNominacion(Produccion),
+    efectos_visuales(Produccion, SupervisoresVFX),
+    write('Nominada a Mejores Efectos Visuales: '), write(SupervisoresVFX), nl.
+  
+mejoresEfectosVisualesNominacion(Produccion) :-
+    nominacion(visual_effects, _, Produccion),
+    efectos_visuales(Produccion, _).
+
+% Obtener las nominaciones de los escritores
+escritorNominado(Produccion) :-
+    nominadaMejorGuionAdaptado(Produccion);
+    nominadaMejorGuionOriginal(Produccion).
+
+nominadaMejorGuionAdaptado(Produccion) :-
+    mejorGuionAdaptadoNominacion(Produccion),
+    guion_adaptado(Produccion, Escritores),
+    write('Nominada a Mejor Guión Adaptado: '), write(Escritores), nl.
+  
+mejorGuionAdaptadoNominacion(Produccion) :-
+    nominacion(writing_adapted_screenplay, _, Produccion),
+    guion_adaptado(Produccion, _).
+
+nominadaMejorGuionOriginal(Produccion) :-
+    mejorGuionOriginalNominacion(Produccion),
+    guion_original(Produccion, Escritores),
+    write('Nominada a Mejor Guión Original: '), write(Escritores), nl.
+  
+mejorGuionOriginalNominacion(Produccion) :-
+    nominacion(writing_original_screenplay, _, Produccion),
+    guion_original(Produccion, _).
 
 % Mostrar el nombre del director de una película nominada por Mejor Director
 % directorNominadoPor(roma).
