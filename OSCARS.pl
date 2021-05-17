@@ -1168,8 +1168,8 @@ mejorCortometrajeNominacion(Produccion) :-
     cortometraje(Produccion, _).
 
 % Mostrar el nombre del director de una película nominada por Mejor Director
-% directorDe(roma).
-directorDe(Pelicula) :-
+% directorNominadoPor(roma).
+directorNominadoPor(Pelicula) :-
     director(Pelicula, Director),
     write(Director).
 
@@ -1199,8 +1199,8 @@ ganadoraDe(Pelicula) :-
     write(Categoria), nl.
 
 % Mostrar el título de las Películas que recibieron el OSCAR según la categoría
-% recibeElOscarPor(actor_in_a_leading_role).
-recibeElOscarPor(Categoria) :-
+% ganadorasDelOscarPor(actor_in_a_leading_role).
+ganadorasDelOscarPor(Categoria) :-
     write('Películas ganadoras del OSCAR en la categoría '),
     write(Categoria), write(': '), nl, nl,
     ganador(Categoria, _, Ganador),
@@ -1249,17 +1249,17 @@ escritorDe(Pelicula) :-
 	write(Quien), nl.
 
 escritorDe(Pelicula) :-
-    guion_adaptado(Pelicula, Escritores),
-    write(Escritores), nl.
-
-escritorDe(Pelicula) :-
-    guion_adaptado(Pelicula, Escritores),
-    
-    write(Escritores), nl.
+    guion_adaptado(Pelicula, Escritor),
+    write(Escritor), nl.
 
 escritorDe(Pelicula) :-
     guion_original(Pelicula, Escritores),
-    write(Escritores), nl.
+	member(Quien, Escritores),
+	write(Quien), nl.
+
+escritorDe(Pelicula) :-
+    guion_original(Pelicula, Escritor),
+    write(Escritor), nl.
 
 % Saber si alguien o una película ha recibido un OSCAR
 % haRecibidoUnOscar(frances_mcdormand).
