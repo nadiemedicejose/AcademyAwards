@@ -1127,7 +1127,7 @@ mejorPeliculaAnimadaNominacion(Produccion) :-
 nominadaMejorPeliculaExtranjera(Produccion) :-
     mejorPeliculaExtranjeraNominacion(Produccion),
     pelicula_extranjera(Produccion, Pais),
-    write('Mejor Película Extranjera (País): '), write(Pais), nl.
+    write('Nominada a Mejor Película Extranjera (País): '), write(Pais), nl.
   
 mejorPeliculaExtranjeraNominacion(Produccion) :-
     nominacion(foreign_language_film, _, Produccion),
@@ -1145,7 +1145,7 @@ mejorDocumentalNominacion(Produccion) :-
 nominadaMejorCortoDocumental(Produccion) :-
     mejorCortoDocumentalNominacion(Produccion),
     corto_documental(Produccion, Productores),
-    write('Nominado a Mejor Corto Documental (Productores): '), write(Productores), nl.
+    write('Nominada a Mejor Corto Documental (Productores): '), write(Productores), nl.
   
 mejorCortoDocumentalNominacion(Produccion) :-
     nominacion(documentary_short_subject, _, Produccion),
@@ -1154,7 +1154,7 @@ mejorCortoDocumentalNominacion(Produccion) :-
 nominadaMejorCortoAnimado(Produccion) :-
     mejorCortoAnimadoNominacion(Produccion),
     corto_animado(Produccion, Productores),
-    write('Mejor Corto Animado (Productores): '), write(Productores), nl.
+    write('Nominada a Mejor Corto Animado (Productores): '), write(Productores), nl.
   
 mejorCortoAnimadoNominacion(Produccion) :-
     nominacion(short_film_animated, _, Produccion),
@@ -1163,7 +1163,7 @@ mejorCortoAnimadoNominacion(Produccion) :-
 nominadaMejorCortometraje(Produccion) :-
     mejorCortometrajeNominacion(Produccion),
     cortometraje(Produccion, Productores),
-    write('Actor principal: '), write(Productores), nl.
+    write('Nominada a Mejor Cortometraje (Productores): '), write(Productores), nl.
   
 mejorCortometrajeNominacion(Produccion) :-
     nominacion(short_film_live_action, _, Produccion),
@@ -1507,7 +1507,7 @@ ganadores(Year) :-
 
 % Empezar el Sistema Experto
 iniciar(si) :-
-    write('Sistema Experto sobre los Academy Awards'), nl,
+    write('Bienvenid@ al Academy Awards Expert System'), nl,
     write('¿Cuál año deseas ver?'), nl,
     read(Year), nl,
     write('Los ganadores de este año son:'), nl,
