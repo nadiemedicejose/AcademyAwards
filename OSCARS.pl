@@ -1028,25 +1028,20 @@ guion_original(once_upon_a_timein_hollywood, quentin_tarantino).
 guion_original(parasite, [bong_joon_ho,han_jin_won]).
 
 % REGLAS
+peliculaNominada(Pelicula) :-
+    castNominado(Pelicula);
+    produccionNominada(Pelicula).
+
 % Mostrar los detalles de la Mejor Película en cierto año
-% mejorPelicula(2021).
-mejorPelicula(Year) :-
+% mejorPeliculaPorAño(2021).
+mejorPeliculaPorAño(Year) :-
     write('Ganadora del OSCAR por Mejor Película en el año '), write(Year), nl,
     ganador(best_picture, Year, Pelicula), nl,
-    write('Película: '), write(Pelicula), nl,
-    pelicula(Pelicula, Release),
-    write('Año de estreno: '), write(Release), nl,
-    director(Pelicula, Director),
-    write('Director: '), write(Director), nl,
-    actriz_principal(Pelicula, Actriz),
-    write('Actriz principal: '), write(Actriz), nl,
-    actor_secundario(Pelicula, Actor),
-    write('Actor secundario: '), write(Actor).
+    write('Película: '), write(Pelicula).
 
-actoresNominados(Pelicula) :-
+castNominado(Pelicula) :-
     actorNominado(Pelicula);
     actrizNominada(Pelicula).
-
 
 actorNominado(Pelicula) :-
     actorPrincipalSiNominado(Pelicula);
@@ -1099,6 +1094,78 @@ actrizSecundariaSiNominada(Pelicula) :-
 actrizSecundariaNominada(Pelicula) :-
     nominacion(actress_in_a_supporting_role, _, Pelicula),
     actriz_secundaria(Pelicula, _).
+
+produccionNominada(Produccion) :-
+    nominadaMejorPelicula(Produccion);
+    nominadaMejorPeliculaAnimada(Produccion);
+    nominadaMejorPeliculaExtranjera(Produccion);
+    nominadaMejorDocumental(Produccion);
+    nominadaMejorCortoDocumental(Produccion);
+    nominadaMejorCortoAnimado(Produccion);
+    nominadaMejorCortometraje(Produccion).
+  
+nominadaMejorPelicula(Produccion) :-
+    mejorPeliculaNominacion(Produccion),
+    mejor_pelicula(Produccion, Productores),
+    write('Nominada a Mejor Película (Productores): '), write(Productores), nl.
+  
+mejorPeliculaNominacion(Produccion) :-
+    nominacion(best_picture, _, Produccion),
+    mejor_pelicula(Produccion, _).
+  
+nominadaMejorPeliculaAnimada(Produccion) :-
+    mejorPeliculaAnimadaNominacion(Produccion),
+    pelicula_animada(Produccion, Productores),
+    write('Nominada a Mejor Película Animada(Productores): '), write(Productores), nl.
+  
+mejorPeliculaAnimadaNominacion(Produccion) :-
+    nominacion(animated_feature_film, _, Produccion),
+    pelicula_animada(Produccion, _).
+  
+nominadaMejorPeliculaExtranjera(Produccion) :-
+    mejorPeliculaExtranjeraNominacion(Produccion),
+    pelicula_extranjera(Produccion, Pais),
+    write('Mejor Película Extranjera (País): '), write(Pais), nl.
+  
+mejorPeliculaExtranjeraNominacion(Produccion) :-
+    nominacion(foreign_language_film, _, Produccion),
+    pelicula_extranjera(Produccion, _).
+  
+nominadaMejorDocumental(Produccion) :-
+    mejorDocumentalNominacion(Produccion),
+    documental(Produccion, Productores),
+    write('Nominada a Mejor Documental (Productores): '), write(Productores), nl.
+  
+mejorDocumentalNominacion(Produccion) :-
+    nominacion(documentary_feature, _, Produccion),
+    documental(Produccion, _).
+  
+nominadaMejorCortoDocumental(Produccion) :-
+    mejorCortoDocumentalNominacion(Produccion),
+    corto_documental(Produccion, Productores),
+    write('Nominado a Mejor Corto Documental (Productores): '), write(Productores), nl.
+  
+mejorCortoDocumentalNominacion(Produccion) :-
+    nominacion(documentary_short_subject, _, Produccion),
+    corto_documental(Produccion, _).
+  
+nominadaMejorCortoAnimado(Produccion) :-
+    mejorCortoAnimadoNominacion(Produccion),
+    corto_animado(Produccion, Productores),
+    write('Mejor Corto Animado (Productores): '), write(Productores), nl.
+  
+mejorCortoAnimadoNominacion(Produccion) :-
+    nominacion(short_film_animated, _, Produccion),
+    corto_animado(Produccion, _).
+  
+nominadaMejorCortometraje(Produccion) :-
+    mejorCortometrajeNominacion(Produccion),
+    cortometraje(Produccion, Productores),
+    write('Actor principal: '), write(Productores), nl.
+  
+mejorCortometrajeNominacion(Produccion) :-
+    nominacion(short_film_live_action, _, Produccion),
+    cortometraje(Produccion, _).
 
 % Mostrar el nombre del director de una película nominada por Mejor Director
 % directorDe(roma).
