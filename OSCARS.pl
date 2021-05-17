@@ -1029,8 +1029,9 @@ guion_original(parasite, [bong_joon_ho,han_jin_won]).
 
 % REGLAS
 peliculaNominada(Pelicula) :-
+    produccionNominada(Pelicula);
     castNominado(Pelicula);
-    produccionNominada(Pelicula).
+    crewNominado(Pelicula).
 
 % Mostrar los detalles de la Mejor Película en cierto año
 % mejorPeliculaPorAño(2021).
@@ -1166,6 +1167,29 @@ nominadaMejorCortometraje(Produccion) :-
 mejorCortometrajeNominacion(Produccion) :-
     nominacion(short_film_live_action, _, Produccion),
     cortometraje(Produccion, _).
+
+% Obtener las nominaciones del crew
+crewNominado(Produccion) :-
+    nominadaMejorDirector(Produccion);
+    nominadaMejorFotografia(Produccion).
+
+nominadaMejorDirector(Produccion) :-
+    mejorDirectorNominacion(Produccion),
+    director(Produccion, Director),
+    write('Nominada a Mejor Director: '), write(Director), nl.
+  
+mejorDirectorNominacion(Produccion) :-
+    nominacion(directing, _, Produccion),
+    director(Produccion, _).
+
+nominadaMejorFotografia(Produccion) :-
+    mejorFotografiaNominacion(Produccion),
+    fotografia(Produccion, Fotografo),
+    write('Nominada a Mejor Fotografía: '), write(Fotografo), nl.
+  
+mejorFotografiaNominacion(Produccion) :-
+    nominacion(cinematography, _, Produccion),
+    fotografia(Produccion, _).
 
 % Mostrar el nombre del director de una película nominada por Mejor Director
 % directorNominadoPor(roma).
