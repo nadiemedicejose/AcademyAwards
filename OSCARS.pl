@@ -1506,9 +1506,140 @@ ganadores(Year) :-
     write(N24), nl.
 
 % Empezar el Sistema Experto
-iniciar(si) :-
-    write('Bienvenid@ al Academy Awards Expert System'), nl,
-    write('¿Cuál año deseas ver?'), nl,
-    read(Year), nl,
-    write('Los ganadores de este año son:'), nl,
-    ganadores(Year), nl.
+iniciar :-
+    write('Bienvenid@ al ACADEMY AWARDS EXPERT SYSTEM'), nl, nl,
+    consulta.
+
+consulta :-
+    write('¿Qué deseas consultar?'), nl,
+    write('1. Ganadores de una Entrega por año'), nl,
+    write('2. Ganadora a Mejor Película por año'), nl,
+    write('3. OSCARS ganados por una película'), nl,
+    write('4. Nominaciones de una película'), nl,
+    write('5. Detalle de las nominaciones de una película'), nl,
+    write('6. Consultar películas ganadoras según la categoría'), nl,
+    write('7. Consultar cast nominado según la película'), nl,
+    write('8. Consultar actor nominado según la película'), nl,
+    write('9. Consultar actriz nominada según la película'), nl,
+    write('10. Consultar si una producción (ya sea pelicula, documental, cortometraje) ha sido nominada'), nl,
+    write('11. Consultar nombre del director de una película nominada'), nl,
+    write('12. Consultar nombre(s) de los escritores de una película nominada'), nl,
+    write('13. Consultar las nominaciones de cualquier miembro del crew por película'), nl,
+    write('14. Consultar si escritor ha sido nominado'), nl,
+    write('15. Consultar todas las películas nominadas y escritas por autor'), nl,
+    write('0. Salir'), nl, nl,
+    read(Opcion), nl,
+    opciones(Opcion), nl.
+
+opciones(X) :- (
+    (X = 0) -> salida;
+    (X = 1) ->
+        write('Ganadores de una Entrega por año'), nl, nl,
+        write('Ingresa el año de entrega: '),
+        read(Year),
+        ganadores(Year),
+        continuar;
+    (X = 2) ->
+        write('Ganadora a Mejor Película por año'), nl, nl,
+        write('Ingresa el año de entrega: '),
+        read(Year),
+        mejorPeliculaPorAño(Year),
+        continuar;
+    (X = 3) ->
+        write('OSCARS ganados por una película'), nl, nl,
+        write('Ingresa el título de la película: '),
+        read(Titulo),
+        ganadoraDe(Titulo),
+        continuar;
+    (X = 4) ->
+        write('Nominaciones de una película'), nl, nl,
+        write('Ingresa el título de la película: '),
+        read(Titulo),
+        nominacionesDe(Titulo),
+        continuar;
+    (X = 5) ->
+        write('Detalle de las nominaciones de una película'), nl, nl,
+        write('Ingresa el título de la película: '),
+        read(Titulo),
+        peliculaNominada(Titulo),
+        continuar;
+    (X = 6) ->
+        write('Consultar películas ganadoras según la categoría'), nl, nl,
+        write('Ingresa (en inglés) el nombre de la categoría: '),
+        read(Categoria),
+        ganadorasDelOscarPor(Categoria),
+        continuar;
+    (X = 7) ->
+        write('Consultar cast nominado según la película'), nl, nl,
+        write('Ingresa el título de la película: '),
+        read(Titulo),
+        castNominado(Titulo),
+        continuar;
+    (X = 8) ->
+        write('Consultar actor nominado según la película'), nl, nl,
+        write('Ingresa el título de la película: '),
+        read(Titulo),
+        actorNominado(Titulo),
+        continuar;
+    (X = 9) ->
+        write('Consultar actriz nominada según la película'), nl, nl,
+        write('Ingresa el título de la película: '),
+        read(Titulo),
+        actrizNominada(Titulo),
+        continuar;
+    (X = 10) ->
+        write('Consultar si una producción (ya sea pelicula, documental, cortometraje) ha sido nominada'), nl, nl,
+        write('Ingresa el título de la producción: '),
+        read(Titulo),
+        produccionNominada(Titulo),
+        continuar;
+    (X = 11) ->
+        write('Consultar nombre del director de una película nominada'), nl, nl,
+        write('Ingresa el título de la película: '),
+        read(Titulo),
+        directorNominadoPor(Titulo),
+        continuar;
+    (X = 12) ->
+        write('Consultar nombre(s) de los escritores de una película nominada'), nl, nl,
+        write('Ingresa el título de la película: '),
+        read(Titulo),
+        escritorNominado(Titulo),
+        continuar;
+    (X = 13) ->
+        write('Consultar las nominaciones de cualquier miembro del crew por película'), nl, nl,
+        write('Ingresa el título de la película: '),
+        read(Titulo),
+        crewNominado(Titulo),
+        continuar;
+    (X = 14) ->
+        write('Consultar si escritor ha sido nominado'), nl, nl,
+        write('Ingresa el nombre del escritor: '),
+        read(Escritor),
+        esEscritor(Escritor),
+        continuar;
+    (X = 15) ->
+        write('Consultar todas las películas nominadas y escritas por autor'), nl, nl,
+        write('Ingresa el nombre del escritor: '),
+        read(Escritor),
+        escritasPor(Escritor),
+        continuar).
+
+continuar :-
+    nl, nl, nl,
+    write('¿Deseas realizar otra consulta?'), nl,
+    write('1. Sí'), nl,
+    write('2. No'), nl, nl,
+    read(Desea),
+    deseaContinuar(Desea).
+
+deseaContinuar(X) :-
+    ((X = 1) -> consulta;
+     (X = 2) -> salida).
+
+salida :-
+    write('ACADEMY AWARDS EXPERT SYSTEM'), nl, nl,
+    write('Desarrollado por:'), nl,
+    write('Castillo López Ana Sofía'), nl,
+    write('Estrada Ramirez Jose Guadalupe'), nl,
+    write('Gastelum Payan Leobardo'), nl,
+    write('Rivera Leal Miguel Ernesto'), nl.
